@@ -5,12 +5,18 @@
     "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/Splitted-By-Protocol/vless.txt",
     "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/vless.txt",
     "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/Sub1.txt",
-    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Sub1.txt"
+    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Sub1.txt",
+    "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
+    "https://raw.githubusercontent.com/vxstream/SkyVPN/main/sub.txt",
+    "https://raw.githubusercontent.com/miraali1372/mirsub/main/subscription.txt",
+    "https://raw.githubusercontent.com/mohammadaz2/v2rayConfigsForYou/main/sub/vless.txt",
+    "https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/vless.txt",
+    "https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/mix.txt"
   ],
   "collection": {
     "timeoutSec": 25,
     "maxBytes": 41943040,
-    "maxConfigs": 500,
+    "maxConfigs": 800,
     "shuffle": true,
     "dedupeByEndpoint": true
   },
