@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-10-04T13:38:56.076Z",
+  "nickname": "Xer0x",
+  "totals": {
+    "fetched": 10520,
+    "unique": 4088,
+    "validated": 1,
+    "failed": 11,
+    "whitelist": 0,
+    "blacklist": 1
+  },
+  "whitelist_criteria": {
+    "requirePublicTls": true,
+    "requireDomain": false,
+    "requireCdn": false,
+    "maxLatencyMs": 800
+  },
+  "top_countries": [
+    {
+      "cc": "FR",
+      "count": 1
+    }
+  ],
+  "profiles": [
+    {
+      "idx": 1,
+      "host": "62.210.91.10",
+      "port": 23576,
+      "type": "tcp",
+      "security": "reality",
+      "server_cc": "FR",
+      "server_country": "France",
+      "egress_ip": "62.210.91.10",
+      "egress_cc": "FR",
+      "latency_ms": 1017,
+      "public_tls": false,
+      "cdn": false,
+      "whitelist": false
+    }
+  ]
+}

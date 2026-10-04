@@ -1,0 +1,5 @@
+.xray/
+.cache/
+node_modules/
+*.log
+*.zip

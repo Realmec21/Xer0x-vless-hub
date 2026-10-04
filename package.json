@@ -1,0 +1,15 @@
+{
+  "name": "xer0x-vless-hub",
+  "version": "1.0.0",
+  "description": "Auto-collector of public VLESS profiles: validate, geo-flag, split into whitelist/blacklist subscriptions",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:small": "node src/index.js --limit 30"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}

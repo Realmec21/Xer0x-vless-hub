@@ -1,0 +1,31 @@
+{
+  "nickname": "Xer0x",
+  "outputDir": "subscriptions",
+  "sources": [
+    "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/Splitted-By-Protocol/vless.txt",
+    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/vless.txt",
+    "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/Sub1.txt",
+    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Sub1.txt"
+  ],
+  "collection": {
+    "timeoutSec": 25,
+    "maxBytes": 41943040,
+    "maxConfigs": 500,
+    "shuffle": true,
+    "dedupeByEndpoint": true
+  },
+  "validation": {
+    "timeoutSec": 9,
+    "concurrency": 10,
+    "retry": 1
+  },
+  "whitelist": {
+    "requirePublicTls": true,
+    "requireDomain": false,
+    "requireCdn": false,
+    "maxLatencyMs": 800
+  },
+  "geo": {
+    "batchDelayMs": 1500
+  }
+}
