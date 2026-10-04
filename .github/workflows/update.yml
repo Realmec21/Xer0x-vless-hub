@@ -45,5 +45,11 @@ jobs:
             echo "No changes"
           else
             git commit -m "chore: refresh subscriptions"
-            git push origin main
+            for i in 1 2 3; do
+              git push origin main && exit 0
+              git fetch origin main
+              git rebase origin/main || git rebase --abort
+              sleep 5
+            done
+            exit 1
           fi
