@@ -92,9 +92,10 @@ async function main() {
 
   const out = build(records, cfg, col);
   const secs = Math.round((Date.now() - started) / 1000);
-  console.log(`[build] whitelist=${out.white.length} blacklist=${out.black.length} (${secs}s)`);
+  console.log(`[build] whitelist=${out.white.length} blacklist=${out.black.length} fast=${out.fast.length} (${secs}s)`);
   console.log(`[build] ${out.whitePath}`);
   console.log(`[build] ${out.blackPath}`);
+  console.log(`[build] ${out.fastPath}`);
 }
 
 main().catch((e) => {

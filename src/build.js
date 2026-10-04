@@ -6,6 +6,12 @@ const { remarkUri } = require('./vless');
 const { isWhitelistCandidate } = require('./classify');
 const { flag } = require('./geo');
 
+function speedBadge(latencyMs) {
+  if (latencyMs < 300) return '⚡';
+  if (latencyMs < 500) return '🔵';
+  return '🔴';
+}
+
 function build(records, cfg, collectionStats) {
   const nickname = cfg.nickname || 'Xer0x';
   const outDir = path.resolve(process.cwd(), cfg.outputDir || 'subscriptions');
@@ -17,18 +23,22 @@ function build(records, cfg, collectionStats) {
 
   validated.forEach((r, i) => {
     r.index = i + 1;
-    r.uri = remarkUri(r.profile, nickname, flag(r.serverCc), r.index);
+    r.badge = speedBadge(r.latencyMs);
+    r.uri = remarkUri(r.profile, nickname, flag(r.serverCc), r.badge, r.index);
     r.whitelist = isWhitelistCandidate(r, cfg.whitelist);
   });
 
   const white = validated.filter((r) => r.whitelist);
   const black = validated.filter((r) => !r.whitelist);
+  const fast = validated.filter((r) => r.latencyMs < 300);
 
   const whitePath = path.join(outDir, 'whitelist.txt');
   const blackPath = path.join(outDir, 'blacklist.txt');
+  const fastPath = path.join(outDir, 'fast.txt');
 
   fs.writeFileSync(whitePath, white.length ? white.map((r) => r.uri).join('\n') + '\n' : '');
   fs.writeFileSync(blackPath, black.length ? black.map((r) => r.uri).join('\n') + '\n' : '');
+  fs.writeFileSync(fastPath, fast.length ? fast.map((r) => r.uri).join('\n') + '\n' : '');
 
   const byCountry = {};
   for (const r of validated) {
@@ -46,6 +56,7 @@ function build(records, cfg, collectionStats) {
       failed: records.length - validated.length,
       whitelist: white.length,
       blacklist: black.length,
+      fast: fast.length,
     },
     sources: collectionStats ? collectionStats.sources : [],
     whitelist_criteria: cfg.whitelist || {},
@@ -72,7 +83,7 @@ function build(records, cfg, collectionStats) {
 
   fs.writeFileSync(path.join(outDir, 'report.json'), JSON.stringify(report, null, 2));
 
-  return { whitePath, blackPath, white, black, validated };
+  return { whitePath, blackPath, fastPath, white, black, fast, validated };
 }
 
 module.exports = { build };
