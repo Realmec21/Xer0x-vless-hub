@@ -11,7 +11,14 @@
     "https://raw.githubusercontent.com/miraali1372/mirsub/main/subscription.txt",
     "https://raw.githubusercontent.com/mohammadaz2/v2rayConfigsForYou/main/sub/vless.txt",
     "https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/vless.txt",
-    "https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/mix.txt"
+    "https://raw.githubusercontent.com/MahanKenway/Freedom-V2Ray/main/configs/mix.txt",
+    "https://raw.githubusercontent.com/Trojankill/Safe-server-lists-for-bypassing-whitelists/main/githubmirror/ALL.txt",
+    "https://raw.githubusercontent.com/maffloppe/mywl/main/sub/test/base64.txt",
+    "https://raw.githubusercontent.com/maffloppe/mywl/main/sub/trusted-vless_universal.txt",
+    "https://raw.githubusercontent.com/Xumuk0/White-List-VPN/main/list_vpn.txt",
+    "https://raw.githubusercontent.com/Xumuk0/White-List-VPN/main/list.txt",
+    "https://raw.githubusercontent.com/flaafix/AetrisVPN-white-list-lite/main/AetrisVPN.txt",
+    "https://raw.githubusercontent.com/FunTheBody/WhiteList-Vpn/main/output/merged_sub.txt"
   ],
   "collection": {
     "timeoutSec": 25,
