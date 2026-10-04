@@ -8,6 +8,7 @@ const { collect } = require('./collect');
 const { validateAll, checkPublicTls } = require('./validate');
 const { resolveHost, looksLikeCdn, lookupCountries, loadCache, flag } = require('./geo');
 const { build } = require('./build');
+const { recordRun, uptimeOf, shouldRetryDead } = require('./uptime');
 
 function loadConfig(argv) {
   let file = 'config.json';
@@ -52,10 +53,16 @@ async function main() {
       console.log(`[validate] ${done}/${total} ok=${res.ok ? 'Y' : 'n'}`);
     }
   });
-  const records = results.map((r, i) => ({ ...r, profile: col.profiles[i] }));
+
+  const history = recordRun(col.profiles, results);
+  const records = results.map((r, i) => {
+    const p = col.profiles[i];
+    const key = `${p.uuid}@${p.host}:${p.port}`;
+    return { ...r, profile: p, uptime: uptimeOf(history, key) };
+  });
+
   const okRecords = records.filter((r) => r.ok);
   console.log(`[validate] done: ${okRecords.length}/${records.length} alive`);
-
   if (!okRecords.length) {
     console.error('[fatal] nothing validated, keeping previous subscriptions');
     process.exit(1);
@@ -67,10 +74,7 @@ async function main() {
     hostIps.set(h, await resolveHost(h));
   });
 
-  await lookupCountries(
-    [...hostIps.values()].flat(),
-    cfg.geo || {}
-  );
+  await lookupCountries([...hostIps.values()].flat(), cfg.geo || {});
   const geoCache = loadCache();
 
   await pool(okRecords, 20, async (r) => {
@@ -92,10 +96,10 @@ async function main() {
 
   const out = build(records, cfg, col);
   const secs = Math.round((Date.now() - started) / 1000);
-  console.log(`[build] whitelist=${out.white.length} blacklist=${out.black.length} fast=${out.fast.length} (${secs}s)`);
-  console.log(`[build] ${out.whitePath}`);
-  console.log(`[build] ${out.blackPath}`);
-  console.log(`[build] ${out.fastPath}`);
+  const speeds = out.validated.filter((r) => r.speedMbps);
+  const avgSpeed = speeds.length ? (speeds.reduce((s, r) => s + r.speedMbps, 0) / speeds.length).toFixed(1) : 'n/a';
+  console.log(`[build] whitelist=${out.white.length} blacklist=${out.black.length} fast=${out.fast.length} avg_speed=${avgSpeed}Mbps (${secs}s)`);
+  console.log(`[build] ${cfg.outputDir}/whitelist.txt, blacklist.txt, fast.txt, clash.yaml, sing-box.json, report.json`);
 }
 
 main().catch((e) => {

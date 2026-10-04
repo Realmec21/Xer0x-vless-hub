@@ -1,0 +1,43 @@
+# Xer0x-vless-hub Clash proxies
+proxies:
+  - name: "🔴 🇺🇸 Xer0x-01"
+    type: vless
+    server: 169.40.42.104
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    tls: true
+    udp: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+    flow: xtls-rprx-vision
+  - name: "🔴 🇮🇹 ~5.6Mbps Xer0x-02"
+    type: vless
+    server: milan.adaspoloandco.com
+    port: 8443
+    uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
+    tls: true
+    udp: true
+    servername: milan.adaspoloandco.com
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /RoBeRt
+      headers:
+        Host: milan.adaspoloandco.com
+  - name: "🔴 🇺🇸 ~9Mbps Xer0x-03"
+    type: vless
+    server: 169.40.42.223
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    tls: true
+    udp: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+    flow: xtls-rprx-vision

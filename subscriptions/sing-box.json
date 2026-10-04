@@ -1,0 +1,74 @@
+{
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🔴 🇺🇸 Xer0x-01",
+      "server": "169.40.42.104",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇮🇹 ~5.6Mbps Xer0x-02",
+      "server": "milan.adaspoloandco.com",
+      "server_port": 8443,
+      "uuid": "69ac162b-1643-4acb-9f49-09d8b0fad609",
+      "transport": {
+        "type": "ws",
+        "path": "/RoBeRt",
+        "headers": {
+          "Host": "milan.adaspoloandco.com"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "milan.adaspoloandco.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇺🇸 ~9Mbps Xer0x-03",
+      "server": "169.40.42.223",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    }
+  ]
+}

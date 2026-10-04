@@ -5,6 +5,7 @@ const path = require('path');
 const { remarkUri } = require('./vless');
 const { isWhitelistCandidate } = require('./classify');
 const { flag } = require('./geo');
+const { buildClashFile, buildSingBoxFile } = require('./formats');
 
 function speedBadge(latencyMs) {
   if (latencyMs < 300) return '⚡';
@@ -24,7 +25,10 @@ function build(records, cfg, collectionStats) {
   validated.forEach((r, i) => {
     r.index = i + 1;
     r.badge = speedBadge(r.latencyMs);
-    r.uri = remarkUri(r.profile, nickname, flag(r.serverCc), r.badge, r.index);
+    r.flag = flag(r.serverCc);
+    const speedPart = r.speedMbps ? ` ~${r.speedMbps}Mbps` : '';
+    r.remark = [r.badge, r.flag, speedPart.trim(), `${nickname}-${String(r.index).padStart(2, '0')}`].filter(Boolean).join(' ');
+    r.uri = remarkUri(r.profile, r.remark);
     r.whitelist = isWhitelistCandidate(r, cfg.whitelist);
   });
 
@@ -32,19 +36,22 @@ function build(records, cfg, collectionStats) {
   const black = validated.filter((r) => !r.whitelist);
   const fast = validated.filter((r) => r.latencyMs < 300);
 
-  const whitePath = path.join(outDir, 'whitelist.txt');
-  const blackPath = path.join(outDir, 'blacklist.txt');
-  const fastPath = path.join(outDir, 'fast.txt');
+  fs.writeFileSync(path.join(outDir, 'whitelist.txt'), white.length ? white.map((r) => r.uri).join('\n') + '\n' : '');
+  fs.writeFileSync(path.join(outDir, 'blacklist.txt'), black.length ? black.map((r) => r.uri).join('\n') + '\n' : '');
+  fs.writeFileSync(path.join(outDir, 'fast.txt'), fast.length ? fast.map((r) => r.uri).join('\n') + '\n' : '');
 
-  fs.writeFileSync(whitePath, white.length ? white.map((r) => r.uri).join('\n') + '\n' : '');
-  fs.writeFileSync(blackPath, black.length ? black.map((r) => r.uri).join('\n') + '\n' : '');
-  fs.writeFileSync(fastPath, fast.length ? fast.map((r) => r.uri).join('\n') + '\n' : '');
+  fs.writeFileSync(path.join(outDir, 'clash.yaml'), buildClashFile(validated));
+  fs.writeFileSync(path.join(outDir, 'sing-box.json'), buildSingBoxFile(validated));
 
   const byCountry = {};
   for (const r of validated) {
     const cc = r.serverCc || '??';
     byCountry[cc] = (byCountry[cc] || 0) + 1;
   }
+
+  const speeds = validated.filter((r) => r.speedMbps !== null && r.speedMbps !== undefined);
+  const avgSpeed = speeds.length ? Math.round(speeds.reduce((s, r) => s + r.speedMbps, 0) / speeds.length * 10) / 10 : null;
+  const avgLatency = validated.length ? Math.round(validated.reduce((s, r) => s + r.latencyMs, 0) / validated.length) : null;
 
   const report = {
     generated_at: new Date().toISOString(),
@@ -57,6 +64,8 @@ function build(records, cfg, collectionStats) {
       whitelist: white.length,
       blacklist: black.length,
       fast: fast.length,
+      avg_latency_ms: avgLatency,
+      avg_speed_mbps: avgSpeed,
     },
     sources: collectionStats ? collectionStats.sources : [],
     whitelist_criteria: cfg.whitelist || {},
@@ -75,15 +84,18 @@ function build(records, cfg, collectionStats) {
       egress_ip: r.egressIp,
       egress_cc: r.egressCountry || null,
       latency_ms: r.latencyMs,
+      speed_mbps: r.speedMbps || null,
+      uptime: r.uptime !== undefined ? r.uptime : null,
       public_tls: !!r.hasPublicTls,
       cdn: !!r.isCdn,
       whitelist: !!r.whitelist,
+      fast: r.latencyMs < 300,
     })),
   };
 
   fs.writeFileSync(path.join(outDir, 'report.json'), JSON.stringify(report, null, 2));
 
-  return { whitePath, blackPath, fastPath, white, black, fast, validated };
+  return { white, black, fast, validated };
 }
 
 module.exports = { build };

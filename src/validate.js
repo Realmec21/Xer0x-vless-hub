@@ -9,6 +9,7 @@ const { spawn } = require('child_process');
 const { execFile } = require('child_process');
 const { promisify } = require('util');
 const { buildXrayConfig } = require('./vless');
+const { measureSpeed } = require('./speedtest');
 
 const execFileAsync = promisify(execFile);
 
@@ -115,12 +116,13 @@ async function validateProfile(p, xrayBin, opts) {
       await waitPort(port, 4000, child);
       const result = await curlThrough(port, timeoutSec);
       if (!result.egressIp || !Number.isFinite(result.latencyMs)) throw new Error('bad trace result');
+      const speedMbps = await measureSpeed(port);
       if (child.exitCode === null) {
         try {
           child.kill();
         } catch (e) {}
       }
-      return { ok: true, latencyMs: result.latencyMs, egressIp: result.egressIp, egressCountry: result.egressCountry };
+      return { ok: true, latencyMs: result.latencyMs, egressIp: result.egressIp, egressCountry: result.egressCountry, speedMbps };
     } catch (e) {
       lastErr = String(e.message || e);
       const tail = errChunks.join('').trim().slice(-200);

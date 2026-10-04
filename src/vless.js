@@ -175,10 +175,8 @@ function buildXrayConfig(listenPort, p) {
   };
 }
 
-function remarkUri(p, nickname, flag, speedBadge, index) {
+function remarkUri(p, remark) {
   const base = p.raw.split('#')[0];
-  const parts = [speedBadge, flag, `${nickname}-${String(index).padStart(2, '0')}`].filter(Boolean);
-  const remark = parts.join(' ');
   return `${base}#${encodeURIComponent(remark)}`;
 }
 
