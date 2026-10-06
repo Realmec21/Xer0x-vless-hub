@@ -122,6 +122,16 @@ function build(records, cfg, collectionStats) {
 
   fs.writeFileSync(path.join(outDir, 'report.json'), JSON.stringify(report, null, 2));
 
+  const docsRoot = path.resolve(process.cwd(), 'docs');
+  if (fs.existsSync(path.join(docsRoot, 'index.html'))) {
+    const docsOut = path.join(docsRoot, 'subscriptions');
+    fs.mkdirSync(docsOut, { recursive: true });
+    for (const f of fs.readdirSync(outDir)) {
+      const src = path.join(outDir, f);
+      if (fs.statSync(src).isFile()) fs.copyFileSync(src, path.join(docsOut, f));
+    }
+  }
+
   return { white, black, fast, validated, wifiPool, ltePool };
 }
 

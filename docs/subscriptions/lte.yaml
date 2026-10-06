@@ -1,0 +1,291 @@
+# Xer0x-vless-hub Clash proxies
+proxies:
+  - name: "🔵 🇺🇸 ~26Mbps Xer0x-08"
+    type: vless
+    server: 216.227.161.95
+    port: 7443
+    uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+    tls: true
+    udp: true
+    servername: media3.abvphelp.cc
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: uNqGvaJEIFTFQvAxsTDhetPxkIWzJuBtxXsK0yFMYzM
+      short-id: 48d5cf47
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+  - name: "🔵 🇨🇦 ~16.3Mbps Xer0x-09"
+    type: vless
+    server: 66.70.179.198
+    port: 2053
+    uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+    tls: true
+    udp: true
+    servername: www.cloudflare.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+      short-id: 83f8317a948bb769
+  - name: "🔴 🇯🇵 ~11.5Mbps Xer0x-10"
+    type: vless
+    server: 160.16.139.182
+    port: 443
+    uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+    tls: true
+    udp: true
+    servername: www.amazon.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+      short-id: 1a
+    flow: xtls-rprx-vision
+  - name: "🔴 🇯🇵 ~11.2Mbps Xer0x-11"
+    type: vless
+    server: 38.207.130.15
+    port: 443
+    uuid: e4cd263b-c5c7-4410-bf61-8893179ec429
+    tls: true
+    udp: true
+    servername: amazon.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE
+      short-id: 6d962e8d8a0dce
+    flow: xtls-rprx-vision
+    network: raw
+  - name: "🔴 🇨🇦 Xer0x-12"
+    type: vless
+    server: 104.16.10.197
+    port: 443
+    uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+    tls: true
+    udp: true
+    servername: a.cwvps.eu.org
+    client-fingerprint: unsafe
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /ws
+      headers:
+        Host: a.cwvps.eu.org
+  - name: "🔴 🇳🇱 ~9Mbps Xer0x-14"
+    type: vless
+    server: 195.123.221.36
+    port: 443
+    uuid: 9c60369d-e5f9-4cec-9e63-1560e88e119a
+    tls: true
+    udp: true
+    servername: gateway.icloud.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: dIv6pPS-x6IzbiPyHX8nNdRrwI2yZl4y3YCeRWy9UgE
+      short-id: 3e67326f98ddb407
+    flow: xtls-rprx-vision
+  - name: "🔴 🇩🇪 ~7.9Mbps Xer0x-16"
+    type: vless
+    server: 91.107.165.46
+    port: 8080
+    uuid: 59ab9bbf-3f08-4992-bbf3-4faddceb8e49
+    tls: true
+    udp: true
+    servername: www.actionvfx.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: _OmNcv89o5SDt4H3ButRX9UynGIVwNZR250w4Zie-yk
+      short-id: 73693dea6faae051
+  - name: "🔴 🇫🇷 ~8.5Mbps Xer0x-17"
+    type: vless
+    server: 31.77.227.6
+    port: 52006
+    uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
+    tls: true
+    udp: true
+    servername: bigdick.gamegrow.ru
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+  - name: "🔴 🇬🇧 ~10.3Mbps Xer0x-18"
+    type: vless
+    server: 46.250.250.149
+    port: 2053
+    uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+    tls: true
+    udp: true
+    servername: www.apple.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+      short-id: 9922313fffed1c63
+  - name: "🔴 🇸🇪 ~7.9Mbps Xer0x-19"
+    type: vless
+    server: 150.241.73.119
+    port: 443
+    uuid: 3cf5b062-214c-440b-afc6-d151e5fbecf9
+    tls: true
+    udp: true
+    servername: node-04.koshsky.ru
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ZPCvZ35GG6s9XAIIbF2Xj9zRWHntn3Ystcus_0TF3n8
+      short-id: ""
+    flow: xtls-rprx-vision
+  - name: "🔴 🇩🇰 ~3.4Mbps Xer0x-20"
+    type: vless
+    server: 130.49.188.120
+    port: 443
+    uuid: 76d1bd6e-6ba0-44c0-a4a4-becb4e0a9b3d
+    tls: true
+    udp: true
+    servername: dk-1.alpha-ai-studio.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: RsUYIPGTv1QIAC1wERleUBoyMZ-mpxHPRT_hA80u-BM
+      short-id: 1aa760b0
+    flow: xtls-rprx-vision
+  - name: "🔴 🇭🇰 ~8.1Mbps Xer0x-21"
+    type: vless
+    server: 43.99.93.77
+    port: 443
+    uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+    tls: true
+    udp: true
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: o8SsyMfDn8-WIfsseuvnnyq5dVpZqql_ubVTuj-S6FU
+      short-id: c69c8691
+    flow: xtls-rprx-vision
+  - name: "🔴 🇵🇱 ~7.8Mbps Xer0x-22"
+    type: vless
+    server: 31.59.204.227
+    port: 443
+    uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+    tls: true
+    udp: true
+    servername: pl3.cloud-static.org
+    client-fingerprint: random
+    reality-opts:
+      public-key: cIgH-cz8JCjHnPQXA4qZNpYWwgYdVKCX3jDhuDbVK24
+      short-id: 96ef4f5dd00f1ba0
+    flow: xtls-rprx-vision
+  - name: "🔴 🇫🇷 ~9.1Mbps Xer0x-23"
+    type: vless
+    server: 185.171.202.82
+    port: 443
+    uuid: 77b62ac8-241a-4d20-99b4-8582915250f8
+    tls: true
+    udp: true
+    servername: apifr02.schenkencards.de
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: y7jP1lhrhIU9eemQ_uZ7v7fwbQWu9nArdT2LGsoZ6yY
+      short-id: 1d79a697a75b8633
+    flow: xtls-rprx-vision
+  - name: "🔴 🇮🇪 Xer0x-24"
+    type: vless
+    server: 23.95.225.10
+    port: 8443
+    uuid: d342d11e-d224-4463-b982-532309285094
+    tls: true
+    udp: true
+    servername: ccc.010304.xyz
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: ccc.010304.xyz
+  - name: "🔴 🇳🇱 ~8.3Mbps Xer0x-25"
+    type: vless
+    server: 185.94.165.207
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    udp: true
+    servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /glasspanel/guest000_0_5de14443985f/
+      headers:
+        Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
+  - name: "🔴 🇯🇵 ~7.2Mbps Xer0x-26"
+    type: vless
+    server: 45.192.201.140
+    port: 443
+    uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
+    tls: true
+    udp: true
+    servername: argo6.5671234.xyz
+    client-fingerprint: firefox
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /e8e2cecb6188f7fb
+      headers:
+        Host: argo6.5671234.xyz
+  - name: "🔴 🇳🇱 ~9.1Mbps Xer0x-27"
+    type: vless
+    server: 87.58.201.211
+    port: 443
+    uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+    tls: true
+    udp: true
+    servername: d3-nl1.cloud-cdn.xyz
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vlgrpc
+proxy-groups:
+  - name: "LTE Auto"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "🔵 🇺🇸 ~26Mbps Xer0x-08"
+      - "🔵 🇨🇦 ~16.3Mbps Xer0x-09"
+      - "🔴 🇯🇵 ~11.5Mbps Xer0x-10"
+      - "🔴 🇯🇵 ~11.2Mbps Xer0x-11"
+      - "🔴 🇨🇦 Xer0x-12"
+      - "🔴 🇳🇱 ~9Mbps Xer0x-14"
+      - "🔴 🇩🇪 ~7.9Mbps Xer0x-16"
+      - "🔴 🇫🇷 ~8.5Mbps Xer0x-17"
+      - "🔴 🇬🇧 ~10.3Mbps Xer0x-18"
+      - "🔴 🇸🇪 ~7.9Mbps Xer0x-19"
+      - "🔴 🇩🇰 ~3.4Mbps Xer0x-20"
+      - "🔴 🇭🇰 ~8.1Mbps Xer0x-21"
+      - "🔴 🇵🇱 ~7.8Mbps Xer0x-22"
+      - "🔴 🇫🇷 ~9.1Mbps Xer0x-23"
+      - "🔴 🇮🇪 Xer0x-24"
+      - "🔴 🇳🇱 ~8.3Mbps Xer0x-25"
+      - "🔴 🇯🇵 ~7.2Mbps Xer0x-26"
+      - "🔴 🇳🇱 ~9.1Mbps Xer0x-27"
+  - name: "LTE Manual"
+    type: select
+    proxies:
+      - "LTE Auto"
+      - "🔵 🇺🇸 ~26Mbps Xer0x-08"
+      - "🔵 🇨🇦 ~16.3Mbps Xer0x-09"
+      - "🔴 🇯🇵 ~11.5Mbps Xer0x-10"
+      - "🔴 🇯🇵 ~11.2Mbps Xer0x-11"
+      - "🔴 🇨🇦 Xer0x-12"
+      - "🔴 🇳🇱 ~9Mbps Xer0x-14"
+      - "🔴 🇩🇪 ~7.9Mbps Xer0x-16"
+      - "🔴 🇫🇷 ~8.5Mbps Xer0x-17"
+      - "🔴 🇬🇧 ~10.3Mbps Xer0x-18"
+      - "🔴 🇸🇪 ~7.9Mbps Xer0x-19"
+      - "🔴 🇩🇰 ~3.4Mbps Xer0x-20"
+      - "🔴 🇭🇰 ~8.1Mbps Xer0x-21"
+      - "🔴 🇵🇱 ~7.8Mbps Xer0x-22"
+      - "🔴 🇫🇷 ~9.1Mbps Xer0x-23"
+      - "🔴 🇮🇪 Xer0x-24"
+      - "🔴 🇳🇱 ~8.3Mbps Xer0x-25"
+      - "🔴 🇯🇵 ~7.2Mbps Xer0x-26"
+      - "🔴 🇳🇱 ~9.1Mbps Xer0x-27"
+rules:
+  - MATCH,LTE Auto

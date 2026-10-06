@@ -49,7 +49,7 @@ jobs:
             echo "index.js failed after all retries"
             exit 1
           fi
-          git add subscriptions
+          git add subscriptions docs/subscriptions
           if git diff --cached --quiet; then
             echo "No changes"
           else
