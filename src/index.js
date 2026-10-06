@@ -100,8 +100,8 @@ async function main() {
   const secs = Math.round((Date.now() - started) / 1000);
   const speeds = out.validated.filter((r) => r.speedMbps);
   const avgSpeed = speeds.length ? (speeds.reduce((s, r) => s + r.speedMbps, 0) / speeds.length).toFixed(1) : 'n/a';
-  console.log(`[build] whitelist=${out.white.length} blacklist=${out.black.length} fast=${out.fast.length} avg_speed=${avgSpeed}Mbps (${secs}s)`);
-  console.log(`[build] ${cfg.outputDir}/whitelist.txt, blacklist.txt, fast.txt, clash.yaml, sing-box.json, report.json`);
+  console.log(`[build] whitelist=${out.white.length} blacklist=${out.black.length} fast=${out.fast.length} wifi=${out.wifiPool.length} lte=${out.ltePool.length} avg_speed=${avgSpeed}Mbps (${secs}s)`);
+  console.log(`[build] ${cfg.outputDir}/all.txt, whitelist.txt, blacklist.txt, fast.txt, clash.yaml, sing-box.json, wifi.yaml, lte.yaml, lte.json, wifi.json, auto.txt, report.json`);
 }
 
 main().catch((e) => {

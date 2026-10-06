@@ -18,7 +18,21 @@
     "https://raw.githubusercontent.com/Xumuk0/White-List-VPN/main/list_vpn.txt",
     "https://raw.githubusercontent.com/Xumuk0/White-List-VPN/main/list.txt",
     "https://raw.githubusercontent.com/flaafix/AetrisVPN-white-list-lite/main/AetrisVPN.txt",
-    "https://raw.githubusercontent.com/FunTheBody/WhiteList-Vpn/main/output/merged_sub.txt"
+    "https://raw.githubusercontent.com/FunTheBody/WhiteList-Vpn/main/output/merged_sub.txt",
+    "https://raw.githubusercontent.com/itsyebekhe/PSG/main/config.txt",
+    "https://raw.githubusercontent.com/10ium/ScrapeAndCategorize/main/output_configs/Vless.txt",
+    "https://raw.githubusercontent.com/Kolandone/v2raycollector/main/vless.txt",
+    "https://raw.githubusercontent.com/F0rc3Run/F0rc3Run/main/splitted-by-protocol/vless.txt",
+    "https://raw.githubusercontent.com/T3stAcc/V2Ray/main/All_Configs_Sub.txt",
+    "https://raw.githubusercontent.com/liketolivefree/kobabi/main/sub_all.txt",
+    "https://raw.githubusercontent.com/Argh94/V2RayAutoConfig/main/configs/Vless.txt",
+    "https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Protocols/vless.txt",
+    "https://raw.githubusercontent.com/hamedcode/port-based-v2ray-configs/main/sub/vless.txt",
+    "https://raw.githubusercontent.com/MhdiTaheri/V2rayCollector/main/sub/vless",
+    "https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/vless",
+    "https://raw.githubusercontent.com/penhandev/AutoAiVPN/main/allConfigs.txt",
+    "https://raw.githubusercontent.com/MhdiTaheri/V2rayCollector/main/sub/mix",
+    "https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/configtg.txt"
   ],
   "collection": {
     "timeoutSec": 25,
@@ -31,13 +45,28 @@
     "timeoutSec": 9,
     "concurrency": 10,
     "retry": 1,
-    "checkUrls": ["https://www.instagram.com/robots.txt", "https://www.youtube.com/robots.txt"]
+    "batchSize": 40,
+    "tcpTimeoutMs": 2500,
+    "tcpConcurrency": 128,
+    "checkUrls": [
+      "https://www.instagram.com/robots.txt",
+      "https://www.youtube.com/robots.txt"
+    ]
   },
   "whitelist": {
     "requirePublicTls": true,
     "requireDomain": false,
     "requireCdn": false,
     "maxLatencyMs": 800
+  },
+  "profiles": {
+    "wifi": {
+      "maxLatencyMs": 500
+    },
+    "lte": {
+      "maxLatencyMs": 800,
+      "fromWhitelist": true
+    }
   },
   "geo": {
     "batchDelayMs": 1500

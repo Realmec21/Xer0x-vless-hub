@@ -5,7 +5,7 @@ const path = require('path');
 const { remarkUri } = require('./vless');
 const { isWhitelistCandidate } = require('./classify');
 const { flag } = require('./geo');
-const { buildClashFile, buildSingBoxFile } = require('./formats');
+const { buildClashFile, buildSingBoxFile, buildClashAutoFile, buildXrayAutoConfig } = require('./formats');
 
 function speedBadge(latencyMs) {
   if (latencyMs < 300) return '⚡';
@@ -40,6 +40,29 @@ function build(records, cfg, collectionStats) {
   fs.writeFileSync(path.join(outDir, 'blacklist.txt'), black.length ? black.map((r) => r.uri).join('\n') + '\n' : '');
   fs.writeFileSync(path.join(outDir, 'fast.txt'), fast.length ? fast.map((r) => r.uri).join('\n') + '\n' : '');
 
+  const allUris = validated.map((r) => r.uri);
+  fs.writeFileSync(path.join(outDir, 'all.txt'), allUris.length ? allUris.join('\n') + '\n' : '');
+  fs.writeFileSync(path.join(outDir, 'all.base64.txt'), allUris.length ? Buffer.from(allUris.join('\n'), 'utf8').toString('base64') + '\n' : '');
+
+  const pCfg = cfg.profiles || {};
+  const wifiMax = (pCfg.wifi && pCfg.wifi.maxLatencyMs) || 500;
+  const lteMax = (pCfg.lte && pCfg.lte.maxLatencyMs) || 800;
+  const lteFromWhitelist = !pCfg.lte || pCfg.lte.fromWhitelist !== false;
+  let wifiPool = validated.filter((r) => r.latencyMs < wifiMax);
+  let ltePool = (lteFromWhitelist ? validated.filter((r) => r.whitelist) : validated).filter((r) => r.latencyMs < lteMax);
+  if (wifiPool.length < 5) wifiPool = validated.slice(0, Math.min(20, validated.length));
+  if (ltePool.length < 5) ltePool = white.slice(0, Math.min(20, white.length));
+  if (!ltePool.length) ltePool = validated.slice(0, Math.min(20, validated.length));
+
+  fs.writeFileSync(path.join(outDir, 'wifi.yaml'), buildClashAutoFile(wifiPool, 'WiFi'));
+  fs.writeFileSync(path.join(outDir, 'lte.yaml'), buildClashAutoFile(ltePool, 'LTE'));
+  fs.writeFileSync(path.join(outDir, 'lte.json'), buildXrayAutoConfig(ltePool, 'lte'));
+  fs.writeFileSync(path.join(outDir, 'wifi.json'), buildXrayAutoConfig(wifiPool, 'wifi'));
+  fs.writeFileSync(
+    path.join(outDir, 'auto.txt'),
+    buildXrayAutoConfig(ltePool, 'lte').trimEnd() + '\n####\n' + buildXrayAutoConfig(wifiPool, 'wifi').trimEnd() + '\n'
+  );
+
   fs.writeFileSync(path.join(outDir, 'clash.yaml'), buildClashFile(validated));
   fs.writeFileSync(path.join(outDir, 'sing-box.json'), buildSingBoxFile(validated));
 
@@ -64,6 +87,9 @@ function build(records, cfg, collectionStats) {
       whitelist: white.length,
       blacklist: black.length,
       fast: fast.length,
+      all: validated.length,
+      wifi_profile: wifiPool.length,
+      lte_profile: ltePool.length,
       avg_latency_ms: avgLatency,
       avg_speed_mbps: avgSpeed,
     },
@@ -96,7 +122,7 @@ function build(records, cfg, collectionStats) {
 
   fs.writeFileSync(path.join(outDir, 'report.json'), JSON.stringify(report, null, 2));
 
-  return { white, black, fast, validated };
+  return { white, black, fast, validated, wifiPool, ltePool };
 }
 
 module.exports = { build };

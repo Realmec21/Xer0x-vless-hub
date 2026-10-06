@@ -75,8 +75,27 @@ function dedupeKey(p) {
   return `${p.uuid}@${p.host}:${p.port}?${q.toString()}`;
 }
 
-function buildXrayConfig(listenPort, p) {
-  const network = p.type || 'tcp';
+function sanitizeProfile(p) {
+  let uuid = p.uuid;
+  if (uuid && uuid.includes('%')) {
+    try {
+      uuid = decodeURIComponent(uuid);
+    } catch (e) {}
+  }
+  const uuidOk =
+    /^[0-9a-fA-F]{32}$/.test(uuid) ||
+    /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/.test(uuid);
+  if (!uuidOk) return { error: `invalid uuid: ${String(p.uuid).slice(0, 48)}` };
+  if ((p.security || '') === 'reality' && !p.pbk) return { error: 'reality without public key' };
+  if (uuid !== p.uuid) return { p: { ...p, uuid } };
+  return { p };
+}
+
+function buildVlessOutbound(p, tag) {
+  let network = (p.type || 'tcp').toLowerCase();
+  if (network === 'raw' || network === 'h2' || network === 'mkcp') {
+    network = network === 'raw' ? 'tcp' : network === 'h2' ? 'http' : 'kcp';
+  }
   const security = p.security || '';
   const stream = { network };
 
@@ -140,6 +159,23 @@ function buildXrayConfig(listenPort, p) {
   if (p.flow) user.flow = p.flow;
 
   return {
+    tag,
+    protocol: 'vless',
+    settings: {
+      vnext: [
+        {
+          address: p.host,
+          port: p.port,
+          users: [user],
+        },
+      ],
+    },
+    streamSettings: stream,
+  };
+}
+
+function buildXrayConfig(listenPort, p) {
+  return {
     log: { loglevel: 'warning' },
     inbounds: [
       {
@@ -150,24 +186,36 @@ function buildXrayConfig(listenPort, p) {
         settings: { timeout: 8 },
       },
     ],
-    outbounds: [
-      {
-        tag: 'proxy',
-        protocol: 'vless',
-        settings: {
-          vnext: [
-            {
-              address: p.host,
-              port: p.port,
-              users: [user],
-            },
-          ],
-        },
-        streamSettings: stream,
-      },
-      { tag: 'direct', protocol: 'freedom' },
-      { tag: 'block', protocol: 'blackhole' },
-    ],
+    outbounds: [buildVlessOutbound(p, 'proxy'), { tag: 'direct', protocol: 'freedom' }, { tag: 'block', protocol: 'blackhole' }],
+    policy: {
+      levels: { '0': { handshake: 4, connIdle: 8, uplinkOnly: 2, downlinkOnly: 5 } },
+      system: { statsInboundUplink: false, statsInboundDownlink: false },
+    },
+  };
+}
+
+function buildBatchXrayConfig(entries) {
+  const inbounds = [];
+  const outbounds = [];
+  const rules = [];
+  entries.forEach((e, i) => {
+    inbounds.push({
+      tag: `in-${i}`,
+      listen: '127.0.0.1',
+      port: e.port,
+      protocol: 'http',
+      settings: { timeout: 8 },
+    });
+    outbounds.push(buildVlessOutbound(e.profile, `out-${i}`));
+    rules.push({ type: 'field', inboundTag: [`in-${i}`], outboundTag: `out-${i}` });
+  });
+  outbounds.push({ tag: 'direct', protocol: 'freedom' });
+  outbounds.push({ tag: 'block', protocol: 'blackhole' });
+  return {
+    log: { loglevel: 'warning' },
+    inbounds,
+    outbounds,
+    routing: { rules },
     policy: {
       levels: { '0': { handshake: 4, connIdle: 8, uplinkOnly: 2, downlinkOnly: 5 } },
       system: { statsInboundUplink: false, statsInboundDownlink: false },
@@ -180,4 +228,4 @@ function remarkUri(p, remark) {
   return `${base}#${encodeURIComponent(remark)}`;
 }
 
-module.exports = { parseVless, dedupeKey, buildXrayConfig, remarkUri };
+module.exports = { parseVless, dedupeKey, sanitizeProfile, buildXrayConfig, buildVlessOutbound, buildBatchXrayConfig, remarkUri };

@@ -51,32 +51,49 @@ async function collect(cfg) {
   const timeoutMs = (c.timeoutSec || 25) * 1000;
   const maxBytes = c.maxBytes || 41943040;
   const sources = cfg.sources || [];
-  const stats = [];
+  const stats = new Array(sources.length);
   const seen = new Map();
   let totalRaw = 0;
 
-  for (const url of sources) {
-    try {
-      const text = await fetchText(url, { timeoutMs, maxBytes: maxBytes + 1024 });
-      const found = extractFromText(text);
-      let added = 0;
-      for (const uri of found) {
-        const p = parseVless(uri);
-        if (!p) continue;
-        totalRaw++;
-        const key = dedupeKey(p);
-        if (!seen.has(key)) {
-          seen.set(key, p);
-          added++;
+  let idx = 0;
+  const worker = async () => {
+    for (;;) {
+      const i = idx++;
+      if (i >= sources.length) break;
+      const url = sources[i];
+      let lastErr = null;
+      for (let attempt = 0; attempt < 3; attempt++) {
+        if (attempt > 0) await new Promise((r) => setTimeout(r, 1500));
+        try {
+          const text = await fetchText(url, { timeoutMs, maxBytes: maxBytes + 1024 });
+          const found = extractFromText(text);
+          let added = 0;
+          for (const uri of found) {
+            const p = parseVless(uri);
+            if (!p) continue;
+            totalRaw++;
+            const key = dedupeKey(p);
+            if (!seen.has(key)) {
+              seen.set(key, p);
+              added++;
+            }
+          }
+          stats[i] = { url, ok: true, found: found.length, added };
+          console.log(`[collect] ${url} -> ${found.length} vless, +${added} new`);
+          lastErr = null;
+          break;
+        } catch (e) {
+          lastErr = e;
         }
       }
-      stats.push({ url, ok: true, found: found.length, added });
-      console.log(`[collect] ${url} -> ${found.length} vless, +${added} new`);
-    } catch (e) {
-      stats.push({ url, ok: false, error: String(e.message || e) });
-      console.log(`[collect] FAILED ${url}: ${e.message || e}`);
+      if (lastErr) {
+        stats[i] = { url, ok: false, error: String(lastErr.message || lastErr) };
+        console.log(`[collect] FAILED ${url}: ${lastErr.message || lastErr}`);
+      }
     }
-  }
+  };
+  const n = Math.max(1, Math.min(c.concurrency || 8, 16));
+  await Promise.all(Array.from({ length: n }, () => worker()));
 
   let profiles = [...seen.values()];
   const beforeEndpoint = profiles.length;
