@@ -37,7 +37,7 @@
   "collection": {
     "timeoutSec": 25,
     "maxBytes": 41943040,
-    "maxConfigs": 800,
+    "maxConfigs": 1200,
     "shuffle": true,
     "dedupeByEndpoint": true,
     "sourceQuota": true
