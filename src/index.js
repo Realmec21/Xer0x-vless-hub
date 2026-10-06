@@ -62,7 +62,8 @@ async function main() {
   });
 
   const okRecords = records.filter((r) => r.ok);
-  console.log(`[validate] done: ${okRecords.length}/${records.length} alive`);
+  const viaRu = okRecords.filter((r) => r.checkedVia === 'ru').length;
+  console.log(`[validate] done: ${okRecords.length}/${records.length} alive (via_trace=${okRecords.length - viaRu}, via_ru=${viaRu})`);
   if (!okRecords.length) {
     console.error('[fatal] nothing validated, keeping previous subscriptions');
     process.exit(1);

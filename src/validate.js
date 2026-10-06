@@ -14,6 +14,7 @@ const { measureSpeed } = require('./speedtest');
 const execFileAsync = promisify(execFile);
 
 const TRACE_URL = 'https://www.cloudflare.com/cdn-cgi/trace';
+const RU_DEFAULT_URLS = ['https://ya.ru/', 'https://www.gosuslugi.ru/', 'https://www.ozon.ru/'];
 const DEVNULL = process.platform === 'win32' ? 'NUL' : '/dev/null';
 
 function getFreePort() {
@@ -92,6 +93,45 @@ async function curlThrough(port, timeoutSec) {
   return parseTrace(body, timeLine);
 }
 
+async function curlRuThrough(port, timeoutSec, urls) {
+  const list = Array.isArray(urls) && urls.length ? urls : RU_DEFAULT_URLS;
+  let lastErr = 'ru check: no urls';
+  for (const url of list) {
+    const args = [
+      '-sS',
+      '-x', `http://127.0.0.1:${port}`,
+      '--max-time', String(timeoutSec),
+      '--connect-timeout', String(timeoutSec),
+      '-o', DEVNULL,
+      '-w', '%{time_total}',
+      url,
+    ];
+    let stdout = '';
+    let stderr = '';
+    let code = 0;
+    try {
+      const res = await execFileAsync('curl', args, { maxBuffer: 1024 });
+      stdout = res.stdout || '';
+      stderr = res.stderr || '';
+    } catch (e) {
+      stdout = (e.stdout || '') + '';
+      stderr = (e.stderr || '') + '';
+      code = e.code || 1;
+      if (typeof code !== 'number') code = 1;
+    }
+    if (code !== 0) {
+      lastErr = `ru ${url}: curl exit ${code}: ${stderr.trim().slice(0, 120) || stdout.trim().slice(0, 120)}`;
+      continue;
+    }
+    const secs = parseFloat(stdout.trim());
+    if (Number.isFinite(secs) && secs >= 0) {
+      return { egressIp: '', egressCountry: '', latencyMs: Math.round(secs * 1000), checkedVia: 'ru', checkedUrl: url };
+    }
+    lastErr = `ru ${url}: bad time output`;
+  }
+  throw new Error(lastErr);
+}
+
 async function validateProfile(p, xrayBin, opts) {
   const timeoutSec = opts.timeoutSec || 9;
   const retry = opts.retry || 0;
@@ -114,15 +154,32 @@ async function validateProfile(p, xrayBin, opts) {
       });
       child.on('error', () => {});
       await waitPort(port, 4000, child);
-      const result = await curlThrough(port, timeoutSec);
-      if (!result.egressIp || !Number.isFinite(result.latencyMs)) throw new Error('bad trace result');
+      let result = null;
+      let traceErr = null;
+      try {
+        const trace = await curlThrough(port, timeoutSec);
+        if (trace.egressIp && Number.isFinite(trace.latencyMs)) {
+          result = { egressIp: trace.egressIp, egressCountry: trace.egressCountry, latencyMs: trace.latencyMs, checkedVia: 'trace' };
+        } else {
+          traceErr = new Error('bad trace result');
+        }
+      } catch (e) {
+        traceErr = e;
+      }
+      if (!result) {
+        try {
+          result = await curlRuThrough(port, timeoutSec, opts.ruUrls);
+        } catch (ruErr) {
+          throw new Error(`${traceErr ? String(traceErr.message || traceErr) : 'trace failed'} | ${ruErr.message}`);
+        }
+      }
       const speedMbps = await measureSpeed(port);
       if (child.exitCode === null) {
         try {
           child.kill();
         } catch (e) {}
       }
-      return { ok: true, latencyMs: result.latencyMs, egressIp: result.egressIp, egressCountry: result.egressCountry, speedMbps };
+      return { ok: true, latencyMs: result.latencyMs, egressIp: result.egressIp, egressCountry: result.egressCountry, speedMbps, checkedVia: result.checkedVia, checkedUrl: result.checkedUrl };
     } catch (e) {
       lastErr = String(e.message || e);
       const tail = errChunks.join('').trim().slice(-200);

@@ -30,7 +30,8 @@
   "validation": {
     "timeoutSec": 9,
     "concurrency": 10,
-    "retry": 1
+    "retry": 1,
+    "ruUrls": ["https://ya.ru/", "https://www.gosuslugi.ru/", "https://www.ozon.ru/"]
   },
   "whitelist": {
     "requirePublicTls": true,
