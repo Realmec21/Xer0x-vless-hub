@@ -39,7 +39,8 @@
     "maxBytes": 41943040,
     "maxConfigs": 800,
     "shuffle": true,
-    "dedupeByEndpoint": true
+    "dedupeByEndpoint": true,
+    "sourceQuota": true
   },
   "validation": {
     "timeoutSec": 9,

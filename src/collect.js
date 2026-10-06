@@ -74,7 +74,7 @@ async function collect(cfg) {
             totalRaw++;
             const key = dedupeKey(p);
             if (!seen.has(key)) {
-              seen.set(key, p);
+              seen.set(key, { p, url });
               added++;
             }
           }
@@ -95,27 +95,54 @@ async function collect(cfg) {
   const n = Math.max(1, Math.min(c.concurrency || 8, 16));
   await Promise.all(Array.from({ length: n }, () => worker()));
 
-  let profiles = [...seen.values()];
-  const beforeEndpoint = profiles.length;
+  let entries = [...seen.values()];
+  const beforeEndpoint = entries.length;
   if (c.dedupeByEndpoint) {
     const byEndpoint = new Map();
-    for (const p of profiles) {
-      const ek = `${p.uuid}@${p.host}:${p.port}`;
-      if (!byEndpoint.has(ek)) byEndpoint.set(ek, p);
+    for (const e of entries) {
+      const ek = `${e.p.uuid}@${e.p.host}:${e.p.port}`;
+      if (!byEndpoint.has(ek)) byEndpoint.set(ek, e);
     }
-    profiles = [...byEndpoint.values()];
-    if (profiles.length !== beforeEndpoint) {
-      console.log(`[collect] endpoint dedupe: ${beforeEndpoint} -> ${profiles.length}`);
+    entries = [...byEndpoint.values()];
+    if (entries.length !== beforeEndpoint) {
+      console.log(`[collect] endpoint dedupe: ${beforeEndpoint} -> ${entries.length}`);
     }
   }
-  const maxConfigs = c.maxConfigs || 500;
-  if (c.shuffle) {
-    for (let i = profiles.length - 1; i > 0; i--) {
+
+  const shuffleArr = (arr) => {
+    for (let i = arr.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [profiles[i], profiles[j]] = [profiles[j], profiles[i]];
+      [arr[i], arr[j]] = [arr[j], arr[i]];
     }
+    return arr;
+  };
+
+  const maxConfigs = c.maxConfigs || 500;
+  let picked;
+  if (c.sourceQuota) {
+    const bySrc = new Map();
+    for (const e of entries) {
+      if (!bySrc.has(e.url)) bySrc.set(e.url, []);
+      bySrc.get(e.url).push(e);
+    }
+    const pools = [...bySrc.values()].map(shuffleArr);
+    picked = [];
+    for (let round = 0; picked.length < maxConfigs; round++) {
+      let addedAny = false;
+      for (const pool of pools) {
+        if (round < pool.length) {
+          picked.push(pool[round]);
+          addedAny = true;
+          if (picked.length >= maxConfigs) break;
+        }
+      }
+      if (!addedAny) break;
+    }
+    console.log(`[collect] source quota: ${pools.length} sources, picked ${picked.length} of ${entries.length}`);
+  } else {
+    picked = shuffleArr(entries).slice(0, maxConfigs);
   }
-  if (profiles.length > maxConfigs) profiles = profiles.slice(0, maxConfigs);
+  const profiles = picked.map((e) => e.p);
 
   return { profiles, stats, totalRaw, unique: seen.size };
 }
