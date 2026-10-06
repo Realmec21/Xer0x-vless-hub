@@ -62,8 +62,9 @@ async function main() {
   });
 
   const okRecords = records.filter((r) => r.ok);
-  const viaRu = okRecords.filter((r) => r.checkedVia === 'ru').length;
-  console.log(`[validate] done: ${okRecords.length}/${records.length} alive (via_trace=${okRecords.length - viaRu}, via_ru=${viaRu})`);
+  const viaIg = okRecords.filter((r) => String(r.checkedVia || '').includes('instagram')).length;
+  const viaYt = okRecords.filter((r) => String(r.checkedVia || '').includes('youtube')).length;
+  console.log(`[validate] done: ${okRecords.length}/${records.length} alive (instagram=${viaIg}, youtube=${viaYt})`);
   if (!okRecords.length) {
     console.error('[fatal] nothing validated, keeping previous subscriptions');
     process.exit(1);

@@ -14,7 +14,7 @@ const { measureSpeed } = require('./speedtest');
 const execFileAsync = promisify(execFile);
 
 const TRACE_URL = 'https://www.cloudflare.com/cdn-cgi/trace';
-const RU_DEFAULT_URLS = ['https://ya.ru/', 'https://www.gosuslugi.ru/', 'https://www.ozon.ru/'];
+const CHECK_DEFAULT_URLS = ['https://www.instagram.com/robots.txt', 'https://www.youtube.com/robots.txt'];
 const DEVNULL = process.platform === 'win32' ? 'NUL' : '/dev/null';
 
 function getFreePort() {
@@ -93,10 +93,16 @@ async function curlThrough(port, timeoutSec) {
   return parseTrace(body, timeLine);
 }
 
-async function curlRuThrough(port, timeoutSec, urls) {
-  const list = Array.isArray(urls) && urls.length ? urls : RU_DEFAULT_URLS;
-  let lastErr = 'ru check: no urls';
+async function checkUrlsThrough(port, timeoutSec, urls) {
+  const list = Array.isArray(urls) && urls.length ? urls : CHECK_DEFAULT_URLS;
+  const results = [];
+  const errors = [];
+  let bestMs = null;
   for (const url of list) {
+    let host = url;
+    try {
+      host = new URL(url).hostname;
+    } catch (e) {}
     const args = [
       '-sS',
       '-x', `http://127.0.0.1:${port}`,
@@ -120,16 +126,21 @@ async function curlRuThrough(port, timeoutSec, urls) {
       if (typeof code !== 'number') code = 1;
     }
     if (code !== 0) {
-      lastErr = `ru ${url}: curl exit ${code}: ${stderr.trim().slice(0, 120) || stdout.trim().slice(0, 120)}`;
+      errors.push(`${host}: curl exit ${code}: ${stderr.trim().slice(0, 120) || stdout.trim().slice(0, 120)}`);
+      results.push({ host, ok: false });
       continue;
     }
     const secs = parseFloat(stdout.trim());
-    if (Number.isFinite(secs) && secs >= 0) {
-      return { egressIp: '', egressCountry: '', latencyMs: Math.round(secs * 1000), checkedVia: 'ru', checkedUrl: url };
+    if (!Number.isFinite(secs) || secs < 0) {
+      errors.push(`${host}: bad time output`);
+      results.push({ host, ok: false });
+      continue;
     }
-    lastErr = `ru ${url}: bad time output`;
+    const ms = Math.round(secs * 1000);
+    results.push({ host, ok: true, ms });
+    if (bestMs === null || ms < bestMs) bestMs = ms;
   }
-  throw new Error(lastErr);
+  return { alive: results.some((r) => r.ok), latencyMs: bestMs, results, error: errors.join(' | ') };
 }
 
 async function validateProfile(p, xrayBin, opts) {
@@ -154,32 +165,25 @@ async function validateProfile(p, xrayBin, opts) {
       });
       child.on('error', () => {});
       await waitPort(port, 4000, child);
-      let result = null;
-      let traceErr = null;
+      const checks = await checkUrlsThrough(port, timeoutSec, opts.checkUrls);
+      if (!checks.alive) throw new Error(checks.error || 'all checks failed');
+      let egressIp = '';
+      let egressCountry = '';
       try {
         const trace = await curlThrough(port, timeoutSec);
-        if (trace.egressIp && Number.isFinite(trace.latencyMs)) {
-          result = { egressIp: trace.egressIp, egressCountry: trace.egressCountry, latencyMs: trace.latencyMs, checkedVia: 'trace' };
-        } else {
-          traceErr = new Error('bad trace result');
+        if (trace.egressIp) {
+          egressIp = trace.egressIp;
+          egressCountry = trace.egressCountry;
         }
-      } catch (e) {
-        traceErr = e;
-      }
-      if (!result) {
-        try {
-          result = await curlRuThrough(port, timeoutSec, opts.ruUrls);
-        } catch (ruErr) {
-          throw new Error(`${traceErr ? String(traceErr.message || traceErr) : 'trace failed'} | ${ruErr.message}`);
-        }
-      }
+      } catch (e) {}
       const speedMbps = await measureSpeed(port);
       if (child.exitCode === null) {
         try {
           child.kill();
         } catch (e) {}
       }
-      return { ok: true, latencyMs: result.latencyMs, egressIp: result.egressIp, egressCountry: result.egressCountry, speedMbps, checkedVia: result.checkedVia, checkedUrl: result.checkedUrl };
+      const passed = checks.results.filter((r) => r.ok).map((r) => r.host).join(',');
+      return { ok: true, latencyMs: checks.latencyMs, egressIp, egressCountry, speedMbps, checkedVia: passed };
     } catch (e) {
       lastErr = String(e.message || e);
       const tail = errChunks.join('').trim().slice(-200);

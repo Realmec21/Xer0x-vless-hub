@@ -31,7 +31,7 @@
     "timeoutSec": 9,
     "concurrency": 10,
     "retry": 1,
-    "ruUrls": ["https://ya.ru/", "https://www.gosuslugi.ru/", "https://www.ozon.ru/"]
+    "checkUrls": ["https://www.instagram.com/robots.txt", "https://www.youtube.com/robots.txt"]
   },
   "whitelist": {
     "requirePublicTls": true,
