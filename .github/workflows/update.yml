@@ -14,42 +14,46 @@ concurrency:
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux, ARM64]
     timeout-minutes: 60
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-
-      - name: Restore geo cache
-        uses: actions/cache@v4
-        with:
-          path: .cache
-          key: geo-cache-${{ github.run_id }}
-          restore-keys: |
-            geo-cache-
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd "$GITHUB_WORKSPACE"
+          git remote remove origin 2>/dev/null || true
+          git init -q
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          for i in 1 2 3 4 5 6; do
+            if git fetch -q --depth 1 origin "$GITHUB_SHA" && git checkout -q FETCH_HEAD; then
+              echo "checkout ok (attempt $i)"
+              break
+            fi
+            echo "checkout attempt $i failed, retrying..."
+            sleep 15
+          done
+          git rev-parse HEAD
 
       - name: Commit new subscriptions
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git reset --hard origin/main
-          node src/index.js
+          for i in 1 2 3; do
+            node src/index.js && break
+            echo "index attempt $i failed, retrying..."
+            sleep 20
+          done
           git add subscriptions
           if git diff --cached --quiet; then
             echo "No changes"
           else
             git commit -m "chore: refresh subscriptions"
-            for i in 1 2 3; do
+            for i in 1 2 3 4 5; do
               git push origin main && exit 0
               git fetch origin main
               git rebase origin/main || git rebase --abort
-              sleep 5
+              sleep 10
             done
             exit 1
           fi
