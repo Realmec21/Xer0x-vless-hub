@@ -1,0 +1,73 @@
+# Xer0x-vless-hub Clash proxies
+proxies:
+  - name: "⚡ 🇨🇦 ~32.5Mbps Xer0x-06"
+    type: vless
+    server: 66.70.179.198
+    port: 2053
+    uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+    tls: true
+    udp: true
+    servername: www.cloudflare.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+      short-id: 83f8317a948bb769
+  - name: "🔵 🇷🇺 ~10.5Mbps Xer0x-08"
+    type: vless
+    server: 196.240.125.253
+    port: 8443
+    uuid: 20ef7310-0b50-4943-98a6-3d0856b383b1
+    tls: true
+    udp: true
+    servername: vusr-6ac431f4.adhil.uk
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    network: raw
+  - name: "🔴 🇫🇷 ~6.2Mbps Xer0x-09"
+    type: vless
+    server: 45.140.165.192
+    port: 443
+    uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+    tls: true
+    udp: true
+    servername: france.nztvpn.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 8EU4QO_Md_9ohyl1TfE5gtgPyxQ0QNTrXggljxOOvz0
+      short-id: 0da7e14db353e7d0
+    flow: xtls-rprx-vision
+  - name: "🔴 🇳🇱 ~10.5Mbps Xer0x-11"
+    type: vless
+    server: 87.58.201.170
+    port: 443
+    uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+    tls: true
+    udp: true
+    servername: d3-nl1.cloud-cdn.xyz
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vlgrpc
+proxy-groups:
+  - name: "LTE Auto"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "⚡ 🇨🇦 ~32.5Mbps Xer0x-06"
+      - "🔵 🇷🇺 ~10.5Mbps Xer0x-08"
+      - "🔴 🇫🇷 ~6.2Mbps Xer0x-09"
+      - "🔴 🇳🇱 ~10.5Mbps Xer0x-11"
+  - name: "LTE Manual"
+    type: select
+    proxies:
+      - "LTE Auto"
+      - "⚡ 🇨🇦 ~32.5Mbps Xer0x-06"
+      - "🔵 🇷🇺 ~10.5Mbps Xer0x-08"
+      - "🔴 🇫🇷 ~6.2Mbps Xer0x-09"
+      - "🔴 🇳🇱 ~10.5Mbps Xer0x-11"
+rules:
+  - MATCH,LTE Auto
