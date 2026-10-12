@@ -2,32 +2,164 @@
 proxies:
   - name: "⚡ 🇨🇦 Xer0x-01"
     type: vless
-    server: 104.17.144.29
+    server: 172.64.94.251
     port: 8880
-    uuid: 77d68177-7331-4816-b5e9-23ec39a2ae3b
+    uuid: f3a30870-eb2e-4ad7-85cb-c0e65d061d5b
     tls: false
     udp: true
     network: ws
     ws-opts:
       path: /pyip=ProxyIP.US.CMLiussss.net
       headers:
-        Host: divine-rice-3224.464.workers.dev
-  - name: "⚡ 🇨🇦 ~8.8Mbps Xer0x-02"
+        Host: shrill-mouse-dacd.391.workers.dev
+  - name: "⚡ 🇨🇦 Xer0x-02"
     type: vless
-    server: 188.114.97.1
-    port: 2053
-    uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
-    tls: true
+    server: 172.64.151.134
+    port: 8880
+    uuid: f15a5586-23f6-453f-97f5-c301b949e699
+    tls: false
     udp: true
-    servername: bold-term-4edd.mbigspot.workers.dev
-    client-fingerprint: chrome
-    skip-cert-verify: false
     network: ws
     ws-opts:
       path: /
       headers:
-        Host: bold-term-4edd.mbigspot.workers.dev
+        Host: mute-sunset-0849.40-aeb.workers.dev
   - name: "⚡ 🇨🇦 Xer0x-03"
+    type: vless
+    server: 104.18.12.229
+    port: 8880
+    uuid: 380de97f-1d87-4394-acb8-f9ad7a422ac1
+    tls: false
+    udp: true
+    network: ws
+    ws-opts:
+      path: /pyip=ProxyIP.SG.CMLiussss.net
+      headers:
+        Host: proud-recipe-239d.305-0da.workers.dev
+  - name: "⚡ 🇨🇦 Xer0x-04"
+    type: vless
+    server: 172.64.80.1
+    port: 8880
+    uuid: 5bbf0601-8431-45f6-a4e9-a1e8b44c0055
+    tls: false
+    udp: true
+    network: ws
+    ws-opts:
+      path: /pyip=ProxyIP.KR.CMLiussss.net
+      headers:
+        Host: misty-mouse-141d.177-f18.workers.dev
+  - name: "⚡ 🇨🇦 Xer0x-05"
+    type: vless
+    server: 104.18.35.86
+    port: 8080
+    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+    tls: false
+    udp: true
+    network: ws
+    ws-opts:
+      path: /sg-melbi
+      headers:
+        Host: hhlfy.twiladaphne.ndjp.net
+  - name: "⚡ 🇨🇦 Xer0x-06"
+    type: vless
+    server: 104.21.12.116
+    port: 8880
+    uuid: fba6d1fd-0dab-428d-ae71-0e64c73a6060
+    tls: false
+    udp: true
+    network: ws
+    ws-opts:
+      path: /pyip=ProxyIP.KR.CMLiussss.net
+      headers:
+        Host: morning-wood-0e8a.28-63e.workers.dev
+  - name: "⚡ 🇨🇦 Xer0x-07"
+    type: vless
+    server: 172.67.179.98
+    port: 8880
+    uuid: 2b2ed3be-36bd-486d-9d04-ebf5b4be7ae9
+    tls: false
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: twilight-heart-dbd6.220-2bd.workers.dev
+  - name: "⚡ 🇨🇦 Xer0x-08"
+    type: vless
+    server: log.bpminecraft.com
+    port: 8880
+    uuid: 1113b881-179c-411c-b29b-53dae8faaf0a
+    tls: false
+    udp: true
+    network: ws
+    ws-opts:
+      path: /pyip=ProxyIP.US.CMLiussss.net
+      headers:
+        Host: raspy-sun-3de0.338.workers.dev
+  - name: "⚡ 🇨🇦 Xer0x-09"
+    type: vless
+    server: 104.18.43.174
+    port: 443
+    uuid: e6df2095-a73c-4043-8693-8d5a03686870
+    tls: true
+    udp: true
+    servername: lucasjow.us.ci
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /cart/docs/www/proxyip=108.160.132.132
+      headers:
+        Host: lucasjow.us.ci
+  - name: "⚡ 🇨🇦 Xer0x-10"
+    type: vless
+    server: 104.17.178.154
+    port: 8880
+    uuid: c3f4ee0c-3c64-466d-ae14-9bcf685e1efd
+    tls: false
+    udp: true
+    network: ws
+    ws-opts:
+      path: /pyip=ProxyIP.KR.CMLiussss.net
+      headers:
+        Host: shiny-waterfall-fa51.300-c6f.workers.dev
+  - name: "⚡ 🇨🇦 Xer0x-11"
+    type: vless
+    server: 104.16.100.215
+    port: 8880
+    uuid: 8d36dcef-c008-47f1-b8a0-4f63193697f8
+    tls: false
+    udp: true
+    network: ws
+    ws-opts:
+      path: /pyip=teΓÇª
+      headers:
+        Host: tiny-union-8d4d.32-c76.workers.dev
+  - name: "⚡ 🇨🇦 Xer0x-12"
+    type: vless
+    server: 188.114.97.6
+    port: 8080
+    uuid: 580af126-448f-407b-a4c2-785e702cd8ea
+    tls: false
+    udp: true
+    network: ws
+    ws-opts:
+      path: /pyip=proxyip.jp.cmliussss.net
+      headers:
+        Host: misty-wood-62b4.263-93e.workers.dev
+  - name: "⚡ 🇨🇦 Xer0x-13"
+    type: vless
+    server: 172.67.81.7
+    port: 8880
+    uuid: 2ced390a-4252-4541-8985-730f7a06bb45
+    tls: false
+    udp: true
+    network: ws
+    ws-opts:
+      path: /pyip=ProxyIP.US.CMLiussss.net
+      headers:
+        Host: flat-butterfly-d503.411-d1e.workers.dev
+  - name: "⚡ 🇨🇦 Xer0x-14"
     type: vless
     server: 188.114.97.6
     port: 443
@@ -42,560 +174,66 @@ proxies:
       path: /pyip=proxyip.us.cmliussss.net
       headers:
         Host: icy-hall-bfba.266-f4e.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-04"
-    type: vless
-    server: 172.66.149.243
-    port: 8443
-    uuid: ededaf7e-ad86-40bc-b837-b1403c56f311
-    tls: true
-    udp: true
-    servername: baZYepC.AMINRAZAvI1384.WoRkERS.dEv
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /eyJqdW5rIjoid2tkV0g2R3kxYlNTIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19
-      headers:
-        Host: bazyepc.aminrazavi1384.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-05"
-    type: vless
-    server: 104.18.109.147
-    port: 8080
-    uuid: c29d39bd-92a4-45db-bb61-56013998617c
-    tls: false
-    udp: true
-    network: ws
-    ws-opts:
-      path: /Telegram-XV2ry2?ed=2048
-      headers:
-        Host: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
-  - name: "⚡ 🇨🇦 Xer0x-06"
-    type: vless
-    server: 188.114.97.6
-    port: 8080
-    uuid: 248b7825-58e7-41cc-899f-95e573e0127b
-    tls: false
-    udp: true
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.US.CMLiussss.net
-      headers:
-        Host: dry-violet-d6e0.38-431.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-07"
-    type: vless
-    server: 188.114.97.6
-    port: 8880
-    uuid: 9e648bb6-25f7-4b16-9949-55ac0952d66b
-    tls: false
-    udp: true
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.US.CMLiussss.net
-      headers:
-        Host: lingering-grass-6728.131-a78.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-08"
-    type: vless
-    server: 104.17.21.32
-    port: 8880
-    uuid: 6e5270b6-9f28-4bc6-8a41-9c197f33f4bb
-    tls: false
-    udp: true
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.SG.CMLiussss.net
-      headers:
-        Host: autumn-dawn-fa6b.337-272.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-09"
-    type: vless
-    server: 188.114.97.6
-    port: 443
-    uuid: 4c37df21-0a34-41bf-8bc7-78efd823c03b
-    tls: true
-    udp: true
-    servername: shiny-salad-e491.479.workers.dev
-    client-fingerprint: unsafe
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.SG.CMLiussss.net
-      headers:
-        Host: shiny-salad-e491.479.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-10"
-    type: vless
-    server: 188.114.97.6
-    port: 8080
-    uuid: 4c37df21-0a34-41bf-8bc7-78efd823c03b
-    tls: false
-    udp: true
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.SG.CMLiussss.net
-      headers:
-        Host: shiny-salad-e491.479.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-11"
-    type: vless
-    server: 188.114.97.6
-    port: 8080
-    uuid: 6e5270b6-9f28-4bc6-8a41-9c197f33f4bb
-    tls: false
-    udp: true
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.SG.CMLiussss.net
-      headers:
-        Host: autumn-dawn-fa6b.337-272.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-12"
-    type: vless
-    server: 188.114.97.6
-    port: 8080
-    uuid: 828aa918-2ed3-4541-8519-083f9efeaaf7
-    tls: false
-    udp: true
-    network: ws
-    ws-opts:
-      path: /pyip=proxyip.us.cmliussss.net
-      headers:
-        Host: icy-hall-bfba.266-f4e.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-13"
-    type: vless
-    server: 172.64.145.94
-    port: 443
-    uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-    tls: true
-    udp: true
-    servername: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-14"
-    type: vless
-    server: 104.16.107.139
-    port: 8880
-    uuid: ae83f4a6-7fd3-4168-9f42-1260fc601155
-    tls: false
-    udp: true
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.JP.CMLiussss.net
-      headers:
-        Host: shy-mud-e936.15-bb9.workers.dev
   - name: "⚡ 🇨🇦 Xer0x-15"
     type: vless
-    server: 104.17.123.204
-    port: 8880
+    server: 188.114.97.6
+    port: 443
     uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
-    tls: false
+    tls: true
     udp: true
+    servername: long-firefly-a226.216-ce0.workers.dev
+    client-fingerprint: unsafe
+    skip-cert-verify: false
     network: ws
     ws-opts:
       path: /pyip=ProxyIP.SG.CMLiussss.net
       headers:
         Host: long-firefly-a226.216-ce0.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-16"
+  - name: "⚡ 🇺🇸 ~23.8Mbps Xer0x-16"
     type: vless
-    server: 188.114.97.6
+    server: 172.245.253.16
     port: 443
-    uuid: 248b7825-58e7-41cc-899f-95e573e0127b
+    uuid: b67422ff-101b-433b-8f66-4ab282960b36
     tls: true
     udp: true
-    servername: dry-violet-d6e0.38-431.workers.dev
+    servername: www.apple.com
     client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.US.CMLiussss.net
-      headers:
-        Host: dry-violet-d6e0.38-431.workers.dev
+    reality-opts:
+      public-key: Vh8dv6ENmfFd4JlPgj9-R1Fbet2m6JyRFukcVvDq5A8
+      short-id: e7dc2c820ba8bbd4
+    flow: xtls-rprx-vision
   - name: "⚡ 🇨🇦 Xer0x-17"
     type: vless
-    server: 104.16.106.213
-    port: 8880
-    uuid: b4a18856-301d-4bb2-b729-6afcb700faf5
-    tls: false
-    udp: true
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.JP.CMLiussss.net
-      headers:
-        Host: red-flower-a2bf.363.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-18"
-    type: vless
     server: 188.114.97.6
     port: 443
-    uuid: a3cd0fea-482b-4b67-be46-de041690b657
+    uuid: e382b6dd-2dac-49c5-b16f-1cd0a6b73bf2
     tls: true
     udp: true
-    servername: solitary-firefly-e2dc.495-398.workers.dev
-    client-fingerprint: unsafe
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.SG.CMLiussss.net
-      headers:
-        Host: solitary-firefly-e2dc.495-398.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-19"
-    type: vless
-    server: 162.159.140.78
-    port: 8880
-    uuid: f35fb51f-8d34-49ec-80cb-7d04ffc1a69b
-    tls: false
-    udp: true
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.SG.CMLiussss.net
-      headers:
-        Host: damp-sky-9aaa.224-8b4.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-20"
-    type: vless
-    server: 188.114.97.6
-    port: 443
-    uuid: 77d68177-7331-4816-b5e9-23ec39a2ae3b
-    tls: true
-    udp: true
-    servername: divine-rice-3224.464.workers.dev
-    client-fingerprint: unsafe
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.US.CMLiussss.net
-      headers:
-        Host: divine-rice-3224.464.workers.dev
-  - name: "⚡ 🇨🇦 ~8.1Mbps Xer0x-21"
-    type: vless
-    server: 104.21.63.236
-    port: 443
-    uuid: 77702cd2-6a11-40f4-a817-1efeae6f6889
-    tls: true
-    udp: true
-    servername: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
+    servername: raspy-feather-12ec.137-257.workers.dev
     client-fingerprint: chrome
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /vl/Nmf5YfPITFhUjeHE8KfDU5T8H?ed=2560
+      path: "/pyip=Telegram🇨🇳+@WangCai2"
       headers:
-        Host: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-22"
+        Host: raspy-feather-12ec.137-257.workers.dev
+  - name: "⚡ 🇺🇸 ~20.2Mbps Xer0x-18"
     type: vless
-    server: 188.114.97.6
-    port: 443
-    uuid: 20d0a81f-da70-44dc-b9bf-5a5ddab644db
+    server: 147.182.212.232
+    port: 56565
+    uuid: 7b188eea-b08f-42c2-bac7-d3b0e74218b8
     tls: true
     udp: true
-    servername: crimson-lab-6cab.402-311.workers.dev
-    client-fingerprint: unsafe
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.SG.CMLiussss.net
-      headers:
-        Host: crimson-lab-6cab.402-311.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-23"
-    type: vless
-    server: 188.114.97.6
-    port: 443
-    uuid: 2145ee90-d933-4975-b4fe-8fa5365937f0
-    tls: true
-    udp: true
-    servername: long-breeze-5552.250-271.workers.dev
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.US.CMLiussss.net
-      headers:
-        Host: long-breeze-5552.250-271.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-24"
-    type: vless
-    server: 188.114.97.6
-    port: 443
-    uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
-    tls: true
-    udp: true
-    servername: lingering-lab-91a6.54-8c3.workers.dev
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.US.CMLiussss.net
-      headers:
-        Host: lingering-lab-91a6.54-8c3.workers.dev
-  - name: "⚡ 🇨🇦 ~8.7Mbps Xer0x-25"
-    type: vless
-    server: 104.27.110.232
-    port: 2053
-    uuid: dce8ca0a-ed26-45c9-9962-38888c19a0ad
-    tls: true
-    udp: true
-    servername: still-scene-fda3.devtahair.workers.dev
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /eyJqdW5rIjoiSDNSSGYxT05LU2VEbyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjYyLjYwLjIxNy4yMzAiXX0=
-      headers:
-        Host: still-scene-fda3.devtahair.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-26"
-    type: vless
-    server: 162.159.152.4
-    port: 443
-    uuid: 8d42d29a-ed53-4684-a9ff-6b33826149de
-    tls: true
-    udp: true
-    servername: aio.eth0.dpdns.org
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /aioproxybot/94.23.144.99-2053
-      headers:
-        Host: aio.eth0.dpdns.org
-  - name: "⚡ 🇨🇦 Xer0x-27"
-    type: vless
-    server: 172.67.206.231
-    port: 443
-    uuid: 58e78cf6-2b50-40fb-b6bf-ec7eae5b5000
-    tls: true
-    udp: true
-    servername: hi.n2foriran.workers.dev
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /ws
-      headers:
-        Host: hi.n2foriran.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-28"
-    type: vless
-    server: codecanyon.net
-    port: 8880
-    uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
-    tls: false
-    udp: true
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.US.CMLiussss.net
-      headers:
-        Host: lingering-lab-91a6.54-8c3.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-29"
-    type: vless
-    server: 172.64.152.241
-    port: 443
-    uuid: d342d11e-d224-4463-b982-532309285094
-    tls: true
-    udp: true
-    servername: ccc.010304.xyz
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: ccc.010304.xyz
-  - name: "⚡ 🇨🇦 Xer0x-30"
-    type: vless
-    server: 104.18.35.15
-    port: 443
-    uuid: e6df2095-a73c-4043-8693-8d5a03686870
-    tls: true
-    udp: true
-    servername: lucasjow.us.ci
-    client-fingerprint: qq
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /cart/docs/www/proxyip=108.160.132.132
-      headers:
-        Host: lucasjow.us.ci
-  - name: "⚡ 🇨🇦 Xer0x-31"
-    type: vless
-    server: 104.27.82.154
-    port: 8880
-    uuid: 0ed342c3-eb45-4d63-83a1-697252636ca9
-    tls: false
-    udp: true
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.KR.CMLiussss.net
-      headers:
-        Host: yellow-hall-d482.260-d22.workers.dev
-  - name: "⚡ 🇨🇦 Xer0x-32"
-    type: vless
-    server: 104.21.70.21
-    port: 443
-    uuid: 363202dd-0521-46b4-b4e2-443dfbaa2ce1
-    tls: true
-    udp: true
-    servername: flat-heart-b60a.401-306.workers.dev
-    client-fingerprint: unsafe
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.KR.CMLiussss.net
-      headers:
-        Host: flat-heart-b60a.401-306.workers.dev
-  - name: "⚡ 🇺🇸 ~57.6Mbps Xer0x-33"
-    type: vless
-    server: 207.246.104.91
-    port: 37379
-    uuid: a4bec43e-8073-4725-b307-47edad331fee
-    tls: true
-    udp: true
-    servername: xuius.907737.xyz
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: xhttp
-  - name: "⚡ 🇺🇸 ~23.3Mbps Xer0x-34"
-    type: vless
-    server: 195.211.98.43
-    port: 443
-    uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
-    tls: true
-    udp: true
-    servername: www.cloudflare.com
+    servername: www.paypal.com
     client-fingerprint: chrome
     reality-opts:
-      public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
-      short-id: 9c56fddf237e8eaf
-    flow: xtls-rprx-vision
-  - name: "⚡ 🇺🇸 ~35.1Mbps Xer0x-35"
-    type: vless
-    server: 147.45.60.160
-    port: 8444
-    uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
-    tls: true
-    udp: true
-    servername: github.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+      public-key: Td03Ae-cuYLq4xg7MSps58c_yRUcbbwtZLXm0ywabjY
       short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: GunService
-  - name: "⚡ 🇺🇸 ~50Mbps Xer0x-36"
-    type: vless
-    server: xuius.907737.xyz
-    port: 37379
-    uuid: a4bec43e-8073-4725-b307-47edad331fee
-    tls: true
-    udp: true
-    servername: xuius.907737.xyz
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: xhttp
-  - name: "🔵 🇺🇸 ~8.7Mbps Xer0x-37"
-    type: vless
-    server: 169.40.42.225
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    tls: true
-    udp: true
-    servername: yahoo.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
     flow: xtls-rprx-vision
-  - name: "🔵 🇺🇸 ~1.1Mbps Xer0x-38"
-    type: vless
-    server: 169.40.42.179
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    tls: true
-    udp: true
-    servername: yahoo.com
-    client-fingerprint: ios
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-    flow: xtls-rprx-vision
-  - name: "🔵 🇺🇸 ~16.2Mbps Xer0x-39"
-    type: vless
-    server: 169.40.42.168
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    tls: true
-    udp: true
-    servername: yahoo.com
-    client-fingerprint: ios
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-    flow: xtls-rprx-vision
-  - name: "🔵 🇺🇸 ~10.1Mbps Xer0x-40"
-    type: vless
-    server: 169.40.42.173
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    tls: true
-    udp: true
-    servername: yahoo.com
-    client-fingerprint: ios
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-    flow: xtls-rprx-vision
-  - name: "🔵 🇺🇸 ~19.2Mbps Xer0x-41"
-    type: vless
-    server: 169.40.42.182
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    tls: true
-    udp: true
-    servername: yahoo.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-    flow: xtls-rprx-vision
-  - name: "🔵 🇨🇦 ~15.9Mbps Xer0x-42"
-    type: vless
-    server: 209.200.246.148
-    port: 443
-    uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
-    tls: true
-    udp: true
-    servername: www.cloudflare.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
-      short-id: f98843107912e782
-    flow: xtls-rprx-vision
-  - name: "🔵 🇺🇸 ~19.9Mbps Xer0x-43"
-    type: vless
-    server: 169.40.42.202
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    tls: true
-    udp: true
-    servername: yahoo.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-    flow: xtls-rprx-vision
-  - name: "🔵 🇺🇸 ~8.1Mbps Xer0x-44"
-    type: vless
-    server: 169.40.42.133
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    tls: true
-    udp: true
-    servername: yahoo.com
-    client-fingerprint: ios
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-    flow: xtls-rprx-vision
-  - name: "🔵 🇺🇸 ~24Mbps Xer0x-45"
+  - name: "🔵 🇺🇸 Xer0x-19"
     type: vless
     server: 67.220.73.204
-    port: 18662
+    port: 16016
     uuid: 814bd064-544d-4255-a070-5705c03f6da9
     tls: true
     udp: true
@@ -605,58 +243,6 @@ proxies:
       public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
       short-id: 48050fab
     flow: xtls-rprx-vision
-  - name: "🔵 🇺🇸 ~7.3Mbps Xer0x-46"
-    type: vless
-    server: 169.40.42.35
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    tls: true
-    udp: true
-    servername: yahoo.com
-    client-fingerprint: ios
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-    flow: xtls-rprx-vision
-  - name: "🔵 🇺🇸 ~8.7Mbps Xer0x-47"
-    type: vless
-    server: 169.40.42.212
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    tls: true
-    udp: true
-    servername: yahoo.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-    flow: xtls-rprx-vision
-  - name: "🔵 🇺🇸 ~18.5Mbps Xer0x-48"
-    type: vless
-    server: 169.40.42.90
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    tls: true
-    udp: true
-    servername: yahoo.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-    flow: xtls-rprx-vision
-  - name: "🔵 🇺🇸 ~18.3Mbps Xer0x-49"
-    type: vless
-    server: 169.40.42.15
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    tls: true
-    udp: true
-    servername: yahoo.com
-    client-fingerprint: ios
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-    flow: xtls-rprx-vision
 proxy-groups:
   - name: "WiFi Auto"
     type: url-test
@@ -665,7 +251,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - "⚡ 🇨🇦 Xer0x-01"
-      - "⚡ 🇨🇦 ~8.8Mbps Xer0x-02"
+      - "⚡ 🇨🇦 Xer0x-02"
       - "⚡ 🇨🇦 Xer0x-03"
       - "⚡ 🇨🇦 Xer0x-04"
       - "⚡ 🇨🇦 Xer0x-05"
@@ -679,46 +265,16 @@ proxy-groups:
       - "⚡ 🇨🇦 Xer0x-13"
       - "⚡ 🇨🇦 Xer0x-14"
       - "⚡ 🇨🇦 Xer0x-15"
-      - "⚡ 🇨🇦 Xer0x-16"
+      - "⚡ 🇺🇸 ~23.8Mbps Xer0x-16"
       - "⚡ 🇨🇦 Xer0x-17"
-      - "⚡ 🇨🇦 Xer0x-18"
-      - "⚡ 🇨🇦 Xer0x-19"
-      - "⚡ 🇨🇦 Xer0x-20"
-      - "⚡ 🇨🇦 ~8.1Mbps Xer0x-21"
-      - "⚡ 🇨🇦 Xer0x-22"
-      - "⚡ 🇨🇦 Xer0x-23"
-      - "⚡ 🇨🇦 Xer0x-24"
-      - "⚡ 🇨🇦 ~8.7Mbps Xer0x-25"
-      - "⚡ 🇨🇦 Xer0x-26"
-      - "⚡ 🇨🇦 Xer0x-27"
-      - "⚡ 🇨🇦 Xer0x-28"
-      - "⚡ 🇨🇦 Xer0x-29"
-      - "⚡ 🇨🇦 Xer0x-30"
-      - "⚡ 🇨🇦 Xer0x-31"
-      - "⚡ 🇨🇦 Xer0x-32"
-      - "⚡ 🇺🇸 ~57.6Mbps Xer0x-33"
-      - "⚡ 🇺🇸 ~23.3Mbps Xer0x-34"
-      - "⚡ 🇺🇸 ~35.1Mbps Xer0x-35"
-      - "⚡ 🇺🇸 ~50Mbps Xer0x-36"
-      - "🔵 🇺🇸 ~8.7Mbps Xer0x-37"
-      - "🔵 🇺🇸 ~1.1Mbps Xer0x-38"
-      - "🔵 🇺🇸 ~16.2Mbps Xer0x-39"
-      - "🔵 🇺🇸 ~10.1Mbps Xer0x-40"
-      - "🔵 🇺🇸 ~19.2Mbps Xer0x-41"
-      - "🔵 🇨🇦 ~15.9Mbps Xer0x-42"
-      - "🔵 🇺🇸 ~19.9Mbps Xer0x-43"
-      - "🔵 🇺🇸 ~8.1Mbps Xer0x-44"
-      - "🔵 🇺🇸 ~24Mbps Xer0x-45"
-      - "🔵 🇺🇸 ~7.3Mbps Xer0x-46"
-      - "🔵 🇺🇸 ~8.7Mbps Xer0x-47"
-      - "🔵 🇺🇸 ~18.5Mbps Xer0x-48"
-      - "🔵 🇺🇸 ~18.3Mbps Xer0x-49"
+      - "⚡ 🇺🇸 ~20.2Mbps Xer0x-18"
+      - "🔵 🇺🇸 Xer0x-19"
   - name: "WiFi Manual"
     type: select
     proxies:
       - "WiFi Auto"
       - "⚡ 🇨🇦 Xer0x-01"
-      - "⚡ 🇨🇦 ~8.8Mbps Xer0x-02"
+      - "⚡ 🇨🇦 Xer0x-02"
       - "⚡ 🇨🇦 Xer0x-03"
       - "⚡ 🇨🇦 Xer0x-04"
       - "⚡ 🇨🇦 Xer0x-05"
@@ -732,39 +288,9 @@ proxy-groups:
       - "⚡ 🇨🇦 Xer0x-13"
       - "⚡ 🇨🇦 Xer0x-14"
       - "⚡ 🇨🇦 Xer0x-15"
-      - "⚡ 🇨🇦 Xer0x-16"
+      - "⚡ 🇺🇸 ~23.8Mbps Xer0x-16"
       - "⚡ 🇨🇦 Xer0x-17"
-      - "⚡ 🇨🇦 Xer0x-18"
-      - "⚡ 🇨🇦 Xer0x-19"
-      - "⚡ 🇨🇦 Xer0x-20"
-      - "⚡ 🇨🇦 ~8.1Mbps Xer0x-21"
-      - "⚡ 🇨🇦 Xer0x-22"
-      - "⚡ 🇨🇦 Xer0x-23"
-      - "⚡ 🇨🇦 Xer0x-24"
-      - "⚡ 🇨🇦 ~8.7Mbps Xer0x-25"
-      - "⚡ 🇨🇦 Xer0x-26"
-      - "⚡ 🇨🇦 Xer0x-27"
-      - "⚡ 🇨🇦 Xer0x-28"
-      - "⚡ 🇨🇦 Xer0x-29"
-      - "⚡ 🇨🇦 Xer0x-30"
-      - "⚡ 🇨🇦 Xer0x-31"
-      - "⚡ 🇨🇦 Xer0x-32"
-      - "⚡ 🇺🇸 ~57.6Mbps Xer0x-33"
-      - "⚡ 🇺🇸 ~23.3Mbps Xer0x-34"
-      - "⚡ 🇺🇸 ~35.1Mbps Xer0x-35"
-      - "⚡ 🇺🇸 ~50Mbps Xer0x-36"
-      - "🔵 🇺🇸 ~8.7Mbps Xer0x-37"
-      - "🔵 🇺🇸 ~1.1Mbps Xer0x-38"
-      - "🔵 🇺🇸 ~16.2Mbps Xer0x-39"
-      - "🔵 🇺🇸 ~10.1Mbps Xer0x-40"
-      - "🔵 🇺🇸 ~19.2Mbps Xer0x-41"
-      - "🔵 🇨🇦 ~15.9Mbps Xer0x-42"
-      - "🔵 🇺🇸 ~19.9Mbps Xer0x-43"
-      - "🔵 🇺🇸 ~8.1Mbps Xer0x-44"
-      - "🔵 🇺🇸 ~24Mbps Xer0x-45"
-      - "🔵 🇺🇸 ~7.3Mbps Xer0x-46"
-      - "🔵 🇺🇸 ~8.7Mbps Xer0x-47"
-      - "🔵 🇺🇸 ~18.5Mbps Xer0x-48"
-      - "🔵 🇺🇸 ~18.3Mbps Xer0x-49"
+      - "⚡ 🇺🇸 ~20.2Mbps Xer0x-18"
+      - "🔵 🇺🇸 Xer0x-19"
 rules:
   - MATCH,WiFi Auto
