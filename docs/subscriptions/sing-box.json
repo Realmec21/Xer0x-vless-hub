@@ -2,20 +2,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "⚡ 🇨🇦 Xer0x-01",
-      "server": "172.67.76.40",
+      "tag": "⚡ 🇨🇦 ~88.9Mbps Xer0x-01",
+      "server": "104.18.37.127",
       "server_port": 443,
-      "uuid": "d342d11e-d224-4463-b982-532309285094",
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
       "transport": {
         "type": "ws",
-        "path": "/fp=chrome",
+        "path": "/",
         "headers": {
-          "Host": "ccc.010304.xyz"
+          "Host": "snip.edgeoneai.cc.cd"
         }
       },
       "tls": {
         "enabled": true,
-        "server_name": "ccc.010304.xyz",
+        "server_name": "snip.edgeoneai.cc.cd",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -24,37 +24,33 @@
     },
     {
       "type": "vless",
-      "tag": "⚡ 🇨🇦 Xer0x-02",
-      "server": "104.20.28.74",
+      "tag": "⚡ 🇺🇸 ~168Mbps Xer0x-02",
+      "server": "47.251.108.158",
+      "server_port": 443,
+      "uuid": "975fc322-6e38-434b-a53c-d39fed49b9a9",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs",
+          "short_id": "896f52ba2cfca903"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "⚡ 🇨🇦 Xer0x-03",
+      "server": "104.25.3.123",
       "server_port": 8080,
-      "uuid": "f8f5d3a5-54bd-4f52-9759-137bdbf950db",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "23g-lively-resonance-96b9hsf.msc633k2.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇨🇼 Xer0x-03",
-      "server": "88.216.66.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime04.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇨🇦 Xer0x-04",
-      "server": "172.64.150.28",
-      "server_port": 2082,
       "uuid": "e5cc16a6-ea42-46b2-82ae-ad2157e1641b",
       "transport": {
         "type": "ws",
@@ -66,103 +62,45 @@
     },
     {
       "type": "vless",
-      "tag": "⚡ 🇺🇸 Xer0x-05",
-      "server": "8.35.211.188",
-      "server_port": 8443,
-      "uuid": "2b181a3a-c001-4145-845a-5d43a43837d5",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vpn-1fj.pages.dev"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-1fj.pages.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇨🇦 Xer0x-06",
-      "server": "104.18.109.147",
-      "server_port": 80,
-      "uuid": "c29d39bd-92a4-45db-bb61-56013998617c",
-      "transport": {
-        "type": "ws",
-        "path": "/Telegram-XV2ry2?ed=2048",
-        "headers": {
-          "Host": "www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇦🇪 Xer0x-07",
-      "server": "185.225.195.30",
+      "tag": "⚡ 🇸🇨 Xer0x-04",
+      "server": "45.130.125.30",
       "server_port": 8880,
       "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "vms.lifetime18.workers.dev"
+          "Host": "vms.lifetime58.workers.dev"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "⚡ 🇺🇸 ~36.7Mbps Xer0x-08",
-      "server": "169.40.42.163",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "tag": "⚡ 🇺🇸 ~63.8Mbps Xer0x-05",
+      "server": "15.204.97.209",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
       "transport": {
         "type": "none"
       },
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇨🇦 Xer0x-09",
-      "server": "104.19.50.28",
-      "server_port": 443,
-      "uuid": "2b181a3a-c001-4145-845a-5d43a43837d5",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vpn-1fj.pages.dev"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-1fj.pages.dev",
+        "server_name": "fuck.rkn",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "⚡ 🇨🇦 ~59Mbps Xer0x-10",
+      "tag": "⚡ 🇨🇦 ~131.9Mbps Xer0x-06",
       "server": "162.159.130.234",
       "server_port": 443,
       "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
@@ -184,89 +122,365 @@
     },
     {
       "type": "vless",
-      "tag": "⚡ 🇨🇦 ~38.7Mbps Xer0x-11",
-      "server": "172.64.153.61",
-      "server_port": 443,
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "transport": {
-        "type": "ws",
-        "path": "/fdip",
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "snip.edgeoneai.cc.cd",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇪🇪 Xer0x-12",
-      "server": "185.159.247.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime59.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇺🇸 ~5.6Mbps Xer0x-13",
-      "server": "169.40.42.75",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "tag": "⚡ 🇺🇸 ~97.1Mbps Xer0x-07",
+      "server": "23.95.222.127",
+      "server_port": 8443,
+      "uuid": "352ff568-f971-4613-bf48-92997a5d44ed",
       "transport": {
         "type": "none"
       },
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
+          "public_key": "ribQDOlZ69PzvZ1EDF0EcmMvbq_T5RQrVRBSGUU2riU",
+          "short_id": "35cd899f8de04801"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "⚡ 🇨🇦 Xer0x-08",
+      "server": "172.66.158.115",
+      "server_port": 8080,
+      "uuid": "f8f5d3a5-54bd-4f52-9759-137bdbf950db",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "23g-lively-resonance-96b9hsf.msc633k2.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "⚡ 🇨🇦 Xer0x-09",
+      "server": "104.25.5.52",
+      "server_port": 443,
+      "uuid": "93fa8bdb-9cca-4a3e-8355-b7c12e4f595e",
+      "transport": {
+        "type": "ws",
+        "path": "/vl/yLWNcuUuw1jlJpkDhGy?ed=2560",
+        "headers": {
+          "Host": "fornewiran.ade-1000.workers.dev"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "FORnEwIRAn.ADE-1000.worKeRS.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "⚡ 🇨🇦 Xer0x-10",
+      "server": "172.67.160.192",
+      "server_port": 443,
+      "uuid": "2bcfbfba-b446-4ad5-93ad-72af9e008f61",
+      "transport": {
+        "type": "ws",
+        "path": "/free/103.101.153.32:443",
+        "headers": {
+          "Host": "nuclear.us.kg"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "nuclear.us.kg",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "⚡ 🇨🇦 Xer0x-11",
+      "server": "104.18.35.15",
+      "server_port": 443,
+      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "lucasjow.us.ci"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "lucasjow.us.ci",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "⚡ 🇨🇦 Xer0x-12",
+      "server": "104.18.26.94",
+      "server_port": 8080,
+      "uuid": "989d58b8-d2ea-4d28-b5ff-0f3cd078f2cf",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sdf23g-billowing-moon-348e.mzm468gc.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "⚡ 🇨🇦 Xer0x-13",
+      "server": "92.53.188.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime18.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "⚡ 🇨🇦 Xer0x-14",
-      "server": "172.67.221.230",
+      "server": "162.159.152.4",
       "server_port": 443,
-      "uuid": "ec5cf915-2203-403c-9710-dbd553857929",
+      "uuid": "8d42d29a-ed53-4684-a9ff-6b33826149de",
       "transport": {
         "type": "ws",
-        "path": "/Novan-AE27",
+        "path": "/aioproxybot/94.23.144.99-2053",
         "headers": {
-          "Host": "novantunnel.tech"
+          "Host": "aio.eth0.dpdns.org"
         }
       },
       "tls": {
         "enabled": true,
-        "server_name": "novantunnel.tech",
+        "server_name": "aio.eth0.dpdns.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
+          "fingerprint": "chrome"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "⚡ 🇺🇸 ~32.8Mbps Xer0x-15",
+      "tag": "⚡ 🇨🇦 Xer0x-15",
+      "server": "188.114.97.6",
+      "server_port": 2053,
+      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870",
+      "transport": {
+        "type": "ws",
+        "path": "/?---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---",
+        "headers": {
+          "Host": "lucasjow.us.ci"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "lucasjow.us.ci",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "⚡ 🇨🇦 Xer0x-16",
+      "server": "172.64.152.52",
+      "server_port": 443,
+      "uuid": "2d4b819d-6fa6-4db2-8434-61e7db0fe93c",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "cf.zhahui.de5.net"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "cf.zhahui.de5.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "⚡ 🇨🇦 ~8.7Mbps Xer0x-17",
+      "server": "172.66.44.124",
+      "server_port": 443,
+      "uuid": "b2f2f9f2-1864-48ea-839b-22815faff1f1",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "⚡ 🇨🇦 Xer0x-18",
+      "server": "104.18.37.127",
+      "server_port": 443,
+      "uuid": "d342d11e-d224-4463-b982-532309285094",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ccc.010304.xyz"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "ccc.010304.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "⚡ 🇨🇦 Xer0x-19",
+      "server": "172.64.156.111",
+      "server_port": 443,
+      "uuid": "2d4b819d-6fa6-4db2-8434-61e7db0fe93c",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "cf.zhahui.de5.net"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "cf.zhahui.de5.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "⚡ 🇧🇿 Xer0x-20",
+      "server": "45.131.209.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime04.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "⚡ 🇨🇦 Xer0x-21",
+      "server": "104.18.27.94",
+      "server_port": 8080,
+      "uuid": "989d58b8-d2ea-4d28-b5ff-0f3cd078f2cf",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sdf23g-billowing-moon-348e.mzm468gc.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "⚡ 🇨🇦 Xer0x-22",
+      "server": "104.19.50.28",
+      "server_port": 443,
+      "uuid": "2b181a3a-c001-4145-845a-5d43a43837d5",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vpn-1fj.pages.dev"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-1fj.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "⚡ 🇨🇦 Xer0x-23",
+      "server": "104.18.34.16",
+      "server_port": 443,
+      "uuid": "5dc15e15-f285-4a9d-959b-0e4fbdd77b63",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "powered-by-surena.configfarsi695fcfe8a2e58.workers.dev"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "powered-by-surena.configfarsi695fcfe8a2e58.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "⚡ 🇨🇦 Xer0x-24",
+      "server": "172.64.144.82",
+      "server_port": 443,
+      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "lucasjow.us.ci"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "lucasjow.us.ci",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔵 🇺🇸 ~17.7Mbps Xer0x-25",
       "server": "195.123.235.183",
       "server_port": 443,
       "uuid": "c14ec728-3eca-4750-87fc-fd1e6aeb81d5",
@@ -290,2324 +504,7 @@
     },
     {
       "type": "vless",
-      "tag": "⚡ 🇺🇸 ~2.3Mbps Xer0x-16",
-      "server": "137.184.218.169",
-      "server_port": 36925,
-      "uuid": "c9fd0fb1-8251-4106-b09a-f4b426736f67",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇺🇸 ~32.9Mbps Xer0x-17",
-      "server": "147.182.212.232",
-      "server_port": 56565,
-      "uuid": "7b188eea-b08f-42c2-bac7-d3b0e74218b8",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.paypal.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Td03Ae-cuYLq4xg7MSps58c_yRUcbbwtZLXm0ywabjY",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇺🇸 ~29.2Mbps Xer0x-18",
-      "server": "213.165.50.45",
-      "server_port": 9443,
-      "uuid": "c3db7657-88ce-42a6-b998-1e0364b277ac",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "usa.edgeses.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ELJzJkc4SiCeCn6OF-8V9oeoJqXcD1y9WUntP3It53g",
-          "short_id": "649ab61e575fdbc9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇨🇦 ~43.3Mbps Xer0x-19",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "snip.edgeoneai.cc.cd",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇨🇦 Xer0x-20",
-      "server": "104.18.35.15",
-      "server_port": 443,
-      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870",
-      "transport": {
-        "type": "ws",
-        "path": "/cart/docs/www/proxyip=108.160.132.132",
-        "headers": {
-          "Host": "lucasjow.us.ci"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "lucasjow.us.ci",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇨🇦 Xer0x-21",
-      "server": "23.227.60.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime18.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇺🇸 Xer0x-22",
-      "server": "47.251.25.74",
-      "server_port": 443,
-      "uuid": "18805ff3-b420-45de-af18-93be14024ae8",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇺🇸 ~19.7Mbps Xer0x-23",
-      "server": "169.40.42.16",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇳🇿 Xer0x-24",
-      "server": "114.129.43.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime04.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇨🇦 ~6.5Mbps Xer0x-25",
-      "server": "209.200.246.148",
-      "server_port": 443,
-      "uuid": "ca52e2b6-fb9f-4dac-b6dc-49da9923f251",
-      "transport": {
-        "type": "raw"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk",
-          "short_id": "f98843107912e782"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇺🇸 ~26Mbps Xer0x-26",
-      "server": "169.40.42.104",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇨🇦 ~7.5Mbps Xer0x-27",
-      "server": "92.53.188.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime18.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇺🇸 ~5.4Mbps Xer0x-28",
-      "server": "8.35.211.236",
-      "server_port": 443,
-      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "kkkk-83j.pages.dev"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "kkkk-83j.pages.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇺🇸 ~12.7Mbps Xer0x-29",
-      "server": "169.40.42.212",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇺🇸 ~25.1Mbps Xer0x-30",
-      "server": "169.40.42.35",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇺🇸 ~40.7Mbps Xer0x-31",
-      "server": "xray1-direct-mci1-fs-ce.freesocks.work",
-      "server_port": 443,
-      "uuid": "ff9053c2-3358-47e0-aa3b-72bf99e1d231",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇺🇸 ~33.9Mbps Xer0x-32",
-      "server": "169.40.42.168",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇺🇸 ~17.7Mbps Xer0x-33",
-      "server": "169.40.42.235",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇺🇸 Xer0x-34",
-      "server": "108.186.158.241",
-      "server_port": 443,
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "transport": {
-        "type": "ws",
-        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443",
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "snip.edgeoneai.cc.cd",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇨🇦 Xer0x-35",
-      "server": "188.114.98.0",
-      "server_port": 443,
-      "uuid": "efe19c5a-0ea1-4666-8a4c-4a33f4670775",
-      "transport": {
-        "type": "ws",
-        "path": "/raccoonwsvless",
-        "headers": {
-          "Host": "luminouspetal.cyou"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "luminouspetal.cyou",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇺🇸 ~37.3Mbps Xer0x-36",
-      "server": "169.40.42.224",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇺🇸 ~17.1Mbps Xer0x-37",
-      "server": "169.40.42.232",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇺🇸 ~26.3Mbps Xer0x-38",
-      "server": "169.40.42.184",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "⚡ 🇺🇸 ~14.1Mbps Xer0x-39",
-      "server": "169.40.42.15",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔵 🇺🇸 ~28.8Mbps Xer0x-40",
-      "server": "169.40.42.89",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔵 🇺🇸 ~40.2Mbps Xer0x-41",
-      "server": "169.40.42.182",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔵 🇺🇸 ~18.9Mbps Xer0x-42",
-      "server": "169.40.42.133",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔵 🇺🇸 ~22.4Mbps Xer0x-43",
-      "server": "169.40.42.52",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔵 🇺🇸 ~10.5Mbps Xer0x-44",
-      "server": "129.153.71.28",
-      "server_port": 28863,
-      "uuid": "3e956106-7f92-4cbf-bf77-715d3890fa84",
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔵 🇳🇱 ~11.2Mbps Xer0x-45",
-      "server": "51.158.206.96",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔵 🇳🇱 ~11.1Mbps Xer0x-46",
-      "server": "89.127.211.136",
-      "server_port": 443,
-      "uuid": "02882344-474d-4876-88a2-f9c0d973c4df",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.sony.co.uk",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pX5gBaqZ57BIArPg8zxl4_DWEZoAvegxdxEjHQFHfWM",
-          "short_id": "dbafdfc81bc20552"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇫🇷 ~9.5Mbps Xer0x-47",
-      "server": "195.58.140.146",
-      "server_port": 443,
-      "uuid": "d7790b85-9659-4558-a405-e0ab57d32984",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "d1-fr.cloud-cdn.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lRuJPDrUb0b32-47hl4BgDoQutqmkuW31N4qVxbDgmI",
-          "short_id": "dc927a04e8572c61"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇫🇷 ~12.7Mbps Xer0x-48",
-      "server": "62.210.24.143",
-      "server_port": 32202,
-      "uuid": "28148be2-61a7-4f36-8adb-030cc9f82bd0",
-      "transport": {
-        "type": "xhttp"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bGe_-nAtOq6_w_2mv6pcmD8RzJP65Tti-vyMP2hAwDc",
-          "short_id": "f57d8f26"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇳🇱 ~10.8Mbps Xer0x-49",
-      "server": "89.127.211.136",
-      "server_port": 443,
-      "uuid": "02a6e480-81d8-40b7-95d4-de59081337c4",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.sony.co.uk",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pX5gBaqZ57BIArPg8zxl4_DWEZoAvegxdxEjHQFHfWM",
-          "short_id": "dbafdfc81bc20552"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇳🇱 ~11.6Mbps Xer0x-50",
-      "server": "89.127.211.136",
-      "server_port": 443,
-      "uuid": "741ba434-b9d0-40fe-bc09-5a9d4e981691",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.sony.co.uk",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pX5gBaqZ57BIArPg8zxl4_DWEZoAvegxdxEjHQFHfWM",
-          "short_id": "dbafdfc81bc20552"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇫🇷 ~8.7Mbps Xer0x-51",
-      "server": "62.210.91.2",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇺🇸 ~26.9Mbps Xer0x-52",
-      "server": "169.40.42.95",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇳🇱 ~9.2Mbps Xer0x-53",
-      "server": "2.27.39.233",
-      "server_port": 443,
-      "uuid": "e60a2499-c5bf-4ad6-86b0-8af0bd3c0bbf",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "5tMM2VdgddmxOKhdNa3b7i_aXno1g-_61SzkppS2UXQ",
-          "short_id": "f3c023cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇨🇦 Xer0x-54",
-      "server": "104.21.6.186",
-      "server_port": 443,
-      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "a.cwvps.eu.org"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "a.cwvps.eu.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇩🇪 ~10.9Mbps Xer0x-55",
-      "server": "152.53.236.182",
-      "server_port": 443,
-      "uuid": "711c018e-2692-4aa8-93f3-544d83fcd16c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs",
-          "short_id": "7a76f3c4b9dd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇬🇧 Xer0x-56",
-      "server": "57.129.130.57",
-      "server_port": 52014,
-      "uuid": "98286408-b683-4c0f-96c5-7e00da649d90",
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇬🇧 ~10.3Mbps Xer0x-57",
-      "server": "205.237.110.254",
-      "server_port": 443,
-      "uuid": "e75ad2eb-6c1f-45ce-8023-f5f10875df66",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "zsit.eu-cdn294.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IG6lxrx_xkGOoBuo3DC8sgQoIFmqVgznIr0qOuNO0w4",
-          "short_id": "cd2d53510b4df2a8"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇪🇸 ~10.2Mbps Xer0x-58",
-      "server": "212.227.235.66",
-      "server_port": 2053,
-      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
-      "transport": {
-        "type": "none"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
-          "short_id": "29e8dcd2b37aaa7f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇳🇱 ~10.9Mbps Xer0x-59",
-      "server": "147.45.139.187",
-      "server_port": 2054,
-      "uuid": "2b173b69-8045-4fb8-b713-6db630337970",
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ibm.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZHNVnPSNIvQi7Sunb-pIN7sinF7iwVCmkVdyOtSgNiI",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇳🇱 ~4.2Mbps Xer0x-60",
-      "server": "163.172.213.174",
-      "server_port": 80,
-      "uuid": "e73df646-1f62-41bf-8c50-653497d603d0",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/",
-        "headers": {
-          "Host": "SC-TheNetherlands2.09vpn.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇨🇿 ~9.6Mbps Xer0x-61",
-      "server": "195.123.245.241",
-      "server_port": 443,
-      "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gateway.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw",
-          "short_id": "23d0950d60bc0d5b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇩🇪 ~9.7Mbps Xer0x-62",
-      "server": "94.183.238.15",
-      "server_port": 443,
-      "uuid": "5edbcb44-8d04-4fa7-a587-bc5d60c24ca1",
-      "transport": {
-        "type": "xhttp"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "ger-02.letsgodance.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇳🇱 Xer0x-63",
-      "server": "107.189.26.160",
-      "server_port": 443,
-      "uuid": "d342d11e-d224-4463-b982-532309285094",
-      "transport": {
-        "type": "ws",
-        "path": "/fp",
-        "headers": {
-          "Host": "ccc.010304.xyz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "ccc.010304.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇳🇱 ~11.7Mbps Xer0x-64",
-      "server": "185.115.34.209",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇵🇱 ~7.9Mbps Xer0x-65",
-      "server": "hs-pl-01.farmerly.cc",
-      "server_port": 443,
-      "uuid": "a00e48ce-e56e-4ac1-8272-38983f0d8f99",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "hs-pl-01.farmerly.cc",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AavAYn4G7W6vngeo-TytWKd3gMQyaZvNVuwuvq7rYQE",
-          "short_id": "3387bf0c89b4a945"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇩🇪 ~9.9Mbps Xer0x-66",
-      "server": "130.17.25.67",
-      "server_port": 443,
-      "uuid": "1c5ed2e1-56da-41ab-9a78-159d9892ec17",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q",
-          "short_id": "9e4eced6e98ed4d4"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇪🇸 ~10.5Mbps Xer0x-67",
-      "server": "76.164.203.135",
-      "server_port": 443,
-      "uuid": "e75ad2eb-6c1f-45ce-8023-f5f10875df66",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "zses.eu-cdn294.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ajzyADs9mOY6I3v7OWym5KgYh0afKmlCFaNw1pdQsWA",
-          "short_id": "6b4cf686eebb37b9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇫🇮 ~8.1Mbps Xer0x-68",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-      "transport": {
-        "type": "none"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇳🇱 Xer0x-69",
-      "server": "107.189.26.160",
-      "server_port": 443,
-      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870",
-      "transport": {
-        "type": "ws",
-        "path": "/cart/docs/www/proxyip=108.160.132.132fp=chrome",
-        "headers": {
-          "Host": "lucasjow.us.ci"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "lucasjow.us.ci",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇫🇮 ~7.2Mbps Xer0x-70",
-      "server": "157.228.128.59",
-      "server_port": 443,
-      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws",
-          "short_id": "06e00e7c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇱🇻 ~8.1Mbps Xer0x-71",
-      "server": "195.123.213.28",
-      "server_port": 443,
-      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-          "short_id": "5c256336e3b673fa"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇳🇱 ~8.4Mbps Xer0x-72",
-      "server": "87.199.205.28",
-      "server_port": 443,
-      "uuid": "501a2da5-cb22-4a3f-915e-e3b821d1d62d",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "vkvd754.okcdn.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "W-9zyiOq287RtXVTZlTFbSDJ0Mx8joyBLJoA7ZE7eBw",
-          "short_id": "ef1d3554c652a436"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇯🇵 ~7.3Mbps Xer0x-73",
-      "server": "172.111.146.64",
-      "server_port": 80,
-      "uuid": "904f8ffa-4652-4076-8f2f-e586807840ec",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇵🇱 ~9Mbps Xer0x-74",
-      "server": "45.137.43.168",
-      "server_port": 10444,
-      "uuid": "b4cc503a-c352-4775-85ad-fc982086884a",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "video.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
-          "short_id": "8debcf36f1cc69ff"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇸🇬 Xer0x-75",
-      "server": "43.174.193.1",
-      "server_port": 443,
-      "uuid": "d342d11e-d224-4463-b982-532309285094",
-      "transport": {
-        "type": "ws",
-        "path": "/fp=chrome",
-        "headers": {
-          "Host": "ccc.010304.xyz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "ccc.010304.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇫🇮 Xer0x-76",
-      "server": "65.108.3.59",
-      "server_port": 443,
-      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "web.eitaa.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
-          "short_id": "90ec9bba2019"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇰🇷 ~7.4Mbps Xer0x-77",
-      "server": "3.39.4.109",
-      "server_port": 18967,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇳🇱 ~10.9Mbps Xer0x-78",
-      "server": "185.200.199.199",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇷🇸 ~8.5Mbps Xer0x-79",
-      "server": "150.40.126.19",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "transport": {
-        "type": "grpc",
-        "service_name": "media.v1.ObjectService"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "rs2.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE",
-          "short_id": "1469af2040b7c323"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇷🇸 ~9.4Mbps Xer0x-80",
-      "server": "150.40.126.22",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "transport": {
-        "type": "grpc",
-        "service_name": "media.v1.StreamService"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "rs4.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs",
-          "short_id": "861ac7d66953e55f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇨🇦 Xer0x-81",
-      "server": "104.25.88.220",
-      "server_port": 443,
-      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "a.cwvps.eu.org"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "a.cwvps.eu.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇺🇸 ~2.7Mbps Xer0x-82",
-      "server": "169.40.42.179",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇷🇺 ~3.5Mbps Xer0x-83",
-      "server": "37.18.14.145",
-      "server_port": 7445,
-      "uuid": "66217279-de40-4b62-b2bb-9c33b8fb7a01",
-      "transport": {
-        "type": "raw"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "passport.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "S_s3FVodJIep88KnIgT0cZLUMB2tAJHTJEn0o-J03G8",
-          "short_id": "283f4b51fbe39ad9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇳🇱 ~2.5Mbps Xer0x-84",
-      "server": "163.172.214.188",
-      "server_port": 80,
-      "uuid": "40cc9b52-25b8-4cd5-8b45-715ae26e6baf",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇩🇪 Xer0x-85",
-      "server": "2.27.35.74",
-      "server_port": 443,
-      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zAmNLsLPizp96b55zNe2kJ3zXBdpuNY0olnRaOpluks",
-          "short_id": "34e797af"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇳🇱 ~3.7Mbps Xer0x-86",
-      "server": "152.70.58.201",
-      "server_port": 443,
-      "uuid": "8892e34a-339b-4526-b88d-cf68c516231c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Hg_ivwbClYmR-SEHdoGgq4yEk6ltbjS5c4yiQRa4_28",
-          "short_id": "52c723e0fad49689"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇭🇰 Xer0x-87",
-      "server": "43.129.80.179",
-      "server_port": 8443,
-      "uuid": "d342d11e-d224-4463-b982-532309285094",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "ccc.010304.xyz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "ccc.010304.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇮🇳 ~5.2Mbps Xer0x-88",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇸🇬 ~2.2Mbps Xer0x-89",
-      "server": "3.0.111.82",
-      "server_port": 17623,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇸🇪 ~5.5Mbps Xer0x-90",
-      "server": "2.27.14.244",
-      "server_port": 443,
-      "uuid": "fd1d80da-3b27-457a-810b-2b28a309edc1",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uakxTTpl0pQZxA-wu_QEsyVDUlErAxEKmFcnQrzABXw",
-          "short_id": "c24b46e36cc6d6fa"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇩🇪 Xer0x-91",
-      "server": "94.103.168.219",
-      "server_port": 2087,
-      "uuid": "a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d",
-      "transport": {
-        "type": "ws",
-        "path": "/hokm",
-        "headers": {
-          "Host": "ops5788tugfuy.localip.ir"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "ops5788tugfuy.localip.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇨🇦 Xer0x-92",
-      "server": "104.16.10.104",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇫🇮 ~3.7Mbps Xer0x-93",
-      "server": "83.147.216.223",
-      "server_port": 4433,
-      "uuid": "55889b09-e315-4640-9404-e10834e7728e",
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇨🇭 Xer0x-94",
-      "server": "167.148.183.51",
-      "server_port": 444,
-      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
-      "transport": {
-        "type": "grpc",
-        "service_name": ""
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "ch.srv.vbuste.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-          "short_id": "4be4110078ebed4a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇫🇮 ~7.3Mbps Xer0x-95",
-      "server": "177.1.188.96",
-      "server_port": 443,
-      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fl1.balancer.vbuste-bot.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-          "short_id": "4be4110078ebed4a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇲🇩 ~6.3Mbps Xer0x-96",
-      "server": "89.35.14.32",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "transport": {
-        "type": "grpc",
-        "service_name": "stats.v2.PushService"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "md3.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ",
-          "short_id": "9a72d40f1ff882b3"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇯🇵 Xer0x-97",
-      "server": "154.31.114.162",
-      "server_port": 8443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇨🇦 Xer0x-98",
-      "server": "104.17.50.53",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇨🇦 ~5.3Mbps Xer0x-99",
-      "server": "104.16.10.185",
-      "server_port": 443,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "v2ray.simspeedup.com"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray.simspeedup.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇳🇱 ~12.6Mbps Xer0x-100",
-      "server": "185.192.22.159",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇨🇦 ~1.2Mbps Xer0x-101",
-      "server": "104.19.164.155",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇸🇬 ~2.9Mbps Xer0x-102",
-      "server": "3.0.111.82",
-      "server_port": 12972,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "transport": {
-        "type": "raw"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇦🇪 ~4.6Mbps Xer0x-103",
-      "server": "146.70.37.253",
-      "server_port": 443,
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "snip.edgeoneai.cc.cd",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇫🇮 ~3.7Mbps Xer0x-104",
-      "server": "107.181.151.241",
-      "server_port": 443,
-      "uuid": "2ba7f500-017b-4891-87a0-e4e62a4ad52d",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
-          "short_id": "9409f73c2fd7"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇫🇮 ~3.6Mbps Xer0x-105",
-      "server": "107.181.151.39",
-      "server_port": 443,
-      "uuid": "68cf8d29-5aa0-44b3-88a9-f1a576b6e84c",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "73a9e631a09b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇫🇮 ~3.4Mbps Xer0x-106",
-      "server": "107.181.151.39",
-      "server_port": 443,
-      "uuid": "1896c6c9-a941-4688-a865-29027bf7f8e6",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "6c825bc79850"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇸🇬 ~2.7Mbps Xer0x-107",
-      "server": "5.34.177.164",
-      "server_port": 443,
-      "uuid": "ca678d26-5435-4d13-b378-06c4c3b070ff",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gateway.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cwWhNuekusD1iPZZ--7G891dU9PCacxyCYwsZxOApHA",
-          "short_id": "b2efed6d157e7bb0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇭🇰 ~1.6Mbps Xer0x-108",
-      "server": "43.129.80.179",
-      "server_port": 8443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇳🇱 ~5Mbps Xer0x-109",
-      "server": "31.59.140.188",
-      "server_port": 443,
-      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl1.aiage.work",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vSa3rWZfq5OftXO2RSgggbTOxbHlWGTLpP8bNDki3wk",
-          "short_id": "adcbde41b1cf27ba"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇷🇺 ~2.5Mbps Xer0x-110",
-      "server": "37.18.14.168",
-      "server_port": 2053,
-      "uuid": "2c634977-584e-4e1f-b501-1b70c77a6743",
-      "transport": {
-        "type": "xhttp"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "kaoangeltrahnimenya.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇫🇮 ~3.6Mbps Xer0x-111",
-      "server": "staging.lastilhame.monster",
-      "server_port": 443,
-      "uuid": "594d466e-8ac3-4fda-b1d1-eeb817853518",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
-          "short_id": "5a018643df03"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇨🇦 Xer0x-112",
-      "server": "104.16.10.135",
-      "server_port": 443,
-      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
-      "transport": {
-        "type": "ws",
-        "path": "/ws#/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512",
-        "headers": {
-          "Host": "a.cwvps.eu.org"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "a.cwvps.eu.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇳🇱 Xer0x-113",
-      "server": "108.61.164.217",
-      "server_port": 4443,
-      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k9srkQedwHsZGJP-R-GGwDOGok05gk23s8d4mtidMC4",
-          "short_id": "835391010667297d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇳🇱 ~2.7Mbps Xer0x-114",
-      "server": "140.225.199.212",
-      "server_port": 443,
-      "uuid": "6c713691-3ca2-0009-ad25-113d1bed6b03",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "hatch.senko.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JWDpSUaLgiXGXpgZzzxfDnYGvi4MBFcadN6cHZ-He1E",
-          "short_id": "b8c6965f3596688a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇨🇦 ~1.6Mbps Xer0x-115",
-      "server": "104.21.70.228",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇷🇴 ~1.9Mbps Xer0x-116",
-      "server": "146.70.124.85",
-      "server_port": 443,
-      "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
-      "transport": {
-        "type": "none"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE",
-          "short_id": "fe24f8a0a560056e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇦🇪 ~6.7Mbps Xer0x-117",
-      "server": "84.235.244.108",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "uae.unixzone.us"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇳🇱 Xer0x-118",
-      "server": "185.141.227.180",
-      "server_port": 2053,
-      "uuid": "95a608b6-bff1-4e10-bb61-0a39f221bb7d",
-      "transport": {
-        "type": "xhttp"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "dismissaltree.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇺🇸 ~22.9Mbps Xer0x-119",
+      "tag": "🔵 🇺🇸 Xer0x-26",
       "server": "169.40.42.225",
       "server_port": 443,
       "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
@@ -2631,32 +528,128 @@
     },
     {
       "type": "vless",
-      "tag": "🔴 🇷🇺 Xer0x-120",
-      "server": "90.156.218.163",
+      "tag": "🔵 🇺🇸 Xer0x-27",
+      "server": "169.40.42.16",
       "server_port": 443,
-      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
       "transport": {
         "type": "none"
       },
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "eh.vk.ru",
+        "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "short_id": "db04ce8bdb8900f1"
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🔴 🇺🇸 ~10.4Mbps Xer0x-121",
-      "server": "169.40.42.173",
+      "tag": "🔵 🇺🇸 ~3.2Mbps Xer0x-28",
+      "server": "169.40.42.104",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔵 🇺🇸 ~4.3Mbps Xer0x-29",
+      "server": "169.40.42.74",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔵 🇺🇸 ~15.7Mbps Xer0x-30",
+      "server": "169.40.42.95",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔵 🇺🇸 ~16.3Mbps Xer0x-31",
+      "server": "5.34.178.120",
+      "server_port": 443,
+      "uuid": "9063f9fb-e88a-4ee0-b4a4-a92ca7316a9f",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EVhq2BxKuw2Cody1DmF_HPvUYKwzdXbHP47blUv-eRM",
+          "short_id": "55ab5559e3a6d10a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔵 🇺🇸 Xer0x-32",
+      "server": "169.40.42.35",
       "server_port": 443,
       "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
       "transport": {
@@ -2679,201 +672,765 @@
     },
     {
       "type": "vless",
-      "tag": "🔴 🇨🇦 Xer0x-122",
-      "server": "104.24.18.119",
+      "tag": "🔵 🇺🇸 Xer0x-33",
+      "server": "169.40.42.232",
       "server_port": 443,
-      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "a.cwvps.eu.org"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "a.cwvps.eu.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇲🇪 Xer0x-123",
-      "server": "31.57.190.89",
-      "server_port": 443,
-      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "a.cwvps.eu.org"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "a.cwvps.eu.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇮🇳 Xer0x-124",
-      "server": "5.253.28.224",
-      "server_port": 40443,
-      "uuid": "af5eac96-e478-488a-bc8c-45269d7e8847",
-      "transport": {
-        "type": "raw"
-      },
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw",
-          "short_id": "68a8"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇨🇦 Xer0x-125",
-      "server": "172.67.153.156",
-      "server_port": 443,
-      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
-      "transport": {
-        "type": "ws",
-        "path": "/pai50288"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "ccs2g.pai50288.uk",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇲🇪 Xer0x-126",
-      "server": "31.57.190.17",
-      "server_port": 443,
-      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "a.cwvps.eu.org"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "a.cwvps.eu.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇮🇳 Xer0x-127",
-      "server": "5.253.28.240",
-      "server_port": 2443,
-      "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
-      "transport": {
-        "type": "grpc",
-        "service_name": "rex-eb0bf76b710ce763"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg",
-          "short_id": "92c32de179e5d908"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇨🇦 Xer0x-128",
-      "server": "104.18.176.145",
-      "server_port": 443,
-      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "a.cwvps.eu.org"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "a.cwvps.eu.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇨🇦 ~3Mbps Xer0x-129",
-      "server": "104.18.0.181",
-      "server_port": 2052,
-      "uuid": "5744e593-1cc8-48fa-b8ca-57cd494fe35b",
-      "transport": {
-        "type": "ws",
-        "path": "/rain1226",
-        "headers": {
-          "Host": "eu02.123450908.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔴 🇷🇺 Xer0x-130",
-      "server": "87.242.127.113",
-      "server_port": 4510,
-      "uuid": "c3db7657-88ce-42a6-b998-1e0364b277ac",
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
       "transport": {
         "type": "none"
       },
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "9c99da.usecache.net",
+        "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "hkvjyE8WMKHvdGfMta7PAIGz6HAv2WiXvWvAQmsE_DM",
-          "short_id": "2d0c188798bae174"
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🔴 🇺🇸 ~1.6Mbps Xer0x-131",
-      "server": "162.159.254.3",
+      "tag": "🔵 🇺🇸 Xer0x-34",
+      "server": "169.40.42.212",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔵 🇺🇸 Xer0x-35",
+      "server": "169.40.42.133",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔵 🇺🇸 Xer0x-36",
+      "server": "169.40.42.231",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔵 🇯🇵 ~11.6Mbps Xer0x-37",
+      "server": "43.167.232.174",
+      "server_port": 443,
+      "uuid": "0fd46529-707f-4d33-899b-598f5f4acffa",
+      "transport": {
+        "type": "none"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI",
+          "short_id": "b51e057820d3e14c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔵 🇺🇸 Xer0x-38",
+      "server": "169.40.42.235",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔵 🇺🇸 Xer0x-39",
+      "server": "169.40.42.179",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇯🇵 ~11.3Mbps Xer0x-40",
+      "server": "156.246.88.125",
+      "server_port": 26518,
+      "uuid": "e01fcb68-3112-49da-b85d-dffb799cfc9b",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1fa6iCY7vhoQyKu91FeaK04FN-mr1qeHnrtdyLZ79mk",
+          "short_id": "6caead99"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇺🇸 Xer0x-41",
+      "server": "169.40.42.184",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇺🇸 ~15.2Mbps Xer0x-42",
+      "server": "169.40.42.182",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇺🇸 ~15.4Mbps Xer0x-43",
+      "server": "169.40.42.75",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇺🇸 ~14.3Mbps Xer0x-44",
+      "server": "169.40.42.15",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇯🇵 Xer0x-45",
+      "server": "45.8.173.99",
+      "server_port": 443,
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "transport": {
+        "type": "ws",
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443",
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "snip.edgeoneai.cc.cd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇯🇵 Xer0x-46",
+      "server": "154.19.187.190",
+      "server_port": 443,
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "transport": {
+        "type": "ws",
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443",
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "snip.edgeoneai.cc.cd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇳🇱 ~8Mbps Xer0x-47",
+      "server": "130.12.242.106",
+      "server_port": 443,
+      "uuid": "bc058e69-0444-4c7b-98da-bd67f0b143da",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8",
+          "short_id": "15affa0af66dfc79"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇫🇷 ~8.6Mbps Xer0x-48",
+      "server": "51.77.217.70",
+      "server_port": 2053,
+      "uuid": "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e",
+      "transport": {
+        "type": "none"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w",
+          "short_id": "bfe58beb41f1d09f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇳🇱 ~8Mbps Xer0x-49",
+      "server": "31.59.140.189",
+      "server_port": 443,
+      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl1.aiage.work",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "vSa3rWZfq5OftXO2RSgggbTOxbHlWGTLpP8bNDki3wk",
+          "short_id": "adcbde41b1cf27ba"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇩🇪 ~4Mbps Xer0x-50",
+      "server": "144.31.125.60",
+      "server_port": 443,
+      "uuid": "9015f0bc-2053-4ca1-9b9b-a018b97b32d2",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.intel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8",
+          "short_id": "85c86a9863"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇳🇱 ~8.3Mbps Xer0x-51",
+      "server": "195.123.221.36",
+      "server_port": 443,
+      "uuid": "9c60369d-e5f9-4cec-9e63-1560e88e119a",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dIv6pPS-x6IzbiPyHX8nNdRrwI2yZl4y3YCeRWy9UgE",
+          "short_id": "3e67326f98ddb407"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇳🇱 ~8.2Mbps Xer0x-52",
+      "server": "89.127.211.136",
+      "server_port": 443,
+      "uuid": "f00e0908-3fec-4b1e-9e04-0698d8548253",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.sony.co.uk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pX5gBaqZ57BIArPg8zxl4_DWEZoAvegxdxEjHQFHfWM",
+          "short_id": "dbafdfc81bc20552"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇸🇬 ~6.8Mbps Xer0x-53",
+      "server": "88.216.191.10",
+      "server_port": 443,
+      "uuid": "244d9eab-3311-40c7-b47f-4968dc3088a6",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "si1.lazeroe.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+          "short_id": "868419504747f6de"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇬🇧 ~7.7Mbps Xer0x-54",
+      "server": "195.72.166.251",
+      "server_port": 443,
+      "uuid": "64c05afc-ce81-4ba0-b697-afa04da1427e",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.lloydsbankinggroup.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RKDT6fVgcZS8Qfzhv5rbeHRIflA3UTKD_HNLJyOoUwk",
+          "short_id": "25349b36802f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇵🇱 ~8.1Mbps Xer0x-55",
+      "server": "45.194.66.202",
+      "server_port": 443,
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.golangwikito.cfd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg",
+          "short_id": "f8b695e5c59d028c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇵🇱 ~7.2Mbps Xer0x-56",
+      "server": "2.59.253.251",
+      "server_port": 443,
+      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "short_id": "db04ce8bdb8900f1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇨🇭 ~5.2Mbps Xer0x-57",
+      "server": "208.69.78.217",
+      "server_port": 2053,
+      "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
+      "transport": {
+        "type": "none"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0",
+          "short_id": "ad86e2d52ff40ebd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇬🇧 Xer0x-58",
+      "server": "143.110.171.182",
+      "server_port": 443,
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "transport": {
+        "type": "ws",
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443",
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "snip.edgeoneai.cc.cd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇭🇺 ~7.7Mbps Xer0x-59",
+      "server": "85.155.242.37",
+      "server_port": 443,
+      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hu1.aiage.work",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg",
+          "short_id": "f8379ce795f2e5ed"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇬🇧 ~2Mbps Xer0x-60",
+      "server": "86.54.42.91",
+      "server_port": 420,
+      "uuid": "c4754206-27f9-4951-a049-04b46841081f",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "g.co",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "eDBTff9fQM2sXms--xj4iP23ajzOY6mw1gT8YHWXmwA",
+          "short_id": "c2488d654e410190"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇺🇸 Xer0x-61",
+      "server": "169.40.42.89",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇸🇬 ~8.8Mbps Xer0x-62",
+      "server": "164.37.224.232",
+      "server_port": 25454,
+      "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d",
+      "transport": {
+        "type": "grpc",
+        "service_name": "becc6caf9bea"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ns.nl",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "YOgsoXtChX3RvA0Gf9SSsP8VLP4GGk7dytVBo9qZCH4",
+          "short_id": "221ba0d14384ccf1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇳🇱 Xer0x-63",
+      "server": "146.185.141.92",
+      "server_port": 443,
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "transport": {
+        "type": "ws",
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443",
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "snip.edgeoneai.cc.cd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇫🇷 ~7.4Mbps Xer0x-64",
+      "server": "185.46.112.170",
+      "server_port": 443,
+      "uuid": "408c51e8-9246-483d-ba73-34ab4e202eb9",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "metrika.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HRmmr0Ii4Tr9jPLwratvLhee3_VWFNK47T8AAo7kzww",
+          "short_id": "dcb858da"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇨🇦 ~1.5Mbps Xer0x-65",
+      "server": "104.21.70.228",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "transport": {
@@ -2894,10 +1451,802 @@
     },
     {
       "type": "vless",
-      "tag": "🔴 🇰🇷 Xer0x-132",
-      "server": "47.80.19.173",
+      "tag": "🔴 🇬🇧 ~6.7Mbps Xer0x-66",
+      "server": "205.237.110.254",
+      "server_port": 443,
+      "uuid": "e75ad2eb-6c1f-45ce-8023-f5f10875df66",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "zsit.eu-cdn294.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IG6lxrx_xkGOoBuo3DC8sgQoIFmqVgznIr0qOuNO0w4",
+          "short_id": "cd2d53510b4df2a8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇷🇺 ~7.6Mbps Xer0x-67",
+      "server": "api.mediaperekat.cc",
+      "server_port": 443,
+      "uuid": "082f5694-9019-4110-b67b-8125dbb9bab8",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.mediaperekat.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
+          "short_id": "a8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇳🇱 Xer0x-68",
+      "server": "159.223.12.89",
+      "server_port": 443,
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "transport": {
+        "type": "ws",
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome",
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "snip.edgeoneai.cc.cd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇪🇸 ~6.9Mbps Xer0x-69",
+      "server": "46.28.71.247",
+      "server_port": 443,
+      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
+          "short_id": "0dfc23fe80778c00"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇳🇱 ~8.7Mbps Xer0x-70",
+      "server": "185.112.59.107",
+      "server_port": 443,
+      "uuid": "579b72a5-785a-4fb6-ac64-1de2f8c49601",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless-grpc"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "samsung.com.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LAIeXhB_Q_APveaVNJDD4svH4esgDVx3qeo-MSfu1Wg",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇳🇱 Xer0x-71",
+      "server": "188.166.42.149",
+      "server_port": 443,
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "transport": {
+        "type": "ws",
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443",
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "snip.edgeoneai.cc.cd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇺🇸 Xer0x-72",
+      "server": "136.107.170.196",
+      "server_port": 443,
+      "uuid": "d6d58f01-b5ce-4d47-bce0-b8a806155852",
+      "transport": {
+        "type": "none"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "L1S0DpFtHPBeyENZUvJPcrFZIct6kcHUPxuzNaGXIFY",
+          "short_id": "4c69c4b51c580d60"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇩🇪 ~6.4Mbps Xer0x-73",
+      "server": "91.107.247.173",
+      "server_port": 2083,
+      "uuid": "7858128a-6b5e-4f86-9bff-52c1f1e6439d",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sino.bestsellers1.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇧🇾 ~6.5Mbps Xer0x-74",
+      "server": "95.128.71.79",
+      "server_port": 14430,
+      "uuid": "8cef7621-c6f0-486e-b51d-59c30c5b0b25",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "95.128.71.79"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇰🇷 Xer0x-75",
+      "server": "134.185.100.238",
+      "server_port": 8443,
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "transport": {
+        "type": "ws",
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443",
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "snip.edgeoneai.cc.cd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇰🇷 Xer0x-76",
+      "server": "158.247.222.168",
+      "server_port": 443,
+      "uuid": "5dc15e15-f285-4a9d-959b-0e4fbdd77b63",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "powered-by-surena.configfarsi695fcfe8a2e58.workers.dev"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "powered-by-surena.configfarsi695fcfe8a2e58.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇳🇱 ~5.2Mbps Xer0x-77",
+      "server": "185.200.199.199",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": "457fab2ac885dbe0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇩🇪 Xer0x-78",
+      "server": "142.93.104.224",
+      "server_port": 443,
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "transport": {
+        "type": "ws",
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443",
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "snip.edgeoneai.cc.cd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇹🇷 ~6.8Mbps Xer0x-79",
+      "server": "151.241.226.201",
       "server_port": 2053,
-      "uuid": "319d5ffb-57e8-4bbd-ac0c-5d55d0c253de",
+      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
+      "transport": {
+        "type": "none"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
+          "short_id": "9e419c0759b54d6f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇲🇪 Xer0x-80",
+      "server": "31.57.190.15",
+      "server_port": 443,
+      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870",
+      "transport": {
+        "type": "ws",
+        "path": "/cart/docs/www/proxyip=108.160.132.132",
+        "headers": {
+          "Host": "lucasjow.us.ci"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "lucasjow.us.ci",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇵🇱 ~6.7Mbps Xer0x-81",
+      "server": "38.244.186.167",
+      "server_port": 8445,
+      "uuid": "f3b8d5f8-cbe9-4aca-ab34-005c51262d5e",
+      "transport": {
+        "type": "none"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-s2SHiKfXMJRYizNuu8URrx6MgyoQtBJ0QAj33qMog0",
+          "short_id": "f04c762307c0ba04"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇷🇺 ~6.8Mbps Xer0x-82",
+      "server": "37.143.15.206",
+      "server_port": 443,
+      "uuid": "4599572f-bcfa-461e-bc73-d80e1ea65aa6",
+      "transport": {
+        "type": "raw"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "5post-gate.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA",
+          "short_id": "111111"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇸🇪 Xer0x-83",
+      "server": "62.182.192.195",
+      "server_port": 443,
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "transport": {
+        "type": "ws",
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443",
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "snip.edgeoneai.cc.cd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇸🇪 Xer0x-84",
+      "server": "41.216.182.98",
+      "server_port": 443,
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "transport": {
+        "type": "ws",
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443",
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "snip.edgeoneai.cc.cd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇩🇪 Xer0x-85",
+      "server": "2.28.42.209",
+      "server_port": 8443,
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "transport": {
+        "type": "ws",
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443",
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "snip.edgeoneai.cc.cd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇭🇰 Xer0x-86",
+      "server": "38.207.184.103",
+      "server_port": 8443,
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "transport": {
+        "type": "ws",
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443",
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "snip.edgeoneai.cc.cd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇨🇦 ~1.3Mbps Xer0x-87",
+      "server": "104.21.0.87",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇫🇷 ~3Mbps Xer0x-88",
+      "server": "152.228.162.19",
+      "server_port": 80,
+      "uuid": "f5c47e9c-914a-4a91-a81e-a5a77bc10fc1",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇯🇵 Xer0x-89",
+      "server": "160.16.139.182",
+      "server_port": 443,
+      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
+          "short_id": "1a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇺🇸 Xer0x-90",
+      "server": "23.246.154.243",
+      "server_port": 443,
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "transport": {
+        "type": "ws",
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443",
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "snip.edgeoneai.cc.cd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇨🇦 ~5.3Mbps Xer0x-91",
+      "server": "104.16.10.234",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇩🇪 ~3.4Mbps Xer0x-92",
+      "server": "178.104.248.34",
+      "server_port": 2087,
+      "uuid": "a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d",
+      "transport": {
+        "type": "ws",
+        "path": "/hokm",
+        "headers": {
+          "Host": "tuyiuoyuthgfdbf.localip.ir"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "tuyiuoyuthgfdbf.localip.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇷🇸 ~7.2Mbps Xer0x-93",
+      "server": "150.40.126.19",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "transport": {
+        "type": "grpc",
+        "service_name": "media.v1.ObjectService"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "rs2.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE",
+          "short_id": "1469af2040b7c323"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇨🇦 ~2.2Mbps Xer0x-94",
+      "server": "104.19.164.155",
+      "server_port": 443,
+      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "a.cwvps.eu.org"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "a.cwvps.eu.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇷🇺 ~7.5Mbps Xer0x-95",
+      "server": "msk.alexander-official.ru",
+      "server_port": 443,
+      "uuid": "8806b7f9-f4dc-472e-a84c-b52f8edba404",
+      "transport": {
+        "type": "xhttp"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "msk.alexander-official.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇷🇺 ~5.8Mbps Xer0x-96",
+      "server": "193.233.220.203",
+      "server_port": 8443,
+      "uuid": "068c73f5-c2fc-4579-96be-6e37cfcf58ed",
+      "transport": {
+        "type": "xhttp"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn-us.cahmes.space",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "KZejN2d1cwCrITHNxFYQVZ4rpMTZzHgJd9p30MZm_3k",
+          "short_id": "6bd33a75ebc0f26e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇷🇸 ~8Mbps Xer0x-97",
+      "server": "150.40.126.18",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "transport": {
+        "type": "grpc",
+        "service_name": "node.v2.ObjectService"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "rs1.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "upIzyaSbVz2ZK6KfGtXmPl_-sCwn8XLDyFDH5CsL9iY",
+          "short_id": "ed0cd5cc2e26e6e7"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇱🇻 ~5.4Mbps Xer0x-98",
+      "server": "31.56.197.32",
+      "server_port": 443,
+      "uuid": "497f5381-3533-4c6a-939c-66eb3a7de108",
+      "transport": {
+        "type": "ws",
+        "path": "/gropcdn",
+        "headers": {
+          "Host": "cdn.topingr.ir"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.topingr.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇺🇸 ~3.9Mbps Xer0x-99",
+      "server": "191.217.251.254",
+      "server_port": 21382,
+      "uuid": "408c51e8-9246-483d-ba73-34ab4e202eb9",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "metrika.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HbK-TTnL1Dog-wKCowjLrKsx5ECIt2uxBsdGfeWG6kQ",
+          "short_id": "7bbf811a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇯🇵 ~3Mbps Xer0x-100",
+      "server": "154.31.114.162",
+      "server_port": 8443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇷🇺 ~6.4Mbps Xer0x-101",
+      "server": "185.221.199.126",
+      "server_port": 39443,
+      "uuid": "92e135b9-4c04-4e7e-8b28-d8074a202cf8",
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "static.polina.mom",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "YPsphGkQvosdhqZwi_RJDzFIwjZnt9duNWAOAcqKoUc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇩🇪 Xer0x-102",
+      "server": "89.169.53.176",
+      "server_port": 4443,
+      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
       "transport": {
         "type": "none"
       },
@@ -2911,8 +2260,747 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms",
-          "short_id": "3c4041d3"
+          "public_key": "YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw",
+          "short_id": "df3aff719526dc5a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇨🇦 Xer0x-103",
+      "server": "104.19.102.174",
+      "server_port": 443,
+      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
+      "transport": {
+        "type": "ws",
+        "path": "/ws#/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512",
+        "headers": {
+          "Host": "a.cwvps.eu.org"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "a.cwvps.eu.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇷🇺 ~3.8Mbps Xer0x-104",
+      "server": "31.59.210.37",
+      "server_port": 443,
+      "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
+      "transport": {
+        "type": "grpc",
+        "service_name": "astracat"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4",
+          "short_id": "6dbf4931096f9890"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇷🇺 ~6.1Mbps Xer0x-105",
+      "server": "ru77.alexander77.ru",
+      "server_port": 443,
+      "uuid": "8806b7f9-f4dc-472e-a84c-b52f8edba404",
+      "transport": {
+        "type": "xhttp"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "ru77.alexander77.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "28UcAz2yTAF3I9A8F09T2T4ntqiAS7pueC0WJivsnDg",
+          "short_id": "4d318e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇱🇻 ~5.9Mbps Xer0x-106",
+      "server": "195.123.208.32",
+      "server_port": 443,
+      "uuid": "1ebcb694-875c-4be7-b6a2-d53c8208991b",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk",
+          "short_id": "757b9e1ef18e60f0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇨🇦 ~6.2Mbps Xer0x-107",
+      "server": "104.18.42.98",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇷🇺 ~6.2Mbps Xer0x-108",
+      "server": "5.178.87.57",
+      "server_port": 443,
+      "uuid": "605d5f52-7b60-4195-be75-bdb11ce9e6b2",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.bitrix24.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xbS4eVahN5UjRzCJSx9xWZD3J5cQRK1_33lzC9doS3I",
+          "short_id": "2161dd02"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇨🇦 ~1.6Mbps Xer0x-109",
+      "server": "104.19.33.237",
+      "server_port": 443,
+      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "a.cwvps.eu.org"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "a.cwvps.eu.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇷🇺 ~4.6Mbps Xer0x-110",
+      "server": "46.243.232.174",
+      "server_port": 8540,
+      "uuid": "661b4f83-f297-4a72-9663-ac71a7547644",
+      "transport": {
+        "type": "ws",
+        "path": "/r/b1b50bc36f894fe0953a5e58e02018ae",
+        "headers": {
+          "Host": "fi-vpn.nimarko.org"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "fi-vpn.nimarko.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇺🇸 ~16Mbps Xer0x-111",
+      "server": "169.40.42.163",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇨🇦 Xer0x-112",
+      "server": "104.17.169.13",
+      "server_port": 443,
+      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
+      "transport": {
+        "type": "ws",
+        "path": "/ws#/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512",
+        "headers": {
+          "Host": "a.cwvps.eu.org"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "a.cwvps.eu.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇿🇦 ~4.5Mbps Xer0x-113",
+      "server": "34.35.186.228",
+      "server_port": 443,
+      "uuid": "8d65c8a7-4876-4556-bb6a-feccfb46ee81",
+      "transport": {
+        "type": "raw"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE",
+          "short_id": "89b3a20484eb43ec"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇰🇿 ~4.7Mbps Xer0x-114",
+      "server": "109.248.170.119",
+      "server_port": 13447,
+      "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
+      "transport": {
+        "type": "none"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE",
+          "short_id": "83"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇫🇮 ~3.4Mbps Xer0x-115",
+      "server": "107.181.151.39",
+      "server_port": 443,
+      "uuid": "b60cab55-e7a1-413d-a297-ddd7bad3fb62",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "bbcab8fa80a3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇫🇮 ~3.4Mbps Xer0x-116",
+      "server": "107.181.151.128",
+      "server_port": 443,
+      "uuid": "b62e3646-b84d-443c-9c94-718b646502e0",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.foxsports.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
+          "short_id": "dda5f542d835"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇫🇮 ~3.4Mbps Xer0x-117",
+      "server": "107.181.151.39",
+      "server_port": 443,
+      "uuid": "fad0b9a6-187d-4fcc-96fc-498bc5b3135a",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.foxsports.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "8325360e8bd2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇫🇮 ~3.5Mbps Xer0x-118",
+      "server": "87.239.249.137",
+      "server_port": 443,
+      "uuid": "67eb6b17-7797-4ded-bf52-423c4c5f6cbd",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.foxsports.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY",
+          "short_id": "91af08b1ce1f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇫🇮 ~3.5Mbps Xer0x-119",
+      "server": "107.181.151.241",
+      "server_port": 443,
+      "uuid": "317bc783-340f-453c-afb5-b6bf637c0b23",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
+          "short_id": "fc994ae7eb10"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇳🇱 Xer0x-120",
+      "server": "193.233.82.201",
+      "server_port": 443,
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl4.nztvpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fsEatg3Hi0O3NPHIg1xQYjmcYRmEgvnSW-i_ZwaL7XI",
+          "short_id": "b054ade250673c91"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇭🇰 Xer0x-121",
+      "server": "103.41.7.43",
+      "server_port": 2062,
+      "uuid": "d83592a3-a94f-4f7e-b105-b3deedde2a7a",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Ub1ffFeVtG2zd_t001wgmuhojSAxvaVwuo_pAapScBA",
+          "short_id": "be61aab9c7ffd106"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇩🇪 ~6.1Mbps Xer0x-122",
+      "server": "46.225.46.136",
+      "server_port": 2087,
+      "uuid": "a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d",
+      "transport": {
+        "type": "ws",
+        "path": "/hokm",
+        "headers": {
+          "Host": "hoert1rert.localip.ir"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "hoert1rert.localip.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇨🇦 Xer0x-123",
+      "server": "104.19.4.149",
+      "server_port": 443,
+      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "a.cwvps.eu.org"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "a.cwvps.eu.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇺🇸 ~2Mbps Xer0x-124",
+      "server": "169.40.42.202",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇩🇪 ~5.9Mbps Xer0x-125",
+      "server": "193.168.200.67",
+      "server_port": 443,
+      "uuid": "64c05afc-ce81-4ba0-b697-afa04da1427e",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yunohost.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ba3xYhPfXzT1HOHrbCka-pGaBIJGDouCg1MbdlRzklE",
+          "short_id": "5a7c3dab8d267f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇳🇱 ~6Mbps Xer0x-126",
+      "server": "140.225.199.234",
+      "server_port": 443,
+      "uuid": "6c713691-3ca2-0009-ad25-113d1bed6b03",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hatch.senko.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JWDpSUaLgiXGXpgZzzxfDnYGvi4MBFcadN6cHZ-He1E",
+          "short_id": "b8c6965f3596688a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇨🇦 ~6.3Mbps Xer0x-127",
+      "server": "172.67.133.118",
+      "server_port": 2053,
+      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
+      "transport": {
+        "type": "ws",
+        "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net",
+        "headers": {
+          "Host": "uwu.blueknightnet.qzz.io"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "uwu.blueknightnet.qzz.io",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇵🇱 ~2.5Mbps Xer0x-128",
+      "server": "191.44.113.157",
+      "server_port": 443,
+      "uuid": "5fefb7a2-a045-4409-a383-12bbfb111041",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dropbox.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bBI6MyZl42OYBNDkZ1n75oRsFoLF-ez3HvHwzDJvDic",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇳🇱 Xer0x-129",
+      "server": "nl1.fluxorvpn.net",
+      "server_port": 443,
+      "uuid": "6c713691-3ca2-0009-ad25-113d1bed6b03",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hatch.senko.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JWDpSUaLgiXGXpgZzzxfDnYGvi4MBFcadN6cHZ-He1E",
+          "short_id": "b8c6965f3596688a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇷🇺 ~3.2Mbps Xer0x-130",
+      "server": "46.243.232.174",
+      "server_port": 8542,
+      "uuid": "661b4f83-f297-4a72-9663-ac71a7547644",
+      "transport": {
+        "type": "ws",
+        "path": "/r/522a6122e5834e1596e8e3ace7036e1a"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "it-prem.nimarko.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇧🇾 Xer0x-131",
+      "server": "95.130.84.36",
+      "server_port": 8443,
+      "uuid": "8d42d29a-ed53-4684-a9ff-6b33826149de",
+      "transport": {
+        "type": "ws",
+        "path": "/aioproxybot/94.23.144.99-2053",
+        "headers": {
+          "Host": "aio.eth0.dpdns.org"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "aio.eth0.dpdns.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇳🇱 ~1.8Mbps Xer0x-132",
+      "server": "51.15.16.68",
+      "server_port": 2053,
+      "uuid": "7d0fd363-16d2-43ce-9d6d-ed2c15d2cb7c",
+      "transport": {
+        "type": "none"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Zotx4F9CI6_q9yeKCKIHDjwzCv_Aq7WSo7N0Zc1A6Sc",
+          "short_id": "3c99c85cbb6b3b44"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇺🇸 Xer0x-133",
+      "server": "169.40.42.173",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "transport": {
+        "type": "none"
+      },
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔴 🇨🇦 ~6.6Mbps Xer0x-134",
+      "server": "104.21.91.234",
+      "server_port": 2053,
+      "uuid": "e3fb01b6-69b4-41d7-babf-696d992de194",
+      "transport": {
+        "type": "ws",
+        "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net",
+        "headers": {
+          "Host": "uwu.blueknightnet.qzz.io"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "uwu.blueknightnet.qzz.io",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     }
