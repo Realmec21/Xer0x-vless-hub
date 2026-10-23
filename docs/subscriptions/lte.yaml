@@ -1,199 +1,6 @@
 # Xer0x-vless-hub Clash proxies
 proxies:
-  - name: "⚡ 🇺🇸 ~5.2Mbps Xer0x-01"
-    type: vless
-    server: 216.167.126.97
-    port: 443
-    uuid: e5c3d067-7a15-4977-90c0-7e0f6e896a09
-    tls: true
-    udp: true
-    servername: www.cloudflare.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: yFvOpugh65xKQNAwKrhitv4d2pflD8QwNFMj-jDOmT8
-      short-id: 0123456789abcdef
-    flow: xtls-rprx-vision
-  - name: "⚡ 🇨🇦 Xer0x-04"
-    type: vless
-    server: 162.159.140.116
-    port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    udp: true
-    servername: snip.edgeoneai.cc.cd
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: snip.edgeoneai.cc.cd
-  - name: "⚡ 🇨🇦 Xer0x-07"
-    type: vless
-    server: 172.64.144.198
-    port: 443
-    uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-    tls: true
-    udp: true
-    servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-  - name: "⚡ 🇨🇦 ~102.4Mbps Xer0x-09"
-    type: vless
-    server: 188.114.96.6
-    port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    udp: true
-    servername: snip.edgeoneai.cc.cd
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snip.edgeoneai.cc.cd
-  - name: "⚡ 🇨🇦 Xer0x-12"
-    type: vless
-    server: 172.67.76.40
-    port: 443
-    uuid: d342d11e-d224-4463-b982-532309285094
-    tls: true
-    udp: true
-    servername: ccc.010304.xyz
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: ccc.010304.xyz
-  - name: "⚡ 🇨🇦 ~8.7Mbps Xer0x-14"
-    type: vless
-    server: 188.114.97.6
-    port: 443
-    uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-    tls: true
-    udp: true
-    servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-    client-fingerprint: unsafe
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /9BozNyvQ8VdRvsYX?ed=2560
-      headers:
-        Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  - name: "⚡ 🇺🇸 Xer0x-15"
-    type: vless
-    server: 45.59.131.40
-    port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    udp: true
-    servername: snip.edgeoneai.cc.cd
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: snip.edgeoneai.cc.cd
-  - name: "⚡ 🇨🇦 Xer0x-16"
-    type: vless
-    server: 172.64.159.33
-    port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    udp: true
-    servername: snip.edgeoneai.cc.cd
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: snip.edgeoneai.cc.cd
-  - name: "⚡ 🇺🇸 ~3.5Mbps Xer0x-20"
-    type: vless
-    server: 128.241.25.3
-    port: 30021
-    uuid: 53339ee0-1412-4550-89c7-48d1cb71b390
-    tls: true
-    udp: true
-    servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/@Marisa_kristi"
-      headers:
-        Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  - name: "⚡ 🇨🇦 ~104.9Mbps Xer0x-24"
-    type: vless
-    server: 104.18.20.69
-    port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    udp: true
-    servername: snip.edgeoneai.cc.cd
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snip.edgeoneai.cc.cd
-  - name: "⚡ 🇨🇦 Xer0x-26"
-    type: vless
-    server: 104.18.89.52
-    port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    udp: true
-    servername: snip.edgeoneai.cc.cd
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome"
-      headers:
-        Host: snip.edgeoneai.cc.cd
-  - name: "⚡ 🇨🇦 Xer0x-27"
-    type: vless
-    server: 172.64.146.66
-    port: 443
-    uuid: e6df2095-a73c-4043-8693-8d5a03686870
-    tls: true
-    udp: true
-    servername: lucasjow.us.ci
-    client-fingerprint: qq
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /cart/docs/www/proxyip=108.160.132.132
-      headers:
-        Host: lucasjow.us.ci
-  - name: "⚡ 🇨🇦 ~8Mbps Xer0x-28"
-    type: vless
-    server: 188.114.97.6
-    port: 443
-    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
-    tls: true
-    udp: true
-    servername: nautica-cff.kloningstrife002.workers.dev
-    client-fingerprint: unsafe
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /138.2.74.219-28616
-      headers:
-        Host: nautica-cff.kloningstrife002.workers.dev
-  - name: "⚡ 🇨🇦 ~94.2Mbps Xer0x-29"
+  - name: "⚡ 🇨🇦 ~87.2Mbps Xer0x-01"
     type: vless
     server: 104.20.6.134
     port: 443
@@ -208,22 +15,142 @@ proxies:
       path: /
       headers:
         Host: snip.edgeoneai.cc.cd
-  - name: "⚡ 🇨🇦 ~71.9Mbps Xer0x-31"
+  - name: "⚡ 🇨🇦 Xer0x-02"
     type: vless
-    server: 172.64.153.61
+    server: 162.159.140.116
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
     udp: true
     servername: snip.edgeoneai.cc.cd
-    client-fingerprint: unsafe
+    client-fingerprint: chrome
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /fdip
+      path: /fp=chrome
       headers:
         Host: snip.edgeoneai.cc.cd
-  - name: "⚡ 🇨🇦 Xer0x-32"
+  - name: "⚡ 🇨🇦 Xer0x-03"
+    type: vless
+    server: 172.64.144.82
+    port: 443
+    uuid: e6df2095-a73c-4043-8693-8d5a03686870
+    tls: true
+    udp: true
+    servername: lucasjow.us.ci
+    client-fingerprint: qq
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: lucasjow.us.ci
+  - name: "⚡ 🇨🇦 ~81.9Mbps Xer0x-04"
+    type: vless
+    server: 172.64.155.209
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    udp: true
+    servername: snip.edgeoneai.cc.cd
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.edgeoneai.cc.cd
+  - name: "⚡ 🇨🇦 Xer0x-05"
+    type: vless
+    server: 104.18.42.153
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    udp: true
+    servername: snip.edgeoneai.cc.cd
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: snip.edgeoneai.cc.cd
+  - name: "⚡ 🇨🇦 ~98.6Mbps Xer0x-06"
+    type: vless
+    server: 162.159.128.253
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    udp: true
+    servername: snip.edgeoneai.cc.cd
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.edgeoneai.cc.cd
+  - name: "⚡ 🇨🇦 Xer0x-07"
+    type: vless
+    server: 104.17.151.3
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    udp: true
+    servername: snip.edgeoneai.cc.cd
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: snip.edgeoneai.cc.cd
+  - name: "⚡ 🇨🇦 Xer0x-08"
+    type: vless
+    server: 104.17.158.34
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    udp: true
+    servername: snip.edgeoneai.cc.cd
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: snip.edgeoneai.cc.cd
+  - name: "⚡ 🇨🇦 ~86.3Mbps Xer0x-09"
+    type: vless
+    server: 104.17.139.37
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    udp: true
+    servername: snip.edgeoneai.cc.cd
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.edgeoneai.cc.cd
+  - name: "⚡ 🇨🇦 ~52.5Mbps Xer0x-10"
+    type: vless
+    server: 104.26.8.117
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    udp: true
+    servername: snip.edgeoneai.cc.cd
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.edgeoneai.cc.cd
+  - name: "⚡ 🇨🇦 Xer0x-11"
     type: vless
     server: 172.64.149.65
     port: 443
@@ -238,22 +165,22 @@ proxies:
       path: /
       headers:
         Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-  - name: "⚡ 🇨🇦 ~82.6Mbps Xer0x-33"
+  - name: "⚡ 🇨🇦 Xer0x-12"
     type: vless
-    server: 172.67.75.172
+    server: 104.18.34.16
     port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
     tls: true
     udp: true
-    servername: snip.edgeoneai.cc.cd
+    servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
     client-fingerprint: chrome
     skip-cert-verify: false
     network: ws
     ws-opts:
       path: /
       headers:
-        Host: snip.edgeoneai.cc.cd
-  - name: "⚡ 🇨🇦 ~113.4Mbps Xer0x-34"
+        Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+  - name: "⚡ 🇨🇦 ~95.5Mbps Xer0x-13"
     type: vless
     server: 104.19.45.195
     port: 443
@@ -268,24 +195,24 @@ proxies:
       path: /?TELEGRAM-TOOTFFARANGIfp=chrome
       headers:
         Host: snip.edgeoneai.cc.cd
-  - name: "⚡ 🇨🇦 Xer0x-36"
+  - name: "⚡ 🇨🇦 ~9.3Mbps Xer0x-14"
     type: vless
-    server: 104.18.1.1
-    port: 2083
-    uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+    server: 188.114.97.6
+    port: 443
+    uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
     tls: true
     udp: true
-    servername: vlsovip.1d.mom
-    client-fingerprint: ios
+    servername: fornewiran.ade-1000.workers.dev
+    client-fingerprint: unsafe
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: "/socks5=888:888@hkip.1d.mom:1080"
+      path: /vl/yLWNcuUuw1jlJpkDhGy?ed=2560
       headers:
-        Host: vlsovip.1d.mom
-  - name: "⚡ 🇺🇸 ~43.1Mbps Xer0x-38"
+        Host: fornewiran.ade-1000.workers.dev
+  - name: "⚡ 🇨🇦 ~79.2Mbps Xer0x-15"
     type: vless
-    server: 141.98.41.80
+    server: 188.114.96.6
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
@@ -298,7 +225,180 @@ proxies:
       path: /
       headers:
         Host: snip.edgeoneai.cc.cd
-  - name: "⚡ 🇺🇸 ~26.1Mbps Xer0x-39"
+  - name: "⚡ 🇨🇦 Xer0x-16"
+    type: vless
+    server: 172.66.154.57
+    port: 443
+    uuid: d342d11e-d224-4463-b982-532309285094
+    tls: true
+    udp: true
+    servername: ccc.010304.xyz
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ccc.010304.xyz
+  - name: "⚡ 🇨🇦 ~86.8Mbps Xer0x-17"
+    type: vless
+    server: 104.18.32.47
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    udp: true
+    servername: snip.edgeoneai.cc.cd
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.edgeoneai.cc.cd
+  - name: "⚡ 🇨🇦 Xer0x-18"
+    type: vless
+    server: 104.21.46.14
+    port: 443
+    uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
+    tls: true
+    udp: true
+    servername: cf-vless-4cf55824.aimall.fr
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /connect
+      headers:
+        Host: cf-vless-4cf55824.aimall.fr
+  - name: "⚡ 🇨🇦 ~5.9Mbps Xer0x-19"
+    type: vless
+    server: 104.17.3.81
+    port: 443
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    tls: true
+    udp: true
+    servername: nautica-cff.kloningstrife002.workers.dev
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /138.2.74.219-28616
+      headers:
+        Host: nautica-cff.kloningstrife002.workers.dev
+  - name: "⚡ 🇨🇦 ~96.4Mbps Xer0x-20"
+    type: vless
+    server: 172.64.153.61
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    udp: true
+    servername: snip.edgeoneai.cc.cd
+    client-fingerprint: unsafe
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /fdip
+      headers:
+        Host: snip.edgeoneai.cc.cd
+  - name: "⚡ 🇨🇦 Xer0x-21"
+    type: vless
+    server: 172.67.79.160
+    port: 2087
+    uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+    tls: true
+    udp: true
+    servername: cvhpyn.pages.dev
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cvhpyn.pages.dev
+  - name: "⚡ 🇨🇦 ~10Mbps Xer0x-22"
+    type: vless
+    server: 172.64.145.133
+    port: 443
+    uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+    tls: true
+    udp: true
+    servername: a.cwvps.eu.org
+    client-fingerprint: unsafe
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /ws
+      headers:
+        Host: a.cwvps.eu.org
+  - name: "⚡ 🇨🇦 ~2.4Mbps Xer0x-23"
+    type: vless
+    server: 104.17.169.13
+    port: 443
+    uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+    tls: true
+    udp: true
+    servername: a.cwvps.eu.org
+    client-fingerprint: unsafe
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: "/ws#/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512"
+      headers:
+        Host: a.cwvps.eu.org
+  - name: "⚡ 🇺🇸 ~10.6Mbps Xer0x-24"
+    type: vless
+    server: 128.241.25.11
+    port: 30021
+    uuid: 40ca0d8c-0641-4e2d-a701-9fd8330daf6d
+    tls: true
+    udp: true
+    servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  - name: "⚡ 🇺🇸 ~50.9Mbps Xer0x-25"
+    type: vless
+    server: 67.216.218.76
+    port: 443
+    uuid: 77821190-1670-4e06-8111-98388d6fcefd
+    tls: true
+    udp: true
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: wYF-6QYrpUnKHTt26H__bpgkCjqeYZ-rKz7c_wjBqXA
+      short-id: 2ea109a3d9651ecf
+    flow: xtls-rprx-vision
+  - name: "⚡ 🇺🇸 ~23.9Mbps Xer0x-26"
+    type: vless
+    server: 5.34.178.120
+    port: 443
+    uuid: 9063f9fb-e88a-4ee0-b4a4-a92ca7316a9f
+    tls: true
+    udp: true
+    servername: www.cloudflare.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: EVhq2BxKuw2Cody1DmF_HPvUYKwzdXbHP47blUv-eRM
+      short-id: 55ab5559e3a6d10a
+    flow: xtls-rprx-vision
+  - name: "⚡ 🇺🇸 ~40.7Mbps Xer0x-27"
+    type: vless
+    server: 173.249.210.179
+    port: 61000
+    uuid: 12f4c3f6-ecce-4586-b39d-987757ea9b3b
+    tls: true
+    udp: true
+    servername: www.amd.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: c7XtbOUOg19bgo2N-ufXbZHaGHuSB7jAdvmj1zchRn4
+      short-id: ecf5
+  - name: "⚡ 🇺🇸 ~14.2Mbps Xer0x-28"
     type: vless
     server: 147.182.212.232
     port: 56565
@@ -311,7 +411,36 @@ proxies:
       public-key: Td03Ae-cuYLq4xg7MSps58c_yRUcbbwtZLXm0ywabjY
       short-id: ""
     flow: xtls-rprx-vision
-  - name: "⚡ 🇨🇦 Xer0x-40"
+    network: raw
+  - name: "⚡ 🇺🇸 ~21.1Mbps Xer0x-29"
+    type: vless
+    server: 130.12.168.193
+    port: 2096
+    uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+    tls: true
+    udp: true
+    servername: api.led.samsung.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: HbKpPGiVc_s2Dcq0rSdAVCM1aemPYNhLDdIdGRewXUA
+      short-id: 0123456789abcdef
+    flow: xtls-rprx-vision
+  - name: "🔵 🇦🇪 ~20.6Mbps Xer0x-30"
+    type: vless
+    server: 95.182.94.128
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    udp: true
+    servername: snip.edgeoneai.cc.cd
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.edgeoneai.cc.cd
+  - name: "🔵 🇨🇦 Xer0x-31"
     type: vless
     server: 172.67.145.14
     port: 443
@@ -326,50 +455,65 @@ proxies:
       path: /api/ws
       headers:
         Host: web-app-ji3j1z.app-wuuhuw.workers.dev
-  - name: "⚡ 🇺🇸 ~25Mbps Xer0x-42"
+  - name: "🔵 🇨🇦 ~16.8Mbps Xer0x-32"
     type: vless
-    server: 38.145.220.58
-    port: 2093
-    uuid: 0b418782-e023-447e-ba99-e66b84ff118d
+    server: 66.70.179.198
+    port: 2053
+    uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
     tls: true
     udp: true
-    servername: www.apple.com
-    client-fingerprint: chrome
+    servername: www.cloudflare.com
+    client-fingerprint: firefox
     reality-opts:
-      public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
-      short-id: 8a9725533854a7e8
-    flow: xtls-rprx-vision
-  - name: "🔵 🇨🇦 Xer0x-44"
+      public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+      short-id: 83f8317a948bb769
+    network: raw
+  - name: "🔵 🇲🇽 ~16.2Mbps Xer0x-33"
     type: vless
-    server: 104.27.124.133
+    server: 216.238.79.164
     port: 443
-    uuid: 50414e45-4c5f-5a45-5553-7bac159e3b40
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
     udp: true
-    servername: web-app-ji3j1z.app-wuuhuw.workers.dev
+    servername: snip.edgeoneai.cc.cd
     client-fingerprint: chrome
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /api/ws
+      path: /
       headers:
-        Host: web-app-ji3j1z.app-wuuhuw.workers.dev
-  - name: "🔵 🇺🇸 ~25.6Mbps Xer0x-45"
+        Host: snip.edgeoneai.cc.cd
+  - name: "🔵 🇲🇽 ~15.6Mbps Xer0x-34"
     type: vless
-    server: 23.191.200.207
+    server: 138.186.140.8
     port: 443
-    uuid: 9254647e-8834-4215-97ca-978ffe3d7279
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
     udp: true
-    servername: dl.google.com
+    servername: snip.edgeoneai.cc.cd
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.edgeoneai.cc.cd
+  - name: "🔴 🇬🇧 ~9.6Mbps Xer0x-36"
+    type: vless
+    server: 45.141.118.232
+    port: 7443
+    uuid: 81a227e3-cb97-40fe-b7b6-45a60ed065cf
+    tls: true
+    udp: true
+    servername: node.remnagecsp.ru
     client-fingerprint: firefox
     reality-opts:
-      public-key: 7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI
-      short-id: ""
+      public-key: 0BVxZKOt6wO0jIB1xRkAAtaFUkmyFAbVWfkkKSJBfEI
+      short-id: 570ffeb12f6e4635
     flow: xtls-rprx-vision
-  - name: "🔵 🇨🇦 ~2.1Mbps Xer0x-46"
+  - name: "🔴 🇨🇦 ~14.4Mbps Xer0x-37"
     type: vless
-    server: 162.159.228.224
+    server: 104.16.10.251
     port: 443
     uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
     tls: true
@@ -382,318 +526,235 @@ proxies:
       path: /ws
       headers:
         Host: a.cwvps.eu.org
-  - name: "🔵 🇺🇸 ~22.5Mbps Xer0x-47"
+  - name: "🔴 🇨🇦 Xer0x-38"
     type: vless
-    server: 169.40.42.202
+    server: 148.113.179.73
     port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    uuid: 3cd95e58-9f0a-47e1-9937-64a58e949aa5
     tls: true
     udp: true
-    servername: yahoo.com
-    client-fingerprint: ios
-    reality-opts:
-      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-      short-id: c39cc7310a
-    flow: xtls-rprx-vision
-  - name: "🔵 🇺🇸 ~24.5Mbps Xer0x-48"
-    type: vless
-    server: 23.191.200.206
-    port: 443
-    uuid: 41aee492-ac4b-4655-8bb0-ccd02aa237a6
-    tls: true
-    udp: true
-    servername: dl.google.com
+    servername: stats.vk-portal.net
     client-fingerprint: firefox
     reality-opts:
-      public-key: 7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI
-      short-id: ""
+      public-key: 6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do
+      short-id: 3c6fc84d
     flow: xtls-rprx-vision
-  - name: "🔵 🇺🇸 ~29.3Mbps Xer0x-49"
+  - name: "🔴 🇳🇱 ~9.2Mbps Xer0x-39"
     type: vless
-    server: 216.227.161.95
-    port: 7443
-    uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+    server: tnl4b.trust.apruxdomain.space
+    port: 443
+    uuid: 4996e22e-4b2f-4f99-b271-eb4dbc96af4a
     tls: true
     udp: true
-    servername: media3.abvphelp.cc
+    servername: tnl4b.trust.apruxdomain.space
+    client-fingerprint: edge
+    reality-opts:
+      public-key: X7z9FGbRPN3EytN5fpymGPVY-dBuZp3hZNaIgCi6eEk
+      short-id: 1d87ee8e4b146023
+    flow: xtls-rprx-vision
+  - name: "🔴 🇳🇱 ~9.2Mbps Xer0x-40"
+    type: vless
+    server: 89.127.211.136
+    port: 443
+    uuid: 02882344-474d-4876-88a2-f9c0d973c4df
+    tls: true
+    udp: true
+    servername: www.sony.co.uk
     client-fingerprint: firefox
     reality-opts:
-      public-key: uNqGvaJEIFTFQvAxsTDhetPxkIWzJuBtxXsK0yFMYzM
-      short-id: 48d5cf47
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc
-  - name: "🔵 🇺🇸 Xer0x-50"
-    type: vless
-    server: 67.220.73.204
-    port: 16016
-    uuid: 814bd064-544d-4255-a070-5705c03f6da9
-    tls: true
-    udp: true
-    servername: www.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-      short-id: 48050fab
+      public-key: pX5gBaqZ57BIArPg8zxl4_DWEZoAvegxdxEjHQFHfWM
+      short-id: dbafdfc81bc20552
     flow: xtls-rprx-vision
-  - name: "🔵 🇯🇵 ~13.2Mbps Xer0x-51"
+  - name: "🔴 🇩🇪 ~8.9Mbps Xer0x-41"
     type: vless
-    server: 38.47.97.90
+    server: 152.53.236.182
     port: 443
-    uuid: 26e3125d-9cc3-4f8a-816f-55c7806692ee
-    tls: true
-    udp: true
-    servername: www.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: oM8fSNZoxUPYolfcA-trXnlHCbeG7402OQTGOfokaVY
-      short-id: ""
-    flow: xtls-rprx-vision
-  - name: "🔴 🇬🇧 ~10.9Mbps Xer0x-54"
-    type: vless
-    server: 50.7.193.147
-    port: 443
-    uuid: 3b1fa839-2cb9-4511-9711-08800450aea3
-    tls: true
-    udp: true
-    servername: apiv12nd.goonars.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: OINuDFEDTdmtFR8QRxAZfQIMPA-wJxfGN1LjB3TFUHo
-      short-id: 535a3304
-    flow: xtls-rprx-vision
-  - name: "🔴 🇩🇪 ~10.7Mbps Xer0x-55"
-    type: vless
-    server: 82.118.19.153
-    port: 443
-    uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
+    uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
     tls: true
     udp: true
     servername: www.cloudflare.com
     client-fingerprint: chrome
     reality-opts:
-      public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
-      short-id: 670ed9f350bd8ee0
+      public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs
+      short-id: 7a76f3c4b9dd
     flow: xtls-rprx-vision
-  - name: "🔴 🇪🇸 ~11.4Mbps Xer0x-57"
+  - name: "🔴 🇳🇱 ~9.1Mbps Xer0x-42"
     type: vless
-    server: 212.227.235.66
-    port: 2053
-    uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+    server: 89.127.211.136
+    port: 443
+    uuid: bf65eee6-634c-4b6b-8d26-d8ab3547ff9f
     tls: true
     udp: true
-    servername: www.apple.com
+    servername: www.sony.co.uk
     client-fingerprint: chrome
     reality-opts:
-      public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-      short-id: 29e8dcd2b37aaa7f
-  - name: "🔴 🇯🇵 Xer0x-58"
+      public-key: pX5gBaqZ57BIArPg8zxl4_DWEZoAvegxdxEjHQFHfWM
+      short-id: dbafdfc81bc20552
+    flow: xtls-rprx-vision
+  - name: "🔴 🇺🇸 ~10.3Mbps Xer0x-43"
     type: vless
-    server: 52.197.219.243
+    server: 104.164.55.40
+    port: 443
+    uuid: b1fdf506-c8da-4853-b209-9e3ca20fcfc0
+    tls: true
+    udp: true
+    servername: d1.awsstatic.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: Fv_l-a_avt80dp_HHBZJdXasboMODcTiGu60K5OjNS4
+      short-id: 66fd576b785547
+    network: xhttp
+  - name: "🔴 🇨🇭 ~8.5Mbps Xer0x-44"
+    type: vless
+    server: 45.90.59.15
+    port: 443
+    uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+    tls: true
+    udp: true
+    servername: www.cloudflare.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+      short-id: 19253fae84102271
+    flow: xtls-rprx-vision
+  - name: "🔴 🇯🇵 Xer0x-45"
+    type: vless
+    server: 154.19.187.190
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
     udp: true
     servername: snip.edgeoneai.cc.cd
     client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome"
-      headers:
-        Host: snip.edgeoneai.cc.cd
-  - name: "🔴 🇻🇬 ~9.5Mbps Xer0x-59"
-    type: vless
-    server: 45.142.120.7
-    port: 8443
-    uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-    tls: true
-    udp: true
-    servername: speed.dulacloud.store
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /dula?Telegram-WangCai2
-      headers:
-        Host: speed.dulacloud.store
-  - name: "🔴 🇯🇵 ~1.4Mbps Xer0x-60"
-    type: vless
-    server: 3.114.220.22
-    port: 19645
-    uuid: 814bd064-544d-4255-a070-5705c03f6da9
-    tls: true
-    udp: true
-    servername: www.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-      short-id: 48050fab
-    flow: xtls-rprx-vision
-  - name: "🔴 🇬🇧 ~12.2Mbps Xer0x-61"
-    type: vless
-    server: 46.250.250.149
-    port: 2053
-    uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-    tls: true
-    udp: true
-    servername: www.apple.com
-    client-fingerprint: random
-    reality-opts:
-      public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-      short-id: 9922313fffed1c63
-  - name: "🔴 🇩🇪 ~10.2Mbps Xer0x-62"
-    type: vless
-    server: 162.55.242.208
-    port: 2053
-    uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-    tls: true
-    udp: true
-    servername: www.cloudflare.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-      short-id: 4d14da19b19cfc8c
-  - name: "🔴 🇩🇪 ~8.7Mbps Xer0x-63"
-    type: vless
-    server: 5.175.141.7
-    port: 8443
-    uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-    tls: true
-    udp: true
-    servername: speed.dulacloud.store
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /dula?Telegram-WangCai2
-      headers:
-        Host: speed.dulacloud.store
-  - name: "🔴 🇳🇱 ~9.4Mbps Xer0x-68"
-    type: vless
-    server: 87.199.205.28
-    port: 443
-    uuid: 501a2da5-cb22-4a3f-915e-e3b821d1d62d
-    tls: true
-    udp: true
-    servername: vkvd754.okcdn.ru
-    client-fingerprint: qq
-    reality-opts:
-      public-key: W-9zyiOq287RtXVTZlTFbSDJ0Mx8joyBLJoA7ZE7eBw
-      short-id: ef1d3554c652a436
-    flow: xtls-rprx-vision
-  - name: "🔴 🇫🇮 ~9.3Mbps Xer0x-69"
-    type: vless
-    server: 95.216.27.15
-    port: 2053
-    uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-    tls: true
-    udp: true
-    servername: www.google.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-      short-id: d368b94e275ab080
-  - name: "🔴 🇳🇱 ~10.3Mbps Xer0x-70"
-    type: vless
-    server: 130.12.242.106
-    port: 443
-    uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
-    tls: true
-    udp: true
-    servername: deepl.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-      short-id: 15affa0af66dfc79
-    flow: xtls-rprx-vision
-  - name: "🔴 🇭🇰 ~9.7Mbps Xer0x-74"
-    type: vless
-    server: 151.242.85.236
-    port: 443
-    uuid: 7aec627e-a258-4ded-9fd9-fbd7c024f950
-    tls: true
-    udp: true
-    servername: addons.mozilla.org
-    client-fingerprint: ios
-    reality-opts:
-      public-key: gUu1n11Ef_GEoatNQzJJucvIjGTt4qxOWdxMzjoHwDM
-      short-id: 9b6fa4047c24629f
-    flow: xtls-rprx-vision
-  - name: "🔴 🇳🇱 Xer0x-76"
-    type: vless
-    server: 198.211.123.90
-    port: 443
-    uuid: d342d11e-d224-4463-b982-532309285094
-    tls: true
-    udp: true
-    servername: ccc.010304.xyz
-    client-fingerprint: unsafe
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: ccc.010304.xyz
-  - name: "🔴 🇨🇿 Xer0x-78"
-    type: vless
-    server: 31.77.126.2
-    port: 443
-    uuid: d342d11e-d224-4463-b982-532309285094
-    tls: true
-    udp: true
-    servername: ccc.010304.xyz
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: ccc.010304.xyz
-  - name: "🔴 🇳🇱 Xer0x-79"
-    type: vless
-    server: 146.185.141.92
-    port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    udp: true
-    servername: snip.edgeoneai.cc.cd
-    client-fingerprint: unsafe
     skip-cert-verify: false
     network: ws
     ws-opts:
       path: "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443"
       headers:
         Host: snip.edgeoneai.cc.cd
-  - name: "🔴 🇸🇬 ~8.1Mbps Xer0x-80"
+  - name: "🔴 🇨🇿 ~7.8Mbps Xer0x-46"
     type: vless
-    server: 206.206.78.36
+    server: 195.123.245.241
     port: 443
-    uuid: e3f0c894-0f76-4683-a751-6a93da8fd14d
+    uuid: 7c053ca8-38cc-45e2-930c-eda1fd66f903
     tls: true
     udp: true
-    servername: www.cloudflare.com
-    client-fingerprint: firefox
+    servername: gateway.icloud.com
+    client-fingerprint: chrome
     reality-opts:
-      public-key: UOLfRKeEoVxkp-APTF2OlvFkKSoiR2mWzUuhSWxcVmQ
-      short-id: 133a3f10a1581047
+      public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
+      short-id: 23d0950d60bc0d5b
     flow: xtls-rprx-vision
-  - name: "🔴 🇸🇪 ~8.8Mbps Xer0x-81"
+  - name: "🔴 🇮🇹 ~8.6Mbps Xer0x-47"
     type: vless
-    server: 185.58.115.62
-    port: 443
-    uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+    server: 57.131.38.163
+    port: 2053
+    uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
     tls: true
     udp: true
-    servername: se2.gderevievsvideos.fyi
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+      short-id: 5b8a942318178e7b
+  - name: "🔴 🇳🇱 ~8.1Mbps Xer0x-48"
+    type: vless
+    server: 191.217.225.33
+    port: 443
+    uuid: afbd410e-1663-4f40-9d3b-df5117aa23ca
+    tls: true
+    udp: true
+    servername: 191.217.225.33.sslip.io
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: RDuJ2cZE2WiT5kUd0L2SowECJMa_plTqH706nECMkhk
+      short-id: 596c9d1f95308d92
+    flow: xtls-rprx-vision
+  - name: "🔴 🇱🇻 ~7.6Mbps Xer0x-50"
+    type: vless
+    server: 185.81.129.201
+    port: 443
+    uuid: c31dc85a-747e-4dac-94b9-2d5ca7791367
+    tls: true
+    udp: true
+    servername: lite.3apes.online
     client-fingerprint: firefox
     reality-opts:
-      public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
-      short-id: 7271129440ade8fa
+      public-key: q4_o7NvD6vQg4hYsyO29Q6PVufjTJHDUbQTqstre9EQ
+      short-id: ""
     flow: xtls-rprx-vision
-  - name: "🔴 🇺🇸 Xer0x-82"
+  - name: "🔴 🇯🇵 Xer0x-51"
     type: vless
-    server: 104.194.140.26
+    server: 207.148.115.152
+    port: 443
+    uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+    tls: true
+    udp: true
+    servername: vlso5.1d.mom
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: "/socks5=888:888@hkip.1d.mom:1080"
+      headers:
+        Host: vlso5.1d.mom
+  - name: "🔴 🇦🇹 ~6.6Mbps Xer0x-53"
+    type: vless
+    server: 185.104.63.173
+    port: 443
+    uuid: e75ad2eb-6c1f-45ce-8023-f5f10875df66
+    tls: true
+    udp: true
+    servername: zsat.eu-cdn294.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: Dj1TD7Sy_TciG915ffXFpMu_pYHnrpGo_ypyyDw44Uc
+      short-id: 8fbdc8d37cc76852
+    flow: xtls-rprx-vision
+  - name: "🔴 🇳🇱 ~4.3Mbps Xer0x-54"
+    type: vless
+    server: 138.124.79.6
+    port: 443
+    uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+    tls: true
+    udp: true
+    servername: node-nl-1.nztpro.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: ydN3DRKjNC6q7JI_Zegj3hhvdHussmralsnSQGQVdws
+      short-id: 25f4a40b9fdd9780
+    flow: xtls-rprx-vision
+  - name: "🔴 🇪🇸 ~8.2Mbps Xer0x-55"
+    type: vless
+    server: 76.164.203.135
+    port: 443
+    uuid: e75ad2eb-6c1f-45ce-8023-f5f10875df66
+    tls: true
+    udp: true
+    servername: zses.eu-cdn294.com
+    client-fingerprint: random
+    reality-opts:
+      public-key: ajzyADs9mOY6I3v7OWym5KgYh0afKmlCFaNw1pdQsWA
+      short-id: 6b4cf686eebb37b9
+    flow: xtls-rprx-vision
+  - name: "🔴 🇬🇧 ~4.4Mbps Xer0x-56"
+    type: vless
+    server: 57.129.130.57
+    port: 52014
+    uuid: 98286408-b683-4c0f-96c5-7e00da649d90
+    tls: true
+    udp: true
+    servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  - name: "🔴 🇯🇵 Xer0x-57"
+    type: vless
+    server: 60.130.209.253
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
@@ -706,24 +767,136 @@ proxies:
       path: /fp=chrome
       headers:
         Host: snip.edgeoneai.cc.cd
-  - name: "🔴 🇫🇷 ~4.7Mbps Xer0x-83"
+  - name: "🔴 🇬🇧 ~5.9Mbps Xer0x-58"
     type: vless
-    server: 46.105.38.220
-    port: 26451
-    uuid: 3ce72a86-eee6-4029-9fa9-9416944d695d
+    server: 57.129.130.57
+    port: 52014
+    uuid: 82fc8761-470b-4022-89da-ce5412e8bb0a
     tls: true
     udp: true
-    servername: perf-prod.samsung.com
+    servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  - name: "🔴 🇬🇧 ~4.9Mbps Xer0x-59"
+    type: vless
+    server: 57.129.130.57
+    port: 52014
+    uuid: 609b0d70-e2d0-4a48-95b1-02754e9b249a
+    tls: true
+    udp: true
+    servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+      headers:
+        Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  - name: "🔴 🇩🇪 Xer0x-60"
+    type: vless
+    server: 185.230.44.200
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    udp: true
+    servername: snip.edgeoneai.cc.cd
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: snip.edgeoneai.cc.cd
+  - name: "🔴 🇺🇸 ~11.2Mbps Xer0x-61"
+    type: vless
+    server: 191.217.214.50
+    port: 443
+    uuid: 2b9fc113-db27-4635-86d8-fa4556a5b7ba
+    tls: true
+    udp: true
+    servername: nl.cachevault.net
     client-fingerprint: chrome
     reality-opts:
-      public-key: -5pxLNDLKxgq2Zt-GMHZmvjEbp65171I83E-dUTgBw8
-      short-id: df
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc_common2
-  - name: "🔴 🇩🇪 ~9.5Mbps Xer0x-84"
+      public-key: XTX6Yvtj5B4HENQbNCS0MH3jDqq5vj5gWlg2nilTviE
+      short-id: 8ba02790a1480848
+    network: xhttp
+  - name: "🔴 🇩🇪 Xer0x-62"
     type: vless
-    server: 103.13.211.236
+    server: 64.188.71.236
+    port: 2083
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    udp: true
+    servername: snip.edgeoneai.cc.cd
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: snip.edgeoneai.cc.cd
+  - name: "🔴 🇰🇷 ~9.6Mbps Xer0x-63"
+    type: vless
+    server: 158.247.241.102
+    port: 443
+    uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
+    tls: true
+    udp: true
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
+      short-id: ca193e889d958f81
+    flow: xtls-rprx-vision
+  - name: "🔴 🇫🇮 ~7.9Mbps Xer0x-64"
+    type: vless
+    server: 78.17.176.174
+    port: 11515
+    uuid: cb8fbad5-4f14-55bc-a24a-3510f47f4b1b
+    tls: true
+    udp: true
+    servername: www.sony.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: A826RSu-yeVM_t6v7kwHKasHSdfI9KOzUw3WaIa9SWc
+      short-id: 65149fc5ba
+    flow: xtls-rprx-vision
+  - name: "🔴 🇮🇹 ~7.6Mbps Xer0x-65"
+    type: vless
+    server: 82.118.16.149
+    port: 443
+    uuid: 408c51e8-9246-483d-ba73-34ab4e202eb9
+    tls: true
+    udp: true
+    servername: metrika.yandex.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: HbK-TTnL1Dog-wKCowjLrKsx5ECIt2uxBsdGfeWG6kQ
+      short-id: 7bbf811a
+    flow: xtls-rprx-vision
+  - name: "🔴 🇩🇪 Xer0x-66"
+    type: vless
+    server: 64.225.102.174
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    udp: true
+    servername: snip.edgeoneai.cc.cd
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: snip.edgeoneai.cc.cd
+  - name: "🔴 🇹🇼 ~6.9Mbps Xer0x-67"
+    type: vless
+    server: 85.237.207.101
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
@@ -736,21 +909,33 @@ proxies:
       path: /
       headers:
         Host: snip.edgeoneai.cc.cd
-  - name: "🔴 🇩🇪 ~5Mbps Xer0x-86"
+  - name: "🔴 🇷🇺 ~3.1Mbps Xer0x-68"
     type: vless
-    server: 45.80.111.7
-    port: 8443
-    uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+    server: 193.233.112.15
+    port: 443
+    uuid: afbd410e-1663-4f40-9d3b-df5117aa23ca
     tls: true
     udp: true
-    servername: speed.dulacloud.store
+    servername: 193.233.112.15.sslip.io
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: xG-YFOhh24h315dV4aXIz0TJ9CEOJCjkhzpRquxlIgU
+      short-id: 56e3d2302a905451
+    flow: xtls-rprx-vision
+    network: raw
+  - name: "🔴 🇨🇦 Xer0x-69"
+    type: vless
+    server: 104.21.35.17
+    port: 443
+    uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
+    tls: true
+    udp: true
+    servername: xstack.mahanfixe.workers.dev
     client-fingerprint: chrome
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /dula?Telegram-WangCai2
-      headers:
-        Host: speed.dulacloud.store
+      path: /xiron
 proxy-groups:
   - name: "LTE Auto"
     type: url-test
@@ -758,115 +943,141 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "⚡ 🇺🇸 ~5.2Mbps Xer0x-01"
-      - "⚡ 🇨🇦 Xer0x-04"
+      - "⚡ 🇨🇦 ~87.2Mbps Xer0x-01"
+      - "⚡ 🇨🇦 Xer0x-02"
+      - "⚡ 🇨🇦 Xer0x-03"
+      - "⚡ 🇨🇦 ~81.9Mbps Xer0x-04"
+      - "⚡ 🇨🇦 Xer0x-05"
+      - "⚡ 🇨🇦 ~98.6Mbps Xer0x-06"
       - "⚡ 🇨🇦 Xer0x-07"
-      - "⚡ 🇨🇦 ~102.4Mbps Xer0x-09"
+      - "⚡ 🇨🇦 Xer0x-08"
+      - "⚡ 🇨🇦 ~86.3Mbps Xer0x-09"
+      - "⚡ 🇨🇦 ~52.5Mbps Xer0x-10"
+      - "⚡ 🇨🇦 Xer0x-11"
       - "⚡ 🇨🇦 Xer0x-12"
-      - "⚡ 🇨🇦 ~8.7Mbps Xer0x-14"
-      - "⚡ 🇺🇸 Xer0x-15"
+      - "⚡ 🇨🇦 ~95.5Mbps Xer0x-13"
+      - "⚡ 🇨🇦 ~9.3Mbps Xer0x-14"
+      - "⚡ 🇨🇦 ~79.2Mbps Xer0x-15"
       - "⚡ 🇨🇦 Xer0x-16"
-      - "⚡ 🇺🇸 ~3.5Mbps Xer0x-20"
-      - "⚡ 🇨🇦 ~104.9Mbps Xer0x-24"
-      - "⚡ 🇨🇦 Xer0x-26"
-      - "⚡ 🇨🇦 Xer0x-27"
-      - "⚡ 🇨🇦 ~8Mbps Xer0x-28"
-      - "⚡ 🇨🇦 ~94.2Mbps Xer0x-29"
-      - "⚡ 🇨🇦 ~71.9Mbps Xer0x-31"
-      - "⚡ 🇨🇦 Xer0x-32"
-      - "⚡ 🇨🇦 ~82.6Mbps Xer0x-33"
-      - "⚡ 🇨🇦 ~113.4Mbps Xer0x-34"
-      - "⚡ 🇨🇦 Xer0x-36"
-      - "⚡ 🇺🇸 ~43.1Mbps Xer0x-38"
-      - "⚡ 🇺🇸 ~26.1Mbps Xer0x-39"
-      - "⚡ 🇨🇦 Xer0x-40"
-      - "⚡ 🇺🇸 ~25Mbps Xer0x-42"
-      - "🔵 🇨🇦 Xer0x-44"
-      - "🔵 🇺🇸 ~25.6Mbps Xer0x-45"
-      - "🔵 🇨🇦 ~2.1Mbps Xer0x-46"
-      - "🔵 🇺🇸 ~22.5Mbps Xer0x-47"
-      - "🔵 🇺🇸 ~24.5Mbps Xer0x-48"
-      - "🔵 🇺🇸 ~29.3Mbps Xer0x-49"
-      - "🔵 🇺🇸 Xer0x-50"
-      - "🔵 🇯🇵 ~13.2Mbps Xer0x-51"
-      - "🔴 🇬🇧 ~10.9Mbps Xer0x-54"
-      - "🔴 🇩🇪 ~10.7Mbps Xer0x-55"
-      - "🔴 🇪🇸 ~11.4Mbps Xer0x-57"
-      - "🔴 🇯🇵 Xer0x-58"
-      - "🔴 🇻🇬 ~9.5Mbps Xer0x-59"
-      - "🔴 🇯🇵 ~1.4Mbps Xer0x-60"
-      - "🔴 🇬🇧 ~12.2Mbps Xer0x-61"
-      - "🔴 🇩🇪 ~10.2Mbps Xer0x-62"
-      - "🔴 🇩🇪 ~8.7Mbps Xer0x-63"
-      - "🔴 🇳🇱 ~9.4Mbps Xer0x-68"
-      - "🔴 🇫🇮 ~9.3Mbps Xer0x-69"
-      - "🔴 🇳🇱 ~10.3Mbps Xer0x-70"
-      - "🔴 🇭🇰 ~9.7Mbps Xer0x-74"
-      - "🔴 🇳🇱 Xer0x-76"
-      - "🔴 🇨🇿 Xer0x-78"
-      - "🔴 🇳🇱 Xer0x-79"
-      - "🔴 🇸🇬 ~8.1Mbps Xer0x-80"
-      - "🔴 🇸🇪 ~8.8Mbps Xer0x-81"
-      - "🔴 🇺🇸 Xer0x-82"
-      - "🔴 🇫🇷 ~4.7Mbps Xer0x-83"
-      - "🔴 🇩🇪 ~9.5Mbps Xer0x-84"
-      - "🔴 🇩🇪 ~5Mbps Xer0x-86"
+      - "⚡ 🇨🇦 ~86.8Mbps Xer0x-17"
+      - "⚡ 🇨🇦 Xer0x-18"
+      - "⚡ 🇨🇦 ~5.9Mbps Xer0x-19"
+      - "⚡ 🇨🇦 ~96.4Mbps Xer0x-20"
+      - "⚡ 🇨🇦 Xer0x-21"
+      - "⚡ 🇨🇦 ~10Mbps Xer0x-22"
+      - "⚡ 🇨🇦 ~2.4Mbps Xer0x-23"
+      - "⚡ 🇺🇸 ~10.6Mbps Xer0x-24"
+      - "⚡ 🇺🇸 ~50.9Mbps Xer0x-25"
+      - "⚡ 🇺🇸 ~23.9Mbps Xer0x-26"
+      - "⚡ 🇺🇸 ~40.7Mbps Xer0x-27"
+      - "⚡ 🇺🇸 ~14.2Mbps Xer0x-28"
+      - "⚡ 🇺🇸 ~21.1Mbps Xer0x-29"
+      - "🔵 🇦🇪 ~20.6Mbps Xer0x-30"
+      - "🔵 🇨🇦 Xer0x-31"
+      - "🔵 🇨🇦 ~16.8Mbps Xer0x-32"
+      - "🔵 🇲🇽 ~16.2Mbps Xer0x-33"
+      - "🔵 🇲🇽 ~15.6Mbps Xer0x-34"
+      - "🔴 🇬🇧 ~9.6Mbps Xer0x-36"
+      - "🔴 🇨🇦 ~14.4Mbps Xer0x-37"
+      - "🔴 🇨🇦 Xer0x-38"
+      - "🔴 🇳🇱 ~9.2Mbps Xer0x-39"
+      - "🔴 🇳🇱 ~9.2Mbps Xer0x-40"
+      - "🔴 🇩🇪 ~8.9Mbps Xer0x-41"
+      - "🔴 🇳🇱 ~9.1Mbps Xer0x-42"
+      - "🔴 🇺🇸 ~10.3Mbps Xer0x-43"
+      - "🔴 🇨🇭 ~8.5Mbps Xer0x-44"
+      - "🔴 🇯🇵 Xer0x-45"
+      - "🔴 🇨🇿 ~7.8Mbps Xer0x-46"
+      - "🔴 🇮🇹 ~8.6Mbps Xer0x-47"
+      - "🔴 🇳🇱 ~8.1Mbps Xer0x-48"
+      - "🔴 🇱🇻 ~7.6Mbps Xer0x-50"
+      - "🔴 🇯🇵 Xer0x-51"
+      - "🔴 🇦🇹 ~6.6Mbps Xer0x-53"
+      - "🔴 🇳🇱 ~4.3Mbps Xer0x-54"
+      - "🔴 🇪🇸 ~8.2Mbps Xer0x-55"
+      - "🔴 🇬🇧 ~4.4Mbps Xer0x-56"
+      - "🔴 🇯🇵 Xer0x-57"
+      - "🔴 🇬🇧 ~5.9Mbps Xer0x-58"
+      - "🔴 🇬🇧 ~4.9Mbps Xer0x-59"
+      - "🔴 🇩🇪 Xer0x-60"
+      - "🔴 🇺🇸 ~11.2Mbps Xer0x-61"
+      - "🔴 🇩🇪 Xer0x-62"
+      - "🔴 🇰🇷 ~9.6Mbps Xer0x-63"
+      - "🔴 🇫🇮 ~7.9Mbps Xer0x-64"
+      - "🔴 🇮🇹 ~7.6Mbps Xer0x-65"
+      - "🔴 🇩🇪 Xer0x-66"
+      - "🔴 🇹🇼 ~6.9Mbps Xer0x-67"
+      - "🔴 🇷🇺 ~3.1Mbps Xer0x-68"
+      - "🔴 🇨🇦 Xer0x-69"
   - name: "LTE Manual"
     type: select
     proxies:
       - "LTE Auto"
-      - "⚡ 🇺🇸 ~5.2Mbps Xer0x-01"
-      - "⚡ 🇨🇦 Xer0x-04"
+      - "⚡ 🇨🇦 ~87.2Mbps Xer0x-01"
+      - "⚡ 🇨🇦 Xer0x-02"
+      - "⚡ 🇨🇦 Xer0x-03"
+      - "⚡ 🇨🇦 ~81.9Mbps Xer0x-04"
+      - "⚡ 🇨🇦 Xer0x-05"
+      - "⚡ 🇨🇦 ~98.6Mbps Xer0x-06"
       - "⚡ 🇨🇦 Xer0x-07"
-      - "⚡ 🇨🇦 ~102.4Mbps Xer0x-09"
+      - "⚡ 🇨🇦 Xer0x-08"
+      - "⚡ 🇨🇦 ~86.3Mbps Xer0x-09"
+      - "⚡ 🇨🇦 ~52.5Mbps Xer0x-10"
+      - "⚡ 🇨🇦 Xer0x-11"
       - "⚡ 🇨🇦 Xer0x-12"
-      - "⚡ 🇨🇦 ~8.7Mbps Xer0x-14"
-      - "⚡ 🇺🇸 Xer0x-15"
+      - "⚡ 🇨🇦 ~95.5Mbps Xer0x-13"
+      - "⚡ 🇨🇦 ~9.3Mbps Xer0x-14"
+      - "⚡ 🇨🇦 ~79.2Mbps Xer0x-15"
       - "⚡ 🇨🇦 Xer0x-16"
-      - "⚡ 🇺🇸 ~3.5Mbps Xer0x-20"
-      - "⚡ 🇨🇦 ~104.9Mbps Xer0x-24"
-      - "⚡ 🇨🇦 Xer0x-26"
-      - "⚡ 🇨🇦 Xer0x-27"
-      - "⚡ 🇨🇦 ~8Mbps Xer0x-28"
-      - "⚡ 🇨🇦 ~94.2Mbps Xer0x-29"
-      - "⚡ 🇨🇦 ~71.9Mbps Xer0x-31"
-      - "⚡ 🇨🇦 Xer0x-32"
-      - "⚡ 🇨🇦 ~82.6Mbps Xer0x-33"
-      - "⚡ 🇨🇦 ~113.4Mbps Xer0x-34"
-      - "⚡ 🇨🇦 Xer0x-36"
-      - "⚡ 🇺🇸 ~43.1Mbps Xer0x-38"
-      - "⚡ 🇺🇸 ~26.1Mbps Xer0x-39"
-      - "⚡ 🇨🇦 Xer0x-40"
-      - "⚡ 🇺🇸 ~25Mbps Xer0x-42"
-      - "🔵 🇨🇦 Xer0x-44"
-      - "🔵 🇺🇸 ~25.6Mbps Xer0x-45"
-      - "🔵 🇨🇦 ~2.1Mbps Xer0x-46"
-      - "🔵 🇺🇸 ~22.5Mbps Xer0x-47"
-      - "🔵 🇺🇸 ~24.5Mbps Xer0x-48"
-      - "🔵 🇺🇸 ~29.3Mbps Xer0x-49"
-      - "🔵 🇺🇸 Xer0x-50"
-      - "🔵 🇯🇵 ~13.2Mbps Xer0x-51"
-      - "🔴 🇬🇧 ~10.9Mbps Xer0x-54"
-      - "🔴 🇩🇪 ~10.7Mbps Xer0x-55"
-      - "🔴 🇪🇸 ~11.4Mbps Xer0x-57"
-      - "🔴 🇯🇵 Xer0x-58"
-      - "🔴 🇻🇬 ~9.5Mbps Xer0x-59"
-      - "🔴 🇯🇵 ~1.4Mbps Xer0x-60"
-      - "🔴 🇬🇧 ~12.2Mbps Xer0x-61"
-      - "🔴 🇩🇪 ~10.2Mbps Xer0x-62"
-      - "🔴 🇩🇪 ~8.7Mbps Xer0x-63"
-      - "🔴 🇳🇱 ~9.4Mbps Xer0x-68"
-      - "🔴 🇫🇮 ~9.3Mbps Xer0x-69"
-      - "🔴 🇳🇱 ~10.3Mbps Xer0x-70"
-      - "🔴 🇭🇰 ~9.7Mbps Xer0x-74"
-      - "🔴 🇳🇱 Xer0x-76"
-      - "🔴 🇨🇿 Xer0x-78"
-      - "🔴 🇳🇱 Xer0x-79"
-      - "🔴 🇸🇬 ~8.1Mbps Xer0x-80"
-      - "🔴 🇸🇪 ~8.8Mbps Xer0x-81"
-      - "🔴 🇺🇸 Xer0x-82"
-      - "🔴 🇫🇷 ~4.7Mbps Xer0x-83"
-      - "🔴 🇩🇪 ~9.5Mbps Xer0x-84"
-      - "🔴 🇩🇪 ~5Mbps Xer0x-86"
+      - "⚡ 🇨🇦 ~86.8Mbps Xer0x-17"
+      - "⚡ 🇨🇦 Xer0x-18"
+      - "⚡ 🇨🇦 ~5.9Mbps Xer0x-19"
+      - "⚡ 🇨🇦 ~96.4Mbps Xer0x-20"
+      - "⚡ 🇨🇦 Xer0x-21"
+      - "⚡ 🇨🇦 ~10Mbps Xer0x-22"
+      - "⚡ 🇨🇦 ~2.4Mbps Xer0x-23"
+      - "⚡ 🇺🇸 ~10.6Mbps Xer0x-24"
+      - "⚡ 🇺🇸 ~50.9Mbps Xer0x-25"
+      - "⚡ 🇺🇸 ~23.9Mbps Xer0x-26"
+      - "⚡ 🇺🇸 ~40.7Mbps Xer0x-27"
+      - "⚡ 🇺🇸 ~14.2Mbps Xer0x-28"
+      - "⚡ 🇺🇸 ~21.1Mbps Xer0x-29"
+      - "🔵 🇦🇪 ~20.6Mbps Xer0x-30"
+      - "🔵 🇨🇦 Xer0x-31"
+      - "🔵 🇨🇦 ~16.8Mbps Xer0x-32"
+      - "🔵 🇲🇽 ~16.2Mbps Xer0x-33"
+      - "🔵 🇲🇽 ~15.6Mbps Xer0x-34"
+      - "🔴 🇬🇧 ~9.6Mbps Xer0x-36"
+      - "🔴 🇨🇦 ~14.4Mbps Xer0x-37"
+      - "🔴 🇨🇦 Xer0x-38"
+      - "🔴 🇳🇱 ~9.2Mbps Xer0x-39"
+      - "🔴 🇳🇱 ~9.2Mbps Xer0x-40"
+      - "🔴 🇩🇪 ~8.9Mbps Xer0x-41"
+      - "🔴 🇳🇱 ~9.1Mbps Xer0x-42"
+      - "🔴 🇺🇸 ~10.3Mbps Xer0x-43"
+      - "🔴 🇨🇭 ~8.5Mbps Xer0x-44"
+      - "🔴 🇯🇵 Xer0x-45"
+      - "🔴 🇨🇿 ~7.8Mbps Xer0x-46"
+      - "🔴 🇮🇹 ~8.6Mbps Xer0x-47"
+      - "🔴 🇳🇱 ~8.1Mbps Xer0x-48"
+      - "🔴 🇱🇻 ~7.6Mbps Xer0x-50"
+      - "🔴 🇯🇵 Xer0x-51"
+      - "🔴 🇦🇹 ~6.6Mbps Xer0x-53"
+      - "🔴 🇳🇱 ~4.3Mbps Xer0x-54"
+      - "🔴 🇪🇸 ~8.2Mbps Xer0x-55"
+      - "🔴 🇬🇧 ~4.4Mbps Xer0x-56"
+      - "🔴 🇯🇵 Xer0x-57"
+      - "🔴 🇬🇧 ~5.9Mbps Xer0x-58"
+      - "🔴 🇬🇧 ~4.9Mbps Xer0x-59"
+      - "🔴 🇩🇪 Xer0x-60"
+      - "🔴 🇺🇸 ~11.2Mbps Xer0x-61"
+      - "🔴 🇩🇪 Xer0x-62"
+      - "🔴 🇰🇷 ~9.6Mbps Xer0x-63"
+      - "🔴 🇫🇮 ~7.9Mbps Xer0x-64"
+      - "🔴 🇮🇹 ~7.6Mbps Xer0x-65"
+      - "🔴 🇩🇪 Xer0x-66"
+      - "🔴 🇹🇼 ~6.9Mbps Xer0x-67"
+      - "🔴 🇷🇺 ~3.1Mbps Xer0x-68"
+      - "🔴 🇨🇦 Xer0x-69"
 rules:
   - MATCH,LTE Auto
