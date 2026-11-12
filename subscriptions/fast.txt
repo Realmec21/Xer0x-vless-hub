@@ -1,2 +1,0 @@
-vless://99c5b713-dedf-4a10-8070-916ff3f49b0e@5.253.38.69:443?&security=tls&fp=chrome&sni=fs.qicai99.com&type=ws&headerType=none&host=fs.qicai99.com&path=%2F#%E2%9A%A1%20%F0%9F%87%BA%F0%9F%87%B8%20Xer0x-01
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.216:23576?security=reality&type=tcp&sni=fuck.rkn&fp=chrome&flow=xtls-rprx-vision&sid=01&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s#%E2%9A%A1%20%F0%9F%87%BA%F0%9F%87%B8%20~17.7Mbps%20Xer0x-02
