@@ -1,208 +1,433 @@
 # Xer0x-vless-hub Clash proxies
 proxies:
-  - name: "⚡ 🇺🇸 ~44.2Mbps Xer0x-01"
+  - name: "⚡ 🇺🇸 ~30.3Mbps Xer0x-03"
     type: vless
-    server: 198.44.36.36
+    server: 198.247.127.131
     port: 443
-    uuid: da7863a0-5858-4322-840e-0474e423bede
+    uuid: 59548d2d-5d7c-4328-aa81-0d5614da0c1b
+    tls: true
+    udp: true
+    servername: addons.mozilla.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: vmHHRwA9ER6c8dfgtL-gh2HBMCvjySy1xLimqYpLiCI
+      short-id: ""
+    flow: xtls-rprx-vision
+  - name: "⚡ 🇺🇸 ~15.2Mbps Xer0x-04"
+    type: vless
+    server: 195.211.98.43
+    port: 443
+    uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
     tls: true
     udp: true
     servername: www.cloudflare.com
     client-fingerprint: chrome
     reality-opts:
-      public-key: _0A8M6IEGN2T61KyqQOgiLlDu-dVcp0TFUyfukK5YhI
-      short-id: 55a7e6ff3ccf94c9
+      public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
+      short-id: 9c56fddf237e8eaf
     flow: xtls-rprx-vision
-  - name: "⚡ 🇺🇸 ~1.4Mbps Xer0x-02"
+    network: raw
+  - name: "⚡ 🇺🇸 ~17.2Mbps Xer0x-05"
     type: vless
-    server: 107.174.50.37
+    server: 147.224.54.25
+    port: 2053
+    uuid: cdb7fa1d-6e7a-467c-da9c-da363c7bf779
+    tls: true
+    udp: true
+    servername: www.cloudflare.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: DEFJSLdILrvauMpwtpvFZddadpt3rNtv03Dui2EkmRk
+      short-id: 68
+  - name: "🔵 🇺🇸 ~18.9Mbps Xer0x-06"
+    type: vless
+    server: 169.40.42.90
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    tls: true
+    udp: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+    flow: xtls-rprx-vision-udp443
+  - name: "🔵 🇺🇸 ~15.2Mbps Xer0x-07"
+    type: vless
+    server: 169.40.42.229
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    tls: true
+    udp: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+    flow: xtls-rprx-vision
+    network: raw
+  - name: "🔵 🇺🇸 ~18.6Mbps Xer0x-08"
+    type: vless
+    server: 167.17.69.171
+    port: 443
+    uuid: 00144519-7e0d-476b-8d28-435576af9262
+    tls: true
+    udp: true
+    servername: www.cloudflare.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
+      short-id: 0990d22f
+    flow: xtls-rprx-vision
+  - name: "🔵 🇺🇸 ~12.6Mbps Xer0x-09"
+    type: vless
+    server: 192.177.26.55
+    port: 443
+    uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+    tls: true
+    udp: true
+    servername: repo-16.topp-con.xyz
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: cC6kqzQ1mdCXyPey8xRXS7TQ1S4kF3nJW-h1ItJ4SH8
+      short-id: bdaddda4cbc8c7bf
+    flow: xtls-rprx-vision
+  - name: "🔵 🇨🇦 ~17Mbps Xer0x-10"
+    type: vless
+    server: 66.70.179.198
+    port: 2053
+    uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+    tls: true
+    udp: true
+    servername: www.cloudflare.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+      short-id: 83f8317a948bb769
+  - name: "🔵 🇯🇵 ~16.1Mbps Xer0x-11"
+    type: vless
+    server: 31.76.91.94
+    port: 443
+    uuid: 6392cd80-967f-45fc-a4b2-41502f5c68b6
+    tls: true
+    udp: true
+    servername: 39404053.b.uni.onehopcdn.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: idIOvZeC3DjAf12hLxq1UW5aJQUWTjR0o66HlvkNpSI
+      short-id: b0d8f964b7ac8ac0
+    flow: xtls-rprx-vision
+    network: raw
+  - name: "🔵 🇺🇸 ~18.8Mbps Xer0x-12"
+    type: vless
+    server: 169.40.42.202
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    tls: true
+    udp: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+    flow: xtls-rprx-vision
+  - name: "🔵 🇨🇦 ~16.3Mbps Xer0x-13"
+    type: vless
+    server: 209.200.246.148
+    port: 443
+    uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
+    tls: true
+    udp: true
+    servername: www.cloudflare.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
+      short-id: f98843107912e782
+    flow: xtls-rprx-vision
+    network: raw
+  - name: "🔵 🇺🇸 Xer0x-14"
+    type: vless
+    server: 159.89.87.21
+    port: 28190
+    uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
+    tls: true
+    udp: true
+    servername: aws.amazon.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
+      short-id: ""
+    flow: xtls-rprx-vision
+  - name: "🔵 🇺🇸 ~7.1Mbps Xer0x-15"
+    type: vless
+    server: 169.40.42.163
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    tls: true
+    udp: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+    flow: xtls-rprx-vision
+  - name: "🔴 🇨🇦 ~10.4Mbps Xer0x-16"
+    type: vless
+    server: 212.69.135.27
     port: 8443
-    uuid: 98530c82-0c84-4d30-bebf-0f10f032eca3
+    uuid: 0966b31a-daca-4f93-b9ed-c82e3db283a5
     tls: true
     udp: true
-    servername: www.cloudflare.com
+    servername: uk-room05.filesnap.tech
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: FdZlh9FC4ay9OGnKG6K_iNqhz1I3tWDfNZhxrDYuQl8
+      short-id: 7da3ba09a037e956
+    flow: xtls-rprx-vision
+  - name: "🔴 🇳🇱 ~9.8Mbps Xer0x-17"
+    type: vless
+    server: 50.7.169.243
+    port: 443
+    uuid: 33f3c1ee-f026-4f3f-bed3-8c7c01de8a96
+    tls: true
+    udp: true
+    servername: user.betust.net
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: TXP6hQVE4PdXDEdDk2k_5_f92jcOKZ15Fuw14jCJTQg
+      short-id: c1064ddb
+    flow: xtls-rprx-vision
+  - name: "🔴 🇳🇱 ~9.9Mbps Xer0x-18"
+    type: vless
+    server: 130.12.242.106
+    port: 443
+    uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+    tls: true
+    udp: true
+    servername: deepl.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+      short-id: 15affa0af66dfc79
+    flow: xtls-rprx-vision
+  - name: "🔴 🇳🇱 ~2.4Mbps Xer0x-19"
+    type: vless
+    server: 157.173.30.95
+    port: 443
+    uuid: beda6bd0-7ce4-477a-91f1-860d018dbfcb
+    tls: true
+    udp: true
+    servername: tekulo.hagrid-connected.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: tjGdnzd-VNTx6Rx2CX6XGwvU0OwV5_54uBlq1ltXmR0
+      short-id: 56de336ad85ea43e
+    flow: xtls-rprx-vision
+  - name: "🔴 🇳🇱 ~9.1Mbps Xer0x-26"
+    type: vless
+    server: 168.100.9.41
+    port: 16386
+    uuid: e4346f8c-631a-46ee-9caf-09a69c08bff3
+    tls: true
+    udp: true
+    servername: www.oracle.com
     client-fingerprint: chrome
     reality-opts:
-      public-key: gvTO758wlsVaA4ZVZ_A0Ee_5XcnZfbZUJZiqOpXfrEw
-      short-id: 6219103f017a0851
+      public-key: pCe1K8kz-ux6Gv_8nma15hPTBR3PZ4IiVAPSQqUbawY
+      short-id: 2d2db70fbd
     flow: xtls-rprx-vision
-  - name: "⚡ 🇺🇸 ~28.9Mbps Xer0x-03"
+  - name: "🔴 🇬🇧 ~9.7Mbps Xer0x-27"
     type: vless
-    server: 216.152.155.189
-    port: 443
-    uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
+    server: 51.89.194.151
+    port: 2053
+    uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
     tls: true
     udp: true
     servername: www.apple.com
     client-fingerprint: chrome
     reality-opts:
-      public-key: F5BVp5XkY93lll_Ju34lOIE6A1-dx16_frY6eu9Nzzk
-      short-id: fecf2b55bb11bb0d
-    flow: xtls-rprx-vision
-  - name: "🔵 🇺🇸 Xer0x-04"
+      public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
+      short-id: d051f678212f9d54
+  - name: "🔴 🇭🇰 ~12Mbps Xer0x-28"
     type: vless
-    server: 87.120.252.67
-    port: 443
-    uuid: a5446e31-6370-42cc-b6d4-44698f57acf5
+    server: 2.26.204.46
+    port: 31001
+    uuid: 12a4f736-2238-49ee-831f-5516f15cc951
     tls: true
     udp: true
-    servername: game.worldoftanks.com
+    servername: mensura.cdn-apple.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: lzpIiMqHXas_qayw-HvrySb78FNkVroBOqniwqPXPzY
+      short-id: 39793bc4708abbbb
+    flow: xtls-rprx-vision
+  - name: "🔴 🇫🇷 ~10.5Mbps Xer0x-30"
+    type: vless
+    server: 62.210.24.143
+    port: 32202
+    uuid: 28148be2-61a7-4f36-8adb-030cc9f82bd0
+    tls: true
+    udp: true
+    servername: www.amazon.com
     client-fingerprint: chrome
     reality-opts:
-      public-key: 6dc3iKXilOQpA_JFrKlk5-CsFjSmOm_5p0kSQcO9qi4
+      public-key: bGe_-nAtOq6_w_2mv6pcmD8RzJP65Tti-vyMP2hAwDc
+      short-id: f57d8f26
+    network: xhttp
+  - name: "🔴 🇩🇪 ~9.1Mbps Xer0x-31"
+    type: vless
+    server: 31.76.32.122
+    port: 443
+    uuid: 71b566cb-78c4-48e4-af5b-720e4f7884f2
+    tls: true
+    udp: true
+    servername: p1.xvanta.online
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: O35Np_ugrc3mUDIEO4UnViEwRobM2r9kqQCdcdCHjEI
+      short-id: cb33163cf9c03ab1
+    flow: xtls-rprx-vision
+  - name: "🔴 🇳🇱 ~9.2Mbps Xer0x-32"
+    type: vless
+    server: 195.123.221.39
+    port: 18849
+    uuid: 7f3fea72-6819-4748-b734-d984891cf2ac
+    tls: true
+    udp: true
+    servername: rbc.ru
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: TY0u8pJSV0M0yXNZfK4XinnYiG9cEZf1SKta1eIghhM
+      short-id: 0395c5b8449d10e6
+    flow: xtls-rprx-vision
+  - name: "🔴 🇵🇱 ~5.8Mbps Xer0x-33"
+    type: vless
+    server: 222.167.245.16
+    port: 443
+    uuid: 7d43670b-6b08-45b9-8a24-8f3971abc132
+    tls: true
+    udp: true
+    servername: poland.biznes.lol
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk
       short-id: ""
     flow: xtls-rprx-vision
-  - name: "🔵 🇺🇸 Xer0x-05"
+  - name: "🔴 🇪🇪 ~11Mbps Xer0x-34"
     type: vless
-    server: 87.120.252.16
-    port: 443
-    uuid: 850f32dc-ca8a-407e-9505-09bbff3f141e
+    server: eee-1.aloranode.top
+    port: 10443
+    uuid: b36a14f8-fc3f-4142-968f-48031cf5f330
     tls: true
     udp: true
-    servername: challenge.worldoftanks.eu
+    servername: eee-1.aloranode.top
     client-fingerprint: chrome
     reality-opts:
-      public-key: 6dc3iKXilOQpA_JFrKlk5-CsFjSmOm_5p0kSQcO9qi4
-      short-id: ""
-    flow: xtls-rprx-vision
-  - name: "🔴 🇯🇵 ~15.6Mbps Xer0x-06"
+      public-key: _8OfJZ6O4a1K7A0i7F7UQOwxm7GOv-nBSJCcU80Pc1A
+      short-id: 21d6ff06b0c966a2
+    network: xhttp
+  - name: "🔴 🇩🇪 Xer0x-35"
     type: vless
-    server: 158.101.151.157
+    server: 46.28.69.123
     port: 443
-    uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
+    uuid: b945f9aa-1b45-4912-aa7e-248509472bad
     tls: true
     udp: true
-    servername: www.microsoft.com
+    servername: gateway.icloud.com
     client-fingerprint: chrome
     reality-opts:
-      public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
-      short-id: 684c7531e599dec0
+      public-key: 7KnJYp2-sE3o35mnbSZzX3fNg-ns9n8xyNfkRSHCD3E
+      short-id: 238e23c5150f02e4
     flow: xtls-rprx-vision
-  - name: "🔴 🇵🇱 ~10.6Mbps Xer0x-07"
+  - name: "🔴 🇨🇭 ~8.8Mbps Xer0x-36"
     type: vless
-    server: 5.104.74.70
-    port: 8443
-    uuid: 6e10d4e1-1f93-461b-b1c6-90e56c053a11
+    server: 45.90.59.15
+    port: 443
+    uuid: 3950b45e-740d-4dca-ac95-505ec8534592
     tls: true
     udp: true
-    servername: uk-room07.filesnap.tech
+    servername: www.cloudflare.com
     client-fingerprint: chrome
     reality-opts:
-      public-key: 48j01Jsa4o8zfmCGEFoVjn-YeALM80-DSG_-nAZUBDM
-      short-id: dbef98744832b751
+      public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+      short-id: 19253fae84102271
     flow: xtls-rprx-vision
-  - name: "🔴 🇳🇱 ~10.8Mbps Xer0x-08"
+  - name: "🔴 🇫🇮 ~8.3Mbps Xer0x-37"
     type: vless
-    server: 138.124.245.102
-    port: 443
-    uuid: 727a9178-d7f0-4142-8205-b0d19959ded0
+    server: 45.38.143.210
+    port: 30584
+    uuid: cebc5f19-18d9-48e6-9029-fb4b04caf393
     tls: true
     udp: true
-    servername: bol.com
-    client-fingerprint: edge
+    servername: m.vk.com
+    client-fingerprint: chrome
     reality-opts:
-      public-key: yyXZsa238GRW90w5DweXAdRTtVSuK9oZF_dihKQ41So
-      short-id: 9e5a335de26d1f5a
-    flow: xtls-rprx-vision
-    network: raw
-  - name: "🔴 🇩🇪 ~9.6Mbps Xer0x-09"
+      public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
+      short-id: 67ece882d65d0f1a
+  - name: "🔴 🇳🇱 ~3.6Mbps Xer0x-38"
     type: vless
-    server: 49.12.68.40
-    port: 8443
-    uuid: c4128967-9ba4-445d-a7aa-d38b4fed547a
+    server: 87.248.149.50
+    port: 443
+    uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
     tls: true
     udp: true
-    servername: static.40.68.12.49.clients.your-server.de
+    servername: base.hosamobenl.co.uk
+    client-fingerprint: firefox
+    skip-cert-verify: false
+  - name: "🔴 🇫🇷 ~8.6Mbps Xer0x-40"
+    type: vless
+    server: 20.19.83.143
+    port: 2083
+    uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+    tls: true
+    udp: true
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+      short-id: 0123456789abcdef
+    flow: xtls-rprx-vision
+  - name: "🔴 🇬🇧 ~8.5Mbps Xer0x-41"
+    type: vless
+    server: 34.39.80.57
+    port: 50818
+    uuid: 408c814e-f70a-4d16-b3b3-8182bb70211d
+    tls: true
+    udp: true
+    servername: yingguo.rymaker.cn
     client-fingerprint: chrome
     skip-cert-verify: false
-    flow: xtls-rprx-vision
-  - name: "🔴 🇳🇱 Xer0x-10"
+    network: ws
+    ws-opts:
+      path: /GunService
+      headers:
+        Host: yingguo.rymaker.cn
+  - name: "🔴 🇩🇪 Xer0x-42"
     type: vless
-    server: 2.59.183.167
-    port: 443
-    uuid: 301d514e-4aa0-47b0-ba44-a0cb891cd52f
+    server: 88.218.42.115
+    port: 2087
+    uuid: e75ad2eb-6c1f-45ce-8023-f5f10875df66
     tls: true
     udp: true
-    servername: www.samsung.com
+    servername: edge-3b715ba41dc5.eu-cdn539.com
     client-fingerprint: firefox
     reality-opts:
-      public-key: OZVjfQBboTDTBw0baMFqzVPsVUI4FNQmspTEb0b0zW4
-      short-id: a1b2c3d4
-  - name: "🔴 🇸🇬 ~9.4Mbps Xer0x-11"
+      public-key: MQUz0Jo-eQsVmKHD1zHsF2NsnFV6aOwvPN4t4kxJfGs
+      short-id: f539882617db0a7b
+    network: xhttp
+  - name: "🔴 🇳🇱 ~8.3Mbps Xer0x-43"
     type: vless
-    server: 38.180.191.58
+    server: 188.116.27.6
     port: 443
-    uuid: 02655447-4659-41df-8d0e-d23a3035b7cb
+    uuid: bcf7f0af-dc39-423b-9ceb-046a8d8fe358
     tls: true
     udp: true
-    servername: sg.nebulaguard.org
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: _aA3dORko2Woz1sPXldNPwMKHBfPhVe3E0hWVQiyUE0
-      short-id: 58353fbc247bb0a3
-    flow: xtls-rprx-vision
-  - name: "🔴 🇩🇪 ~9.3Mbps Xer0x-12"
-    type: vless
-    server: 91.99.108.252
-    port: 8443
-    uuid: c4128967-9ba4-445d-a7aa-d38b4fed547a
-    tls: true
-    udp: true
-    servername: static.252.108.99.91.clients.your-server.de
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    flow: xtls-rprx-vision
-  - name: "🔴 🇸🇬 ~9.2Mbps Xer0x-13"
-    type: vless
-    server: 188.166.182.158
-    port: 443
-    uuid: 1ab92b9c-9a46-4a06-9a12-1c118fd138f6
-    tls: true
-    udp: true
-    servername: www.bing.com
+    servername: www.sony.co.uk
     client-fingerprint: chrome
     reality-opts:
-      public-key: 8aRRz5a2rhOHIRjE3o3qckxmQNWh-IVGTv16Snyze2M
-      short-id: c44f5e04e67b2c74
+      public-key: mprwTEsQ9nJ78qG7BJskAWXaVfDxeMHBkQHbReVfMnc
+      short-id: 1174
     flow: xtls-rprx-vision
-  - name: "🔴 🇺🇸 ~9.2Mbps Xer0x-14"
-    type: vless
-    server: 48.102.168.211
-    port: 443
-    uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
-    tls: true
-    udp: true
-    servername: tradingview.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
-      short-id: 8f3c6e2a1b5d4f09
-    flow: xtls-rprx-vision
-  - name: "🔴 🇵🇱 ~8.7Mbps Xer0x-15"
-    type: vless
-    server: 201.58.190.235
-    port: 443
-    uuid: 247802ca-0fbb-428a-b807-91a6e571b5c7
-    tls: true
-    udp: true
-    servername: static-pl.snobvpn.online
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: iENUFfise6O4hYZVRinO4aye7XCr4Op7QzQuwTUsgR8
-      short-id: 93be3684474b67a8
-    flow: xtls-rprx-vision
-  - name: "🔴 🇷🇺 ~6.2Mbps Xer0x-16"
-    type: vless
-    server: 45.151.70.116
-    port: 443
-    uuid: 6f2857ee-4d43-417f-8a60-6f29becf061f
-    tls: true
-    udp: true
-    servername: www.amd.com
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: O-B_Lb2sUV9VaUIv0_d6gVMA20oSKEd1wwyZ5vJYvh8
-      short-id: 836c3060
 proxy-groups:
   - name: "LTE Auto"
     type: url-test
@@ -210,41 +435,75 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "⚡ 🇺🇸 ~44.2Mbps Xer0x-01"
-      - "⚡ 🇺🇸 ~1.4Mbps Xer0x-02"
-      - "⚡ 🇺🇸 ~28.9Mbps Xer0x-03"
-      - "🔵 🇺🇸 Xer0x-04"
-      - "🔵 🇺🇸 Xer0x-05"
-      - "🔴 🇯🇵 ~15.6Mbps Xer0x-06"
-      - "🔴 🇵🇱 ~10.6Mbps Xer0x-07"
-      - "🔴 🇳🇱 ~10.8Mbps Xer0x-08"
-      - "🔴 🇩🇪 ~9.6Mbps Xer0x-09"
-      - "🔴 🇳🇱 Xer0x-10"
-      - "🔴 🇸🇬 ~9.4Mbps Xer0x-11"
-      - "🔴 🇩🇪 ~9.3Mbps Xer0x-12"
-      - "🔴 🇸🇬 ~9.2Mbps Xer0x-13"
-      - "🔴 🇺🇸 ~9.2Mbps Xer0x-14"
-      - "🔴 🇵🇱 ~8.7Mbps Xer0x-15"
-      - "🔴 🇷🇺 ~6.2Mbps Xer0x-16"
+      - "⚡ 🇺🇸 ~30.3Mbps Xer0x-03"
+      - "⚡ 🇺🇸 ~15.2Mbps Xer0x-04"
+      - "⚡ 🇺🇸 ~17.2Mbps Xer0x-05"
+      - "🔵 🇺🇸 ~18.9Mbps Xer0x-06"
+      - "🔵 🇺🇸 ~15.2Mbps Xer0x-07"
+      - "🔵 🇺🇸 ~18.6Mbps Xer0x-08"
+      - "🔵 🇺🇸 ~12.6Mbps Xer0x-09"
+      - "🔵 🇨🇦 ~17Mbps Xer0x-10"
+      - "🔵 🇯🇵 ~16.1Mbps Xer0x-11"
+      - "🔵 🇺🇸 ~18.8Mbps Xer0x-12"
+      - "🔵 🇨🇦 ~16.3Mbps Xer0x-13"
+      - "🔵 🇺🇸 Xer0x-14"
+      - "🔵 🇺🇸 ~7.1Mbps Xer0x-15"
+      - "🔴 🇨🇦 ~10.4Mbps Xer0x-16"
+      - "🔴 🇳🇱 ~9.8Mbps Xer0x-17"
+      - "🔴 🇳🇱 ~9.9Mbps Xer0x-18"
+      - "🔴 🇳🇱 ~2.4Mbps Xer0x-19"
+      - "🔴 🇳🇱 ~9.1Mbps Xer0x-26"
+      - "🔴 🇬🇧 ~9.7Mbps Xer0x-27"
+      - "🔴 🇭🇰 ~12Mbps Xer0x-28"
+      - "🔴 🇫🇷 ~10.5Mbps Xer0x-30"
+      - "🔴 🇩🇪 ~9.1Mbps Xer0x-31"
+      - "🔴 🇳🇱 ~9.2Mbps Xer0x-32"
+      - "🔴 🇵🇱 ~5.8Mbps Xer0x-33"
+      - "🔴 🇪🇪 ~11Mbps Xer0x-34"
+      - "🔴 🇩🇪 Xer0x-35"
+      - "🔴 🇨🇭 ~8.8Mbps Xer0x-36"
+      - "🔴 🇫🇮 ~8.3Mbps Xer0x-37"
+      - "🔴 🇳🇱 ~3.6Mbps Xer0x-38"
+      - "🔴 🇫🇷 ~8.6Mbps Xer0x-40"
+      - "🔴 🇬🇧 ~8.5Mbps Xer0x-41"
+      - "🔴 🇩🇪 Xer0x-42"
+      - "🔴 🇳🇱 ~8.3Mbps Xer0x-43"
   - name: "LTE Manual"
     type: select
     proxies:
       - "LTE Auto"
-      - "⚡ 🇺🇸 ~44.2Mbps Xer0x-01"
-      - "⚡ 🇺🇸 ~1.4Mbps Xer0x-02"
-      - "⚡ 🇺🇸 ~28.9Mbps Xer0x-03"
-      - "🔵 🇺🇸 Xer0x-04"
-      - "🔵 🇺🇸 Xer0x-05"
-      - "🔴 🇯🇵 ~15.6Mbps Xer0x-06"
-      - "🔴 🇵🇱 ~10.6Mbps Xer0x-07"
-      - "🔴 🇳🇱 ~10.8Mbps Xer0x-08"
-      - "🔴 🇩🇪 ~9.6Mbps Xer0x-09"
-      - "🔴 🇳🇱 Xer0x-10"
-      - "🔴 🇸🇬 ~9.4Mbps Xer0x-11"
-      - "🔴 🇩🇪 ~9.3Mbps Xer0x-12"
-      - "🔴 🇸🇬 ~9.2Mbps Xer0x-13"
-      - "🔴 🇺🇸 ~9.2Mbps Xer0x-14"
-      - "🔴 🇵🇱 ~8.7Mbps Xer0x-15"
-      - "🔴 🇷🇺 ~6.2Mbps Xer0x-16"
+      - "⚡ 🇺🇸 ~30.3Mbps Xer0x-03"
+      - "⚡ 🇺🇸 ~15.2Mbps Xer0x-04"
+      - "⚡ 🇺🇸 ~17.2Mbps Xer0x-05"
+      - "🔵 🇺🇸 ~18.9Mbps Xer0x-06"
+      - "🔵 🇺🇸 ~15.2Mbps Xer0x-07"
+      - "🔵 🇺🇸 ~18.6Mbps Xer0x-08"
+      - "🔵 🇺🇸 ~12.6Mbps Xer0x-09"
+      - "🔵 🇨🇦 ~17Mbps Xer0x-10"
+      - "🔵 🇯🇵 ~16.1Mbps Xer0x-11"
+      - "🔵 🇺🇸 ~18.8Mbps Xer0x-12"
+      - "🔵 🇨🇦 ~16.3Mbps Xer0x-13"
+      - "🔵 🇺🇸 Xer0x-14"
+      - "🔵 🇺🇸 ~7.1Mbps Xer0x-15"
+      - "🔴 🇨🇦 ~10.4Mbps Xer0x-16"
+      - "🔴 🇳🇱 ~9.8Mbps Xer0x-17"
+      - "🔴 🇳🇱 ~9.9Mbps Xer0x-18"
+      - "🔴 🇳🇱 ~2.4Mbps Xer0x-19"
+      - "🔴 🇳🇱 ~9.1Mbps Xer0x-26"
+      - "🔴 🇬🇧 ~9.7Mbps Xer0x-27"
+      - "🔴 🇭🇰 ~12Mbps Xer0x-28"
+      - "🔴 🇫🇷 ~10.5Mbps Xer0x-30"
+      - "🔴 🇩🇪 ~9.1Mbps Xer0x-31"
+      - "🔴 🇳🇱 ~9.2Mbps Xer0x-32"
+      - "🔴 🇵🇱 ~5.8Mbps Xer0x-33"
+      - "🔴 🇪🇪 ~11Mbps Xer0x-34"
+      - "🔴 🇩🇪 Xer0x-35"
+      - "🔴 🇨🇭 ~8.8Mbps Xer0x-36"
+      - "🔴 🇫🇮 ~8.3Mbps Xer0x-37"
+      - "🔴 🇳🇱 ~3.6Mbps Xer0x-38"
+      - "🔴 🇫🇷 ~8.6Mbps Xer0x-40"
+      - "🔴 🇬🇧 ~8.5Mbps Xer0x-41"
+      - "🔴 🇩🇪 Xer0x-42"
+      - "🔴 🇳🇱 ~8.3Mbps Xer0x-43"
 rules:
   - MATCH,LTE Auto
